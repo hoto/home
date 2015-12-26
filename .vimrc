@@ -14,6 +14,7 @@ Plugin 'FuzzyFinder'
 Plugin 'vim-scripts/vim-auto-save'
 Plugin 'scrooloose/nerdtree'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'elzr/vim-json'
 call vundle#end()
 
 filetype plugin indent on
