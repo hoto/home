@@ -7,9 +7,11 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'L9'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
-Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'FuzzyFinder'
+
 call vundle#end()
 
 filetype plugin indent on
@@ -117,7 +119,7 @@ inoremap <silent> <Esc> <C-O>:stopinsert<CR>
 " NERDTREE
 let g:NERDTreeWinPos = "right"
 
-" AIRLINE
+" AIRLINE - install fonts: https://github.com/powerline/fonts
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 12
 set laststatus=2 "display a line at the bottom of the screen with file name
 let g:airline_powerline_fonts = 1
