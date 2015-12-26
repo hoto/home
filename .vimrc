@@ -3,10 +3,15 @@
 "set laststatus=2 "display a line at the bottom of the screen with file name
 "set nocompatible
 
+set guioptions-=T " Removes top toolbar
+set guioptions-=r " Removes right hand scroll bar
+set go-=L " Removes left hand scroll bar
+
+set t_Co=256
+colorscheme desert
+
 set fileencodings=utf-8
 set encoding=utf-8
-
-colorscheme desert
 filetype indent plugin on
 syntax on
 
@@ -103,3 +108,10 @@ endif
 
 "vim won't move cursor back after insertion
 inoremap <silent> <Esc> <C-O>:stopinsert<CR>
+
+"=====================================
+" PLUGINS
+"====================================
+
+" NERDTREE
+let g:NERDTreeWinPos = "right"
