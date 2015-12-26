@@ -133,4 +133,9 @@ let g:fuf_modesDisable = []
 let g:fuf_mrufile_maxItem = 1000
 let g:fuf_mrucmd_maxItem = 400
 let g:fuf_mrufile_exclude = '\v\~$|\.(bak|sw[po])$|^(\/\/|\\\\|\/mnt\/)'
-map ,f :FufFile **/<CR>
+"map ,f :FufFile **/<CR> 
+map ,f :FufCoverageFile <CR> 
+map ,e :FufBuffer <CR> 
+map ,r :FufMruCmd <CR> 
+map ,j :FufJumpList <CR> 
+map ,l :FufLine <CR> 
