@@ -113,7 +113,8 @@ endif
 
 "vim won't move cursor back after insertion
 inoremap <silent> <Esc> <C-O>:stopinsert<CR>
-
+" CTRL-p will set PATH to current file directory (usefull for fuzzy finder)
+map <C-p> :cd %:p:h<CR>
 
 "=====================================
 " PLUGINS
@@ -146,10 +147,12 @@ let g:fuf_dir_exclude = '\v'.s:startname.'('.s:dirname.')'.s:endname
 map ,f :FufFile **/<CR> 
 map ,e :FufBuffer <CR> 
 map ,b :FufBuffer <CR> 
-map ,r :FufMruCmd <CR> 
+map ,r :FufMruFile <CR> 
 map ,j :FufJumpList <CR> 
 map ,w :FufLine <CR> 
 map ,l :FufLine <CR> 
 
 " NERD-TREE
 map <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeWinPos = "left"
+
