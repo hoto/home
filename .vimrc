@@ -1,59 +1,48 @@
-"let g:airline_powerline_fonts = 1
-"let g:airline_theme='jellybeans'
-"set laststatus=2 "display a line at the bottom of the screen with file name
-"set nocompatible
+"=====================================
+" VUNDLE
+"====================================
 
+"=====================================
+" STUFF
+"====================================
 set guioptions-=T " Removes top toolbar
 set guioptions-=r " Removes right hand scroll bar
 set go-=L " Removes left hand scroll bar
-
-set t_Co=256
-colorscheme desert
-
 set fileencodings=utf-8
 set encoding=utf-8
-filetype indent plugin on
-syntax on
-
-set autoindent "keep the same indent in new line
-set backspace=indent,eol,start whichwrap+=<,>,[,] "allow backspacing over autoindent, line breaks etc.
-
-"set backup
-"set backupdir=~/tmp
-"set backupskip=~/tmp
-"set directory=~/tmp
+set t_Co=256 "enables 256 colors
 set nobackup
 set noswapfile
-
 set hlsearch "highlight searches
 set ignorecase "ignore case when searching
 set incsearch " do incremental searching
 set nomodeline "disable modelines, source of security vulnerabilities
 set showcmd "show partial commands in the last line of the screen
-
 set wildmenu "better command-line completion
 set tabstop=8
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+set autoindent "keep the same indent in new line
+set backspace=indent,eol,start whichwrap+=<,>,[,] "allow backspacing over autoindent, line breaks etc.
 
+colorscheme desert
+syntax on
+filetype indent plugin on
 
+if has('mouse')
+  set mouse=a
+endif
+
+"=====================================
+" MAPPING
+"====================================
 noremap <C-k> <C-]>
 noremap <C-j> <C-t>
 
 " do not skip to next search match
 noremap * #*zz
 noremap # *#zz
-
-
-"set nostartofline "stop certain movement from going to the first char of line
-
-" Pasting blockwise and linewise selections is not possible in Insert and
-" Visual mode without the +virtualedit feature.  They are pasted as if they
-" were characterwise instead.
-" Uses the paste.vim autoload script.
-" Use CTRL-G u to have CTRL-Z only undo the paste.
-" This looks like enabling CTRL+V in Insert mode (andy)
 exe 'inoremap <script> <C-V> <C-G>u' . paste#paste_cmd['i']
 exe 'vnoremap <script> <C-V> ' . paste#paste_cmd['v']
 
@@ -73,9 +62,6 @@ noremap <C-S>		:update<CR>
 vnoremap <C-S>		<C-C>:update<CR>
 inoremap <C-S>		<C-O>:update<CR>
 
-if has('mouse')
-  set mouse=a
-endif
 
 " CTRL-Z is Undo; not in cmdline though
 noremap <C-Z> u
@@ -109,9 +95,15 @@ endif
 "vim won't move cursor back after insertion
 inoremap <silent> <Esc> <C-O>:stopinsert<CR>
 
+
 "=====================================
 " PLUGINS
 "====================================
 
 " NERDTREE
 let g:NERDTreeWinPos = "right"
+
+" AIRLINE
+"let g:airline_powerline_fonts = 1
+"let g:airline_theme='jellybeans'
+"set laststatus=2 "display a line at the bottom of the screen with file name
