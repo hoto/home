@@ -7,8 +7,7 @@ alias gd="git diff"
 alias gds="git diff --staged"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold magenta)%an%Creset %Cgreen%cr' --abbrev-commit"
 
-alias sv1=~/git/typester
-alias sv2=cms
+alias sv1="cd ${HOME}/git/typester"
 
 
 # UTIL ALIASES
