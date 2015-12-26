@@ -142,6 +142,7 @@ let s:dirname = 'node_modules|target|bower_components|build|deploy|\.idea|\.git|
 let g:fuf_file_exclude = '\v'.'('.s:startname.'('.s:dirname.')'.s:endname.')|(('.s:extension.')$)'
 let g:fuf_dir_exclude = '\v'.s:startname.'('.s:dirname.')'.s:endname
 map ,f :FufFile **/<CR> 
+map ,c :FufCoverageFile <CR> 
 map ,e :FufBuffer <CR> 
 map ,b :FufBuffer <CR> 
 map ,r :FufMruFile <CR> 
