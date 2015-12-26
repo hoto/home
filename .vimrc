@@ -118,6 +118,6 @@ inoremap <silent> <Esc> <C-O>:stopinsert<CR>
 let g:NERDTreeWinPos = "right"
 
 " AIRLINE
-let g:airline_powerline_fonts = 1
-let g:airline_theme='jellybeans'
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 12
 set laststatus=2 "display a line at the bottom of the screen with file name
+let g:airline_powerline_fonts = 1
