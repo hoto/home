@@ -1,6 +1,25 @@
 "=====================================
 " VUNDLE
 "====================================
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-fugitive'
+Plugin 'git://git.wincent.com/command-t.git'
+call vundle#end()
+
+filetype plugin indent on
+
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just
+" :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to  auto-approve removal
+
 
 "=====================================
 " STUFF
@@ -43,19 +62,14 @@ noremap <C-j> <C-t>
 " do not skip to next search match
 noremap * #*zz
 noremap # *#zz
-exe 'inoremap <script> <C-V> <C-G>u' . paste#paste_cmd['i']
-exe 'vnoremap <script> <C-V> ' . paste#paste_cmd['v']
 
 " CTRL+X is Cut
 vnoremap <C-X> "+x 
 " CTRL+C is Copy
 vnoremap <C-C> "+y 
-" CTRL-V is Paste
-map <C-V> "+gP
-cmap <C-V> <C-R>+
 
 " Use CTRL-Q to do what CTRL-V used to do (block selection)
-noremap <C-Q> <C-V>
+"noremap <C-Q> <C-V>
 
 " Use CTRL-S for saving, also in Insert mode
 noremap <C-S>		:update<CR>
