@@ -11,11 +11,13 @@ Plugin 'L9'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'FuzzyFinder'
+Plugin 'vim-scripts/vim-auto-save'
 
 call vundle#end()
 
 filetype plugin indent on
 
+" You will have to restart Vim to update Plugin list.
 " :PluginList       - lists configured plugins
 " :PluginInstall    - installs plugins; append `!` to update or just
 " :PluginUpdate
@@ -47,7 +49,7 @@ set expandtab
 set autoindent "keep the same indent in new line
 set backspace=indent,eol,start whichwrap+=<,>,[,] "allow backspacing over autoindent, line breaks etc.
 
-colorscheme desert
+colorscheme default
 syntax on
 filetype indent plugin on
 
@@ -123,3 +125,12 @@ let g:NERDTreeWinPos = "right"
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 12
 set laststatus=2 "display a line at the bottom of the screen with file name
 let g:airline_powerline_fonts = 1
+
+" VIM-AUTO-SAVE
+let g:auto_save = 1 "enable autosave
+let g:auto_save_silent = 1 "do not display message
+let g:fuf_modesDisable = []
+let g:fuf_mrufile_maxItem = 1000
+let g:fuf_mrucmd_maxItem = 400
+let g:fuf_mrufile_exclude = '\v\~$|\.(bak|sw[po])$|^(\/\/|\\\\|\/mnt\/)'
+map ,f :FufFile **/<CR>

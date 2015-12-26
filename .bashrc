@@ -14,5 +14,5 @@ alias sv1="cd ${HOME}/git/typester"
 alias l='ls -la --color'
 alias h='function _hg(){ history | grep $1 -i; };_hg'
 
-
-source scripts/maven-color.sh
+# SCRIPTS
+source ${HOME}/scripts/maven-color.sh
