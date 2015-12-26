@@ -13,6 +13,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'FuzzyFinder'
 Plugin 'vim-scripts/vim-auto-save'
 Plugin 'scrooloose/nerdtree'
+Plugin 'leafgarland/typescript-vim'
 call vundle#end()
 
 filetype plugin indent on
