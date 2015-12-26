@@ -12,7 +12,7 @@ Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'FuzzyFinder'
 Plugin 'vim-scripts/vim-auto-save'
-
+Plugin 'scrooloose/nerdtree'
 call vundle#end()
 
 filetype plugin indent on
@@ -59,7 +59,7 @@ if has('mouse')
 endif
 
 "=====================================
-" MAPPING
+" MAPPINGS
 "====================================
 noremap <C-k> <C-]>
 noremap <C-j> <C-t>
@@ -151,3 +151,5 @@ map ,j :FufJumpList <CR>
 map ,w :FufLine <CR> 
 map ,l :FufLine <CR> 
 
+" NERD-TREE
+map <C-n> :NERDTreeToggle<CR>
