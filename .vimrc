@@ -48,6 +48,7 @@ set softtabstop=4
 set expandtab
 set autoindent "keep the same indent in new line
 set backspace=indent,eol,start whichwrap+=<,>,[,] "allow backspacing over autoindent, line breaks etc.
+set pastetoggle=<F10> "disables formatting when pasting text in Insert mode
 
 colorscheme default
 syntax on
@@ -130,12 +131,23 @@ let g:airline_powerline_fonts = 1
 let g:auto_save = 1 "enable autosave
 let g:auto_save_silent = 1 "do not display message
 let g:fuf_modesDisable = []
-let g:fuf_mrufile_maxItem = 1000
-let g:fuf_mrucmd_maxItem = 400
-let g:fuf_mrufile_exclude = '\v\~$|\.(bak|sw[po])$|^(\/\/|\\\\|\/mnt\/)'
-"map ,f :FufFile **/<CR> 
-map ,f :FufCoverageFile <CR> 
+let g:fuf_mrufile_maxItem = 60
+let g:fuf_mrucmd_maxItem = 60
+let g:fuf_enumeratingLimit = 60
+
+" FUZZY-FINDER
+let s:slash = '[/\\]'
+let s:startname = '(^|'.s:slash.')'
+let s:endname = '($|'.s:slash.')'
+let s:extension = '\.bak|\.dll|\.exe|\.o|\.pyc|\.pyo|\.swp|\.swo|\.class'
+let s:dirname = 'node_modules|target|bower_components|build|deploy|\.idea|\.git|.+\.egg-info'
+let g:fuf_file_exclude = '\v'.'('.s:startname.'('.s:dirname.')'.s:endname.')|(('.s:extension.')$)'
+let g:fuf_dir_exclude = '\v'.s:startname.'('.s:dirname.')'.s:endname
+map ,f :FufFile **/<CR> 
 map ,e :FufBuffer <CR> 
+map ,b :FufBuffer <CR> 
 map ,r :FufMruCmd <CR> 
 map ,j :FufJumpList <CR> 
+map ,w :FufLine <CR> 
 map ,l :FufLine <CR> 
+
