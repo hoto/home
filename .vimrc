@@ -119,10 +119,6 @@ map <C-p> :cd %:p:h<CR>
 "=====================================
 " PLUGINS
 "====================================
-
-" NERDTREE
-let g:NERDTreeWinPos = "right"
-
 " AIRLINE - install fonts: https://github.com/powerline/fonts
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 12
 set laststatus=2 "display a line at the bottom of the screen with file name
@@ -154,5 +150,4 @@ map ,l :FufLine <CR>
 
 " NERD-TREE
 map <C-n> :NERDTreeToggle<CR>
-let g:NERDTreeWinPos = "left"
 

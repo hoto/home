@@ -15,4 +15,11 @@ alias l='ls -la --color'
 alias h='function _hg(){ history | grep $1 -i; };_hg'
 
 # SCRIPTS
-source ${HOME}/scripts/maven-color.sh
+BASH_SCRIPTS=${HOME}/.bash
+export GITAWAREPROMPT=${BASH_SCRIPTS}/git-aware-prompt
+source ${BASH_SCRIPTS}/maven-color.sh
+source ${GITAWAREPROMPT}/main.sh
+
+
+# PS1
+export PS1="\${debian_chroot:+(\$debian_chroot)}\u@\h:\w \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
