@@ -81,7 +81,6 @@ noremap <C-S>		:update<CR>
 vnoremap <C-S>		<C-C>:update<CR>
 inoremap <C-S>		<C-O>:update<CR>
 
-
 " CTRL-Z is Undo; not in cmdline though
 noremap <C-Z> u
 inoremap <C-Z> <C-O>u
@@ -111,8 +110,9 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
-"vim won't move cursor back after insertion
-inoremap <silent> <Esc> <C-O>:stopinsert<CR>
+"vim won't move cursor back after insertion - this brakes arrow keys in I mode
+"inoremap <silent> <Esc> <C-O>:stopinsert<CR>
+
 " CTRL-p will set PATH to current file directory (usefull for fuzzy finder)
 map <C-p> :cd %:p:h<CR>
 
