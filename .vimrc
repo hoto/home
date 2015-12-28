@@ -52,7 +52,13 @@ set autoindent "keep the same indent in new line
 set backspace=indent,eol,start whichwrap+=<,>,[,] "allow backspacing over autoindent, line breaks etc.
 set pastetoggle=<F10> "disables formatting when pasting text in Insert mode
 
-colorscheme default
+
+if has("gui_running")
+    colorscheme desert
+else
+    colorscheme default
+endif
+
 syntax on
 filetype indent plugin on
 
