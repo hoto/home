@@ -1,1 +1,1 @@
-# /home configuration for unix
+# My HOME
