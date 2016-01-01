@@ -28,7 +28,7 @@ filetype plugin indent on
 
 
 "=====================================
-" STUFF
+" VIM STUFF
 "====================================
 set guioptions-=T " Removes top toolbar
 set guioptions-=r " Removes right hand scroll bar
@@ -51,7 +51,8 @@ set expandtab
 set autoindent "keep the same indent in new line
 set backspace=indent,eol,start whichwrap+=<,>,[,] "allow backspacing over autoindent, line breaks etc.
 set pastetoggle=<F10> "disables formatting when pasting text in Insert mode
-
+set splitright "make vsplit put the new buffer on the right of the current buffer
+set splitbelow "make split put the new buffer below the current buffer
 
 if has("gui_running")
     colorscheme desert
