@@ -60,7 +60,8 @@ else
     colorscheme default
 endif
 
-syntax on
+syntax on "syntax highliting on
+set hlsearch "higlight last searched pattern
 filetype indent plugin on
 
 if has('mouse')
@@ -70,9 +71,6 @@ endif
 "=====================================
 " MAPPINGS
 "====================================
-noremap <C-k> <C-]>
-noremap <C-j> <C-t>
-
 " do not skip to next search match
 noremap * #*zz
 noremap # *#zz
@@ -81,9 +79,6 @@ noremap # *#zz
 vnoremap <C-X> "+x 
 " CTRL+C is Copy
 vnoremap <C-C> "+y 
-
-" Use CTRL-Q to do what CTRL-V used to do (block selection)
-"noremap <C-Q> <C-V>
 
 " Use CTRL-S for saving, also in Insert mode
 noremap <C-S>		:update<CR>
@@ -106,19 +101,6 @@ onoremap <C-A> <C-C>gggH<C-O>G
 snoremap <C-A> <C-C>gggH<C-O>G
 xnoremap <C-A> <C-C>ggVG
 
-" CTRL-Tab is Next window
-noremap <C-Tab> <C-W>w
-inoremap <C-Tab> <C-O><C-W>w
-cnoremap <C-Tab> <C-C><C-W>w
-onoremap <C-Tab> <C-C><C-W>w
-
-" Switch syntax highlighting on, when the terminal has colors
-" Also switch on highlighting the last used search pattern.
-if &t_Co > 2 || has("gui_running")
-  syntax on
-  set hlsearch
-endif
-
 "vim won't move cursor back after insertion - this brakes arrow keys in I mode
 "inoremap <silent> <Esc> <C-O>:stopinsert<CR>
 
@@ -135,11 +117,8 @@ let g:airline_powerline_fonts = 1
 
 " VIM-AUTO-SAVE
 let g:auto_save = 1 "enable autosave
-let g:auto_save_silent = 1 "do not display message
-let g:fuf_modesDisable = []
-let g:fuf_mrufile_maxItem = 60
-let g:fuf_mrucmd_maxItem = 60
-let g:fuf_enumeratingLimit = 60
+let g:auto_save_silent = 1 "auto-save notification display on/off
+let g:auto_save_in_insert_mode = 1 
 
 " FUZZY-FINDER
 let s:slash = '[/\\]'
@@ -149,6 +128,10 @@ let s:extension = '\.bak|\.dll|\.exe|\.o|\.pyc|\.pyo|\.swp|\.swo|\.class'
 let s:dirname = 'node_modules|target|bower_components|build|deploy|\.idea|\.git|.+\.egg-info'
 let g:fuf_file_exclude = '\v'.'('.s:startname.'('.s:dirname.')'.s:endname.')|(('.s:extension.')$)'
 let g:fuf_dir_exclude = '\v'.s:startname.'('.s:dirname.')'.s:endname
+let g:fuf_modesDisable = []
+let g:fuf_mrufile_maxItem = 60
+let g:fuf_mrucmd_maxItem = 60
+let g:fuf_enumeratingLimit = 60
 map ,f :FufFile **/<CR> 
 map ,c :FufCoverageFile <CR> 
 map ,e :FufBuffer <CR> 
