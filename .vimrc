@@ -132,7 +132,7 @@ let g:fuf_modesDisable = []
 let g:fuf_mrufile_maxItem = 60
 let g:fuf_mrucmd_maxItem = 60
 let g:fuf_enumeratingLimit = 60
-map ,f :FufFile **/<CR> 
+map ,f :FufFile <CR> 
 map ,c :FufCoverageFile <CR> 
 map ,e :FufBuffer <CR> 
 map ,b :FufBuffer <CR> 
