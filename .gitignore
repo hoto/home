@@ -1,0 +1,21 @@
+*
+!.gitignore
+!README.md
+
+# BASHRC AND SCRIPTS FOR IT
+!.bashrc
+!.bash/
+!.bash/*
+!.bash/**
+
+# VIM
+!.vimrc
+!.vim/
+!.vim/*
+
+# REDSHIFT (SCREEN DIMMER)
+!.config/
+!.config/redshift.conf
+
+# SCREEN
+!.screenrc
