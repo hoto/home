@@ -15,6 +15,7 @@ alias sv1="cd ${HOME}/git/typester"
 alias l='ls -la --color'
 alias c='clear'
 alias h='function _hg(){ history | grep $1 -i; };_hg'
+alias colors='perl .bash/256colors2.pl'
 
 # SCRIPTS
 BASH_SCRIPTS=${HOME}/.bash
