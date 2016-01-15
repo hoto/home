@@ -12,7 +12,7 @@ alias sv1="cd ${HOME}/git/typester"
 
 
 # UTIL ALIASES
-alias l='ls -la --color'
+alias l='ls -la --color --group-directories-first'
 alias c='clear'
 alias h='function _hg(){ history | grep $1 -i; };_hg'
 alias colors='perl .bash/256colors2.pl'
