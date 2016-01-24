@@ -21,7 +21,7 @@ filetype plugin indent on
 
 " You will have to restart Vim to update Plugin list.
 " :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just
+" :PluginInstall    - installs plugins
 " :PluginUpdate
 " :PluginSearch foo - searches for foo; append `!` to refresh local cache
 " :PluginClean      - confirms removal of unused plugins; append `!` to  auto-approve removal
@@ -143,4 +143,3 @@ map ,l :FufLine <CR>
 
 " NERD-TREE
 map <C-n> :NERDTreeToggle<CR>
-
