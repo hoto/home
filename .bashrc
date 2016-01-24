@@ -9,6 +9,7 @@ alias gp="cat ~/.gittoken | xclip; git push"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold magenta)%an%Creset %Cgreen%cr' --abbrev-commit"
 
 alias sv1="cd ${HOME}/git/typester"
+alias sv2="cd ${HOME}/git/funfun"
 
 
 # UTIL ALIASES
@@ -28,3 +29,6 @@ source ${GITAWAREPROMPT}/main.sh
 
 # PS1
 export PS1="\${debian_chroot:+(\$debian_chroot)}\u@\h:\w \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
+
+#Enable Ctrl+S in vim by disabling Software Flow Controll feature in unix
+stty -ixon

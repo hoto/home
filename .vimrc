@@ -118,7 +118,7 @@ let g:airline_powerline_fonts = 1
 " VIM-AUTO-SAVE
 let g:auto_save = 1 "enable autosave
 let g:auto_save_silent = 1 "auto-save notification display on/off
-let g:auto_save_in_insert_mode = 1 
+let g:auto_save_in_insert_mode = 0
 
 " FUZZY-FINDER
 let s:slash = '[/\\]'
