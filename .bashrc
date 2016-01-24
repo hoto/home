@@ -1,7 +1,3 @@
-#EXPORTS
-export GREP_OPTIONS="-n --color"
-
-
 # GIT ALIASES
 alias g="cd ~/git ; ls -la"
 alias gc="git commit -m"
@@ -20,6 +16,7 @@ alias l='ls -las --color --group-directories-first'
 alias c='clear'
 alias h='function _hg(){ history | grep $1 -i; };_hg'
 alias colors='perl .bash/256colors2.pl'
+alias grep='grep -n --color'
 
 
 # SCRIPTS
