@@ -135,10 +135,9 @@ let g:fuf_enumeratingLimit = 60
 map ,f :FufFile <CR> 
 map ,c :FufCoverageFile <CR> 
 map ,e :FufBuffer <CR> 
-map ,b :FufBuffer <CR> 
 map ,r :FufMruFile <CR> 
 map ,j :FufJumpList <CR> 
-map ,w :FufLine <CR> 
+map ,g :FufLine <CR> 
 map ,l :FufLine <CR> 
 
 " NERD-TREE
