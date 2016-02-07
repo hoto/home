@@ -139,6 +139,7 @@ map ,r :FufMruFile <CR>
 map ,j :FufJumpList <CR> 
 map ,g :FufLine <CR> 
 map ,l :FufLine <CR> 
+map ,p :FufRenewCache <CR> 
 
 " NERD-TREE
 map <C-n> :NERDTreeToggle<CR>
