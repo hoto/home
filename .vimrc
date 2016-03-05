@@ -15,6 +15,8 @@ Plugin 'vim-scripts/vim-auto-save'
 Plugin 'scrooloose/nerdtree'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'elzr/vim-json'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'othree/javascript-libraries-syntax.vim'
 call vundle#end()
 
 filetype plugin indent on
@@ -143,3 +145,6 @@ map ,p :FufRenewCache <CR>
 
 " NERD-TREE
 map <C-n> :NERDTreeToggle<CR>
+
+" JAVASCRIPT-LIBRARIES-SYNTAX
+let g:used_javascript_libs = 'underscore,backbone,flux,react,jasmine,chai'
