@@ -56,10 +56,6 @@ set pastetoggle=<F10> "disables formatting when pasting text in Insert mode
 set splitright "make vsplit put the new buffer on the right of the current buffer
 set splitbelow "make split put the new buffer below the current buffer
 
-" use clipboard as buffer
-set clipboard=unnamed
-
-
 if has("gui_running")
     colorscheme desert
 else
@@ -85,10 +81,6 @@ noremap # *#zz
 vnoremap <C-X> "+x 
 " CTRL+C is Copy
 noremap <C-C> "+y 
-" CTRL+V is Paste
-vmap <C-V> c<ESC>"+p
-imap <C-V> <C-r><C-o>+
-
 
 " Use CTRL-S for saving, also in Insert mode
 noremap <C-S>		:update<CR>
