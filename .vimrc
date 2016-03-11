@@ -17,6 +17,7 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'elzr/vim-json'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'tpope/vim-surround'
 call vundle#end()
 
 filetype plugin indent on

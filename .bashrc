@@ -31,4 +31,4 @@ source ${GITAWAREPROMPT}/main.sh
 export PS1="\${debian_chroot:+(\$debian_chroot)}\u@\h:\w \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
 
 #Enable Ctrl+S in vim by disabling Software Flow Controll feature in unix
-stty -ixon
+#stty -ixon
