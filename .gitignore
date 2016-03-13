@@ -11,9 +11,9 @@
 
 # VIM
 !.vimrc
-!.vim
 !.vim/
 !.vim/*
+.vim/.netrwhist
 
 # REDSHIFT (SCREEN DIMMER)
 !.config/
