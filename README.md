@@ -16,9 +16,12 @@ Config for Bash, Vim, git and others.
 
     setxkbmap -option caps:escape
 
-#### Install Powerline Fonts (for vim airline)
+#### Install Powerline Fonts 
+
+Use Defa Vu Sand Mono in terminal (for vim airline)
 
     https://github.com/powerline/fonts
+
 
 #### Install exfat for pendrives
 
