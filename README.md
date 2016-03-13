@@ -25,3 +25,10 @@ Config for Bash, Vim, git and others.
 >http://askubuntu.com/questions/370398/how-to-get-a-drive-formatted-with-exfat-working
 
     sudo apt-get install exfat-utils exfat-fuse
+
+#### Change hostname to something shorter
+
+>http://www.howtogeek.com/197934/how-to-change-your-hostname-computer-name-on-ubuntu-linux/
+
+    sudo vim /etc/hostname
+    sudo vim /etc/hosts
