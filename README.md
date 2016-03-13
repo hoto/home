@@ -10,9 +10,15 @@ Config for Bash, Vim, git and others.
 
 #### Map Caps Lock to Escape
 
+>http://askubuntu.com/questions/453793/remapping-caps-lock-in-14-04-trusty-tahr/527201#527201
 
-#### Install Awesome Fonts (for vim airline)
+    Startup Applications > Add > Name: Disable Capslock > Command
 
+    setxkbmap -option caps:escape
+
+#### Install Powerline Fonts (for vim airline)
+
+    https://github.com/powerline/fonts
 
 #### Install exfat for pendrives
 
