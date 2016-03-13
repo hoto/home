@@ -35,3 +35,11 @@ Use Defa Vu Sand Mono in terminal (for vim airline)
 
     sudo vim /etc/hostname
     sudo vim /etc/hosts
+
+#### Install Nautilus open Terminal Here package
+
+>http://askubuntu.com/questions/207442/how-to-add-open-terminal-here-to-nautilus-context-menu
+
+    sudo apt-get install nautilus-open-terminal
+    nautilus -q
+
