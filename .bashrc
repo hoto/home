@@ -30,5 +30,5 @@ source ${GITAWAREPROMPT}/main.sh
 # PS1
 export PS1="\${debian_chroot:+(\$debian_chroot)}\u@\h:\w \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
 
-#Enable Ctrl+S in vim by disabling Software Flow Controll feature in unix
-#stty -ixon
+# Map capslock key to escape key
+setxkbmap -option caps:escape
