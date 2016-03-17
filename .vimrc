@@ -41,6 +41,7 @@ set encoding=utf-8
 set t_Co=256 "enables 256 colors
 set nobackup
 set noswapfile
+set nowritebackup 
 set hlsearch "highlight searches
 set ignorecase "ignore case when searching
 set incsearch " do incremental searching
