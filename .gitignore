@@ -11,8 +11,13 @@
 
 # VIM
 !.vimrc
+!.vim
 !.vim/
+!.vim/plugin
+!.vim/plugin/
+!.vim/plugin/**
 !.vim/*
+!.vim/**
 .vim/.netrwhist
 
 # REDSHIFT (SCREEN DIMMER)
