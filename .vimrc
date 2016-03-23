@@ -61,7 +61,7 @@ set splitbelow "make split put the new buffer below the current buffer
 if has("gui_running")
     colorscheme desert
 else
-    colorscheme default
+    colorscheme desert
 endif
 
 syntax on "syntax highliting on
