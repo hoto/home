@@ -29,3 +29,8 @@
 !.screenrc
 
 !.inputrc
+
+# GNOME TERMINAL (UBUNTU)
+!.gconf
+!.gconf/
+!.gconf/**
