@@ -33,4 +33,6 @@
 # GNOME TERMINAL (UBUNTU)
 !.gconf
 !.gconf/
+!.gconf/*
 !.gconf/**
+!.gconf/**/*
