@@ -1,4 +1,4 @@
-"s=====================================
+"====================================
 " VUNDLE
 "====================================
 set nocompatible
@@ -19,6 +19,12 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'chase/vim-ansible-yaml'
+"Plugin 'pearofducks/ansible-vim'
+Plugin 'MarcWeber/vim-addon-mw-utils' "for vim-snipmate
+Plugin 'tomtom/tlib_vim' "for vim-snipmate
+Plugin 'garbas/vim-snipmate' 
+Plugin 'honza/vim-snippets' "for vim-snipmate
 call vundle#end()
 
 filetype plugin indent on
