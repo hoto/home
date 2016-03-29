@@ -5,8 +5,8 @@
 	</entry>
 	<entry name="alternate_screen_scroll" mtime="1459243781" type="bool" value="true"/>
 	<entry name="use_custom_command" mtime="1459243781" type="bool" value="false"/>
-	<entry name="font" mtime="1459243797" type="string">
-		<stringvalue>DejaVu Sans Mono for Powerline 14</stringvalue>
+	<entry name="font" mtime="1459243887" type="string">
+		<stringvalue>DejaVu Sans Mono for Powerline 12</stringvalue>
 	</entry>
 	<entry name="scrollbar_position" mtime="1459243781" type="string">
 		<stringvalue>right</stringvalue>
@@ -46,8 +46,8 @@
 	<entry name="use_custom_default_size" mtime="1459243781" type="bool" value="false"/>
 	<entry name="default_show_menubar" mtime="1459243781" type="bool" value="true"/>
 	<entry name="bold_color_same_as_fg" mtime="1459243781" type="bool" value="true"/>
-	<entry name="background_color" mtime="1459243804" type="string">
-		<stringvalue>#FFFFFFFFFFFF</stringvalue>
+	<entry name="background_color" mtime="1459243856" type="string">
+		<stringvalue>#000000000000</stringvalue>
 	</entry>
 	<entry name="allow_bold" mtime="1459243781" type="bool" value="true"/>
 	<entry name="backspace_binding" mtime="1459243781" type="string">
@@ -63,10 +63,10 @@
 	<entry name="scroll_background" mtime="1459243781" type="bool" value="true"/>
 	<entry name="update_records" mtime="1459243781" type="bool" value="true"/>
 	<entry name="login_shell" mtime="1459243781" type="bool" value="false"/>
-	<entry name="foreground_color" mtime="1459243804" type="string">
-		<stringvalue>#000000000000</stringvalue>
+	<entry name="foreground_color" mtime="1459243855" type="string">
+		<stringvalue>#FFFFFFFFFFFF</stringvalue>
 	</entry>
-	<entry name="background_darkness" mtime="1459243830" type="float" value="0.32618024945259094"/>
+	<entry name="background_darkness" mtime="1459243864" type="float" value="0.83476394414901733"/>
 	<entry name="cursor_shape" mtime="1459243781" type="string">
 		<stringvalue>block</stringvalue>
 	</entry>
