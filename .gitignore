@@ -31,15 +31,12 @@
 !.inputrc
 
 # GNOME TERMINAL (UBUNTU)
+# I ignore profiles in .bashrc (git assume unchaged command)
 !.gconf
 !.gconf/
 !.gconf/*
 !.gconf/**
 !.gconf/**/*
-# ignore because timestamps are being updated...
-.gconf/apps/gnome-terminal/profiles/Profile0/%gconf.xml
-.gconf/apps/gnome-terminal/profiles/Profile1/%gconf.xml
-.gconf/apps/gnome-terminal/profiles/Default/%gconf.xml
 
 # ATOM
 !.atom
