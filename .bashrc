@@ -1,5 +1,5 @@
 # GIT ALIASES
-alias g="cd ~/git ; ls -la"
+alias g="cd ~/git; pwd"
 alias gc="git commit -m"
 alias ga="git add -A"
 alias gs="git status"
@@ -8,8 +8,8 @@ alias gds="gd --staged"
 alias gp="cat ~/.gittoken | xclip; git push"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold magenta)%an%Creset %Cgreen%cr' --abbrev-commit"
 
-alias sv1="cd ${HOME}/git/typester"
-alias sv2="cd ${HOME}/git/funfun"
+alias sv1="cd ${HOME}/git/my-ubuntu; pwd"
+alias sv2="cd ${HOME}/git/funfun; pwd"
 
 
 # UTIL ALIASES
