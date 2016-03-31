@@ -1,3 +1,8 @@
 "*":
+  autosave:
+    enabled: true
+  core: {}
+  editor:
+    invisibles: {}
   welcome:
     showOnStartup: false
