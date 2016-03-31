@@ -18,6 +18,8 @@ alias c='clear'
 alias h='function _hg(){ history | grep $1 -i; };_hg'
 alias colors='perl .bash/256colors2.pl'
 alias grep='grep -n --color'
+alias tree='tree -C'
+alias t='tree'
 
 
 # SCRIPTS
