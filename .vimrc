@@ -55,9 +55,9 @@ set incsearch " do incremental searching
 set nomodeline "disable modelines, source of security vulnerabilities
 set showcmd "show partial commands in the last line of the screen
 set wildmenu "better command-line completion
-set tabstop=8
-set shiftwidth=4
-set softtabstop=4
+set tabstop=4
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 set autoindent "keep the same indent in new line
 set backspace=indent,eol,start whichwrap+=<,>,[,] "allow backspacing over autoindent, line breaks etc.
