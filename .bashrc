@@ -16,6 +16,11 @@ alias gds="gd --staged"
 alias gp="cat ~/.gittoken | xclip; git push"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold magenta)%an%Creset %Cgreen%cr' --abbrev-commit"
 
+# DOCKER ALIASES
+alias di='docker images'
+alias dp='docker ps --format="{{.ID}} {{.Image}}   {{.Command}}  {{.RunningFor}} {{.Ports}}"'
+alias dpa='dp --all'
+
 # SCRIPTS
 BASH_SCRIPTS=${HOME}/.bash
 export GITAWAREPROMPT=${BASH_SCRIPTS}/git-aware-prompt
