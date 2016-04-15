@@ -35,3 +35,6 @@ setxkbmap -option caps:escape
 # Ignore changes in ubuntu terminal profiles (because of timestamps being updated there)
 git update-index --assume-unchanged ${HOME}/.gconf/apps/gnome-terminal/profiles/Default/%gconf.xml 2>&-
 git update-index --assume-unchanged ${HOME}/.gconf/apps/gnome-terminal/profiles/Profile0/%gconf.xml 2>&-
+
+# Command competion for AWS CLI
+complete -C '/usr/local/aws/bin/aws_completer' aws 2>&-
