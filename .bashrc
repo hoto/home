@@ -16,6 +16,11 @@ alias gds="gd --staged"
 alias gp="cat ~/.gittoken | xclip; git push"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold magenta)%an%Creset %Cgreen%cr' --abbrev-commit"
 
+# DOCKER ALIASES
+alias di='docker images'
+alias dp='docker ps --format="{{.ID}} {{.Image}}   {{.Command}} {{.Status}} {{.Ports}}"'
+alias dpa='dp --all'
+
 # SCRIPTS
 BASH_SCRIPTS=${HOME}/.bash
 export GITAWAREPROMPT=${BASH_SCRIPTS}/git-aware-prompt
@@ -30,3 +35,6 @@ setxkbmap -option caps:escape
 # Ignore changes in ubuntu terminal profiles (because of timestamps being updated there)
 git update-index --assume-unchanged ${HOME}/.gconf/apps/gnome-terminal/profiles/Default/%gconf.xml 2>&-
 git update-index --assume-unchanged ${HOME}/.gconf/apps/gnome-terminal/profiles/Profile0/%gconf.xml 2>&-
+
+# Command competion for AWS CLI
+complete -C '/usr/local/aws/bin/aws_completer' aws 2>&-
