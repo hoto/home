@@ -37,6 +37,7 @@
 !.gconf/*
 !.gconf/**
 !.gconf/**/*
+.gconf/apps/SoundConverter/%gconf.xml
 
 # ATOM
 !.atom
