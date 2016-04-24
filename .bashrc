@@ -18,6 +18,7 @@ alias gp="cat ~/.gittoken | xclip; git push"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold magenta)%an%Creset %Cgreen%cr' --abbrev-commit"
 
 # DOCKER ALIASES
+alias d='docker'
 alias di='docker images'
 alias dsr='docker ps'
 alias ds='dsr --all'
