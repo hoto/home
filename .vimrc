@@ -130,6 +130,8 @@ let g:airline_powerline_fonts = 1
 let g:auto_save = 1 "enable autosave
 let g:auto_save_silent = 1 "auto-save notification display on/off
 let g:auto_save_in_insert_mode = 0
+let g:auto_save_no_updatetime = 1
+set updatetime=750 "this is the timeout after which vim will trigger plugins
 
 " FUZZY-FINDER
 let s:slash = '[/\\]'
