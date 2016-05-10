@@ -4,7 +4,6 @@
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
-
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'L9'
@@ -114,7 +113,7 @@ snoremap <C-A> <C-C>gggH<C-O>G
 xnoremap <C-A> <C-C>ggVG
 
 "vim won't move cursor back after insertion - this brakes arrow keys in I mode
-"inoremap <silent> <Esc> <C-O>:stopinsert<CR>
+inoremap <silent> <Esc> <C-O>:stopinsert<CR>
 
 " CTRL-p will set PATH to current file directory (usefull for fuzzy finder)
 map <C-p> :cd %:p:h<CR>
