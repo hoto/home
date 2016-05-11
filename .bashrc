@@ -40,5 +40,8 @@ setxkbmap -option caps:escape
 git update-index --assume-unchanged ${HOME}/.gconf/apps/gnome-terminal/profiles/Default/%gconf.xml 2>&-
 git update-index --assume-unchanged ${HOME}/.gconf/apps/gnome-terminal/profiles/Profile0/%gconf.xml 2>&-
 
-# Command competion for AWS CLI
-complete -C '/usr/local/aws/bin/aws_completer' aws 2>&-
+# Command line competion for AWS cli
+complete -C '/usr/local/aws/bin/aws_uompleter' aws 2>&-
+
+# Command line completion for git
+source /usr/share/bash-completion/completions/git
