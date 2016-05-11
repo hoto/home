@@ -29,6 +29,12 @@ alias dc='docker-compose'
 BASH_SCRIPTS=${HOME}/.bash
 export GITAWAREPROMPT=${BASH_SCRIPTS}/git-aware-prompt
 source ${GITAWAREPROMPT}/main.sh
+# git completion
+source /usr/share/bash-completion/completions/git
+source ${BASH_SCRIPTS}/git-completion.sh
+
+# Command line competion for AWS cli
+complete -C '/usr/local/aws/bin/aws_uompleter' aws 2>&-
 
 # PS1
 export PS1="\${debian_chroot:+(\$debian_chroot)}\u@\h:\w \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
@@ -40,8 +46,3 @@ setxkbmap -option caps:escape
 git update-index --assume-unchanged ${HOME}/.gconf/apps/gnome-terminal/profiles/Default/%gconf.xml 2>&-
 git update-index --assume-unchanged ${HOME}/.gconf/apps/gnome-terminal/profiles/Profile0/%gconf.xml 2>&-
 
-# Command line competion for AWS cli
-complete -C '/usr/local/aws/bin/aws_uompleter' aws 2>&-
-
-# Command line completion for git
-source /usr/share/bash-completion/completions/git
