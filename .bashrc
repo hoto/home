@@ -2,6 +2,7 @@
 alias ls='ls --color --group-directories-first'
 alias l='ls'
 alias la='ls -las'
+alias ll='la'
 alias colors='perl .bash/256colors2.pl'
 alias grep='grep -n --color'
 alias tree='tree -C'
