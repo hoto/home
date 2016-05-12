@@ -51,6 +51,10 @@ complete -C '/usr/local/aws/bin/aws_uompleter' aws 2>&-
 # PS1
 export PS1="\${debian_chroot:+(\$debian_chroot)}\u@\h:\w \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
 
+#if [ -f "${BASH_SCRIPTS}/tweak-ps1.sh" ] && [[ $- == *i* ]]; then
+  #. "${BASH_SCRIPTS}/tweak-ps1.sh"
+#fi
+
 # Map capslock key to escape key
 setxkbmap -option caps:escape
 
