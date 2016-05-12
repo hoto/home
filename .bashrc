@@ -20,7 +20,7 @@ alias t3='_tree 3'
 alias t4='_tree 4'
 
 # GIT ALIASES
-alias g="cd ~/git; ls"
+alias g="cd ~/git; tree -L 2 -d"
 alias gc="git commit -m"
 alias ga="git add -A"
 alias gs="git status"
