@@ -5,7 +5,10 @@ alias la='ls -las'
 alias colors='perl .bash/256colors2.pl'
 alias grep='grep -n --color'
 alias tree='tree -C'
-alias t='tree'
+function _tree(){
+  tree -L $1 || tree
+}
+alias t=_tree
 
 # GIT ALIASES
 alias g="cd ~/git; ls"
