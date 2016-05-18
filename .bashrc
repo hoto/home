@@ -14,6 +14,7 @@ function _tree(){
   fi
 }
 alias t=_tree
+alias t0='_tree 1'
 alias t1='_tree 1'
 alias t2='_tree 2'
 alias t3='_tree 3'
