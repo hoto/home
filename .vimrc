@@ -19,7 +19,6 @@ Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'chase/vim-ansible-yaml'
-"Plugin 'pearofducks/ansible-vim'
 Plugin 'MarcWeber/vim-addon-mw-utils' "for vim-snipmate
 Plugin 'tomtom/tlib_vim' "for vim-snipmate
 Plugin 'garbas/vim-snipmate' 
