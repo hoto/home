@@ -6,13 +6,9 @@ alias ll='la'
 alias colors='perl .bash/256colors2.pl'
 alias grep='grep -n --color'
 alias tree='tree -C'
-function _tree(){
-  if [[ -z "$1" ]]; then
-    tree
-  else
-    tree -L $1 
-  fi
-}
+
+# TREE
+function _tree(){ if [[ -z "$1" ]]; then tree; else tree -L $1; fi }
 alias t=_tree
 alias t1='_tree 1'
 alias t2='_tree 2'
@@ -41,19 +37,15 @@ alias dc='docker-compose'
 BASH_SCRIPTS=${HOME}/.bash
 export GITAWAREPROMPT=${BASH_SCRIPTS}/git-aware-prompt
 source ${GITAWAREPROMPT}/main.sh
-# git completion
 source /usr/share/bash-completion/completions/git
 source ${BASH_SCRIPTS}/git-completion.sh
 
-# Command line competion for AWS cli
+# AWS 
 complete -C '/usr/local/aws/bin/aws_uompleter' aws 2>&-
 
 # PS1
-export PS1="\${debian_chroot:+(\$debian_chroot)}\u@\h:\w \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
-
-#if [ -f "${BASH_SCRIPTS}/tweak-ps1.sh" ] && [[ $- == *i* ]]; then
-  #. "${BASH_SCRIPTS}/tweak-ps1.sh"
-#fi
+export PS1="\[$bakblu\]\[$txtblk\]\t \[$txtwht\]\w \[$txtylw\]\$git_branch\[$txtrst\]\[$txtred\]\$git_dirty\[$txtrst\]\$ "
+#export PS1="\${debian_chroot:+(\$debian_chroot)}\u@\h:\w \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
 
 # Map capslock key to escape key
 setxkbmap -option caps:escape
