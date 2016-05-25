@@ -47,7 +47,7 @@ complete -C '/usr/local/aws/bin/aws_uompleter' aws 2>&-
 # PS1
 function nonzero_return() {
   RETVAL=$?
-  [ $RETVAL -ne 0 ] && echo "[1] "
+  [ $RETVAL -ne 0 ] && echo "[$RETVAL] "
 }
 export PS1="\[$bakblu\]\[$txtblk\]\t \[$txtwht\]\w \
 \[$txtrst\]\[$bakylw\]\[$txtblk\]\$git_branch\
