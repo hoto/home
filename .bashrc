@@ -45,7 +45,11 @@ source ${BASH_SCRIPTS}/git-completion.sh
 complete -C '/usr/local/aws/bin/aws_uompleter' aws 2>&-
 
 # PS1
-export PS1="\[$bakblu\]\[$txtblk\]\t \[$txtwht\]\w \[$txtylw\]\$git_branch\[$txtrst\]\[$txtred\]\$git_dirty\[$txtrst\]\$ "
+function nonzero_return() {
+  RETVAL=$?
+  [ $RETVAL -ne 0 ] && echo "[1] "
+}
+export PS1="\[$bakblu\]\[$txtblk\]\t \[$txtwht\]\w\[$txtrst\] \[$txtylw\]\$git_branch\[$txtrst\]\[$txtred\]\$git_dirty\[$txtrst\]\$ \[$txtred\]\$(nonzero_return)\[$txtrst\]"
 #export PS1="\${debian_chroot:+(\$debian_chroot)}\u@\h:\w \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
 
 # Map capslock key to escape key
