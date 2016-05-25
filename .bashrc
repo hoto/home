@@ -35,9 +35,8 @@ alias d='docker'
 alias di='docker images'
 alias dsr='docker ps'
 alias ds='dsr --all'
-alias dp='dsr --all'
+alias dp='ds'
 alias dc='docker-compose'
-#alias dn="docker rmi \$(docker images | grep '^<none>' | awk '{print $3}')"
 
 # SCRIPTS
 BASH_SCRIPTS=${HOME}/.bash
