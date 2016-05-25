@@ -34,7 +34,7 @@ alias d='docker'
 alias di='docker images'
 alias dsr='docker ps'
 alias ds='dsr --all'
-alias dp='dp'
+alias dp='ds'
 alias dc='docker-compose'
 
 # SCRIPTS
