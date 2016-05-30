@@ -52,9 +52,12 @@ function nonzero_return() {
 
 export PS1="\[$bakblu\]\[$txtblk\]\t \[$txtwht\]\w\
 \[$txtrst\]\[$bakylw\]\[$txtblu\]\
-\[$txtrst\]\[$bakylw\]\[$txtblk\]\$git_branch\
+\[$txtrst\]\[$bakylw\]\[$txtblk\]\$git_branch\
+\[$txtrst\]\[$txtylw\]\
 \[$txtrst\]\[$txtred\]\$git_dirty\
-\[$txtrst\]\$ \[$txtred\]\$(nonzero_return)\[$txtrst\]"
+\[$txtrst\]\$ \
+\[$txtrst\]\[$txtred\]\$(nonzero_return)\
+\[$txtrst\]"
 
 # Map capslock key to escape key
 setxkbmap -option caps:escape
