@@ -49,10 +49,10 @@ function nonzero_return() {
   RETVAL=$?
   [ $RETVAL -ne 0 ] && echo "[$RETVAL] "
 }
-
+# Maybe add more colors? https://github.com/itchyny/lightline.vim
 export PS1="\[$bakblu\]\[$txtblk\]\t \[$txtwht\]\w\
 \[$txtrst\]\[$bakylw\]\[$txtblu\]\
-\[$txtrst\]\[$bakylw\]\[$txtblk\]\$git_branch\
+\[$txtrst\]\[$bakylw\]\[$txtblk\]  \$git_branch\
 \[$txtrst\]\[$txtylw\]\
 \[$txtrst\]\[$txtred\]\$git_dirty\
 \[$txtrst\]\$ \
