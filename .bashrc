@@ -41,7 +41,7 @@ source ${GITAWAREPROMPT}/main.sh
 source /usr/share/bash-completion/completions/git
 source ${BASH_SCRIPTS}/git-completion.sh
 
-# AWS 
+# AWS
 complete -C '/usr/local/aws/bin/aws_uompleter' aws 2>&-
 
 # PS1
@@ -49,7 +49,9 @@ function nonzero_return() {
   RETVAL=$?
   [ $RETVAL -ne 0 ] && echo "[$RETVAL] "
 }
-export PS1="\[$bakblu\]\[$txtblk\]\t \[$txtwht\]\w \
+
+export PS1="\[$bakblu\]\[$txtblk\]\t \[$txtwht\]\w\
+\[$txtrst\]\[$bakylw\]\[$txtblu\]\
 \[$txtrst\]\[$bakylw\]\[$txtblk\]\$git_branch\
 \[$txtrst\]\[$txtred\]\$git_dirty\
 \[$txtrst\]\$ \[$txtred\]\$(nonzero_return)\[$txtrst\]"
@@ -60,4 +62,3 @@ setxkbmap -option caps:escape
 # Ignore changes in ubuntu terminal profiles (because of timestamps being updated there)
 git update-index --assume-unchanged ${HOME}/.gconf/apps/gnome-terminal/profiles/Default/%gconf.xml 2>&-
 git update-index --assume-unchanged ${HOME}/.gconf/apps/gnome-terminal/profiles/Profile0/%gconf.xml 2>&-
-
