@@ -1,4 +1,6 @@
+# IGNORE EVERYTHING BY DEFAULT (FOR SECURITY)
 *
+
 !.gitignore
 !README.md
 !LICENSE.txt
