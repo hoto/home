@@ -5,6 +5,8 @@
   editor:
     invisibles: {}
     showIndentGuide: true
+    softWrap: true
+    tabType: "soft"
   "exception-reporting":
     userId: "4af8475c-e628-e8d1-6f1f-795f3f64b65c"
   welcome:
