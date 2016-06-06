@@ -3,6 +3,7 @@
     enabled: true
   core: {}
   editor:
+    autoIndentOnPaste: false
     invisibles: {}
     showIndentGuide: true
     softWrap: true
