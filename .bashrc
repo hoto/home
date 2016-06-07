@@ -41,8 +41,12 @@ source ${GITAWAREPROMPT}/main.sh
 source /usr/share/bash-completion/completions/git
 source ${BASH_SCRIPTS}/git-completion.sh
 
-# AWS
-complete -C '/usr/local/aws/bin/aws_uompleter' aws 2>&-
+# SECRETS
+#SECRETS_DIR=${HOME}/.secrets
+#mkdir --parents ${SECRETS_DIR}
+#for secret in ${SECRETS_DIR}/*; do
+   #source $secret
+#done
 
 # PS1
 function nonzero_return() {
