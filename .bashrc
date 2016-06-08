@@ -9,12 +9,14 @@ alias tree='tree -C'
 
 # TREE
 function _tree(){ if [[ -z "$1" ]]; then tree; else tree -L $1; fi }
+alias tt='_tree 5'
 alias t0='_tree'
 alias t='_tree 1'
 alias t1='_tree 1'
 alias t2='_tree 2'
 alias t3='_tree 3'
 alias t4='_tree 4'
+alias t5='_tree 5'
 
 # GIT ALIASES
 alias g="cd ~/git; tree -L 2 -d"
@@ -34,34 +36,10 @@ alias ds='dsr --all'
 alias dp='ds'
 alias dc='docker-compose'
 
-# SCRIPTS
+# SOURCE OTHER SCRIPTS
 BASH_SCRIPTS=${HOME}/.bash
-export GITAWAREPROMPT=${BASH_SCRIPTS}/git-aware-prompt
-source ${GITAWAREPROMPT}/main.sh
+source ${BASH_SCRIPTS}/ps1.sh
 source /usr/share/bash-completion/completions/git
-source ${BASH_SCRIPTS}/git-completion.sh
-
-# SECRETS
-#SECRETS_DIR=${HOME}/.secrets
-#mkdir --parents ${SECRETS_DIR}
-#for secret in ${SECRETS_DIR}/*; do
-   #source $secret
-#done
-
-# PS1
-function nonzero_return() {
-  RETVAL=$?
-  [ $RETVAL -ne 0 ] && echo "[$RETVAL] "
-}
-# Maybe add more colors? https://github.com/itchyny/lightline.vim
-export PS1="\[$bakblu\]\[$txtblk\]\t \[$txtwht\]\w\
-\[$txtrst\]\[$bakylw\]\[$txtblu\]\
-\[$txtrst\]\[$bakylw\]\[$txtblk\]  \$git_branch\
-\[$txtrst\]\[$txtylw\]\
-\[$txtrst\]\[$txtred\]\$git_dirty\
-\[$txtrst\]\$ \
-\[$txtrst\]\[$txtred\]\$(nonzero_return)\
-\[$txtrst\]"
 
 # Map capslock key to escape key
 setxkbmap -option caps:escape
