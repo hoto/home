@@ -1,4 +1,6 @@
-# PS1
+# PS1 - font and background colors, UTF8 chars, git branch name, git dirty sign, error return code 
+
+# This is a modified git project of the same name. Modified to suit my taste and needs.
 source ${HOME}/.bash/git-aware-prompt/main.sh
 
 function show_return_code_if_non_zero() {
