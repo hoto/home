@@ -46,3 +46,6 @@
 !.atom
 !.atom/config.cson
 !.atom/keymap.cson
+
+# FASTER MOUSE SCROLL
+!.imwheelrc
