@@ -9,14 +9,14 @@ alias tree='tree -C'
 
 # TREE
 function _tree(){ if [[ -z "$1" ]]; then tree; else tree -L $1; fi }
-alias tt='_tree 5'
 alias t0='_tree'
 alias t='_tree 1'
-alias t1='_tree 1'
-alias t2='_tree 2'
-alias t3='_tree 3'
-alias t4='_tree 4'
-alias t5='_tree 5'
+alias t1='_tree 2'
+alias t2='_tree 3'
+alias t3='_tree 4'
+alias t4='_tree 5'
+alias t5='_tree 6'
+alias tt='t5'
 
 # GIT ALIASES
 alias g="cd ~/git; tree -L 2 -d"
