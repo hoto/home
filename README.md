@@ -2,7 +2,15 @@
 
 Config for Bash, Vim, git and others.
 
-#### Install Vundle
+#### Install Powerline Fonts 
+
+Set `Deja Vu Sand Mono` font in terminal (for vim airline)
+
+    git clone https://github.com/powerline/fonts.git powerline-fonts
+    cd powerline-fonts
+    sudo bash install.sh
+
+#### Install Vundle for vim
 
 > https://github.com/VundleVim/Vundle.vim
 
@@ -16,32 +24,11 @@ Config for Bash, Vim, git and others.
 
     setxkbmap -option caps:escape
 
-#### Install Powerline Fonts 
-
-Use Defa Vu Sand Mono in terminal (for vim airline)
-
-    https://github.com/powerline/fonts
-
-
 #### Install exfat for pendrives
 
 > http://askubuntu.com/questions/370398/how-to-get-a-drive-formatted-with-exfat-working
 
     sudo apt-get install exfat-utils exfat-fuse
-
-#### Change hostname to something shorter
-
-> http://www.howtogeek.com/197934/how-to-change-your-hostname-computer-name-on-ubuntu-linux/
-
-    sudo vim /etc/hostname
-    sudo vim /etc/hosts
-
-#### Install Nautilus open Terminal Here package
-
-> http://askubuntu.com/questions/207442/how-to-add-open-terminal-here-to-nautilus-context-menu
-
-    sudo apt-get install nautilus-open-terminal
-    nautilus -q
 
 ### Install imwheel for faster mouse scroll
 
