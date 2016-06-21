@@ -2,6 +2,10 @@
 
 Config for Bash, Vim, git and others.
 
+#### Install stuff
+
+    sudo apt install -y vim xclip git imwheel exfat-utils exfat-fuse
+
 #### Install Powerline Fonts 
 
 Set `Deja Vu Sand Mono` font in terminal (for vim airline)
