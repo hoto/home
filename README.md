@@ -4,7 +4,7 @@ Config for Bash, Vim, git and others.
 
 #### Install stuff
 
-    sudo apt install -y vim xclip git imwheel exfat-utils exfat-fuse
+    sudo apt install -y vim xclip git imwheel exfat-utils exfat-fuse tree
 
 #### Install Powerline Fonts 
 
