@@ -50,3 +50,7 @@
 
 # FASTER MOUSE SCROLL
 !.imwheelrc
+
+# WALLPAPERS
+!.wallpapers
+!.wallpapers/*
