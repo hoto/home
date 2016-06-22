@@ -24,9 +24,9 @@ Set `Deja Vu Sand Mono` font in terminal (for vim airline)
 
 > http://askubuntu.com/questions/453793/remapping-caps-lock-in-14-04-trusty-tahr/527201#527201
 
-    Startup Applications > Add > Name: Disable Capslock > Command
-
-    setxkbmap -option caps:escape
+    Startup Applications > Add 
+    Name: Disable Capslock 
+    Command: setxkbmap -option caps:escape
 
 #### Install exfat for pendrives
 
@@ -44,3 +44,9 @@ To change scroll speed edit `~/.imwheelrc`, default value is 3. Then restart `im
 
     killall imwheel
     imwheel
+    
+Add to startup:
+
+    Startup Applications > Add 
+    Name: imwheel for mouse scroll
+    Command: imwheel
