@@ -2,7 +2,19 @@
 
 Config for Bash, Vim, git and others.
 
-#### Install Vundle
+#### Install stuff
+
+    sudo apt install -y vim xclip git imwheel exfat-utils exfat-fuse tree
+
+#### Install Powerline Fonts 
+
+Set `Deja Vu Sand Mono` font in terminal (for vim airline)
+
+    git clone https://github.com/powerline/fonts.git powerline-fonts
+    cd powerline-fonts
+    sudo bash install.sh
+
+#### Install Vundle for vim
 
 > https://github.com/VundleVim/Vundle.vim
 
@@ -12,36 +24,15 @@ Config for Bash, Vim, git and others.
 
 > http://askubuntu.com/questions/453793/remapping-caps-lock-in-14-04-trusty-tahr/527201#527201
 
-    Startup Applications > Add > Name: Disable Capslock > Command
-
-    setxkbmap -option caps:escape
-
-#### Install Powerline Fonts 
-
-Use Defa Vu Sand Mono in terminal (for vim airline)
-
-    https://github.com/powerline/fonts
-
+    Startup Applications > Add 
+    Name: Disable Capslock 
+    Command: setxkbmap -option caps:escape
 
 #### Install exfat for pendrives
 
 > http://askubuntu.com/questions/370398/how-to-get-a-drive-formatted-with-exfat-working
 
     sudo apt-get install exfat-utils exfat-fuse
-
-#### Change hostname to something shorter
-
-> http://www.howtogeek.com/197934/how-to-change-your-hostname-computer-name-on-ubuntu-linux/
-
-    sudo vim /etc/hostname
-    sudo vim /etc/hosts
-
-#### Install Nautilus open Terminal Here package
-
-> http://askubuntu.com/questions/207442/how-to-add-open-terminal-here-to-nautilus-context-menu
-
-    sudo apt-get install nautilus-open-terminal
-    nautilus -q
 
 ### Install imwheel for faster mouse scroll
 
@@ -53,3 +44,9 @@ To change scroll speed edit `~/.imwheelrc`, default value is 3. Then restart `im
 
     killall imwheel
     imwheel
+    
+Add to startup:
+
+    Startup Applications > Add 
+    Name: imwheel for mouse scroll
+    Command: imwheel

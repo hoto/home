@@ -3,8 +3,6 @@
 
 !.gitignore
 !.gitconfig
-!.wallpapers
-!.wallpapers/*
 !.gitattributes
 !README.md
 !LICENSE.txt
@@ -52,3 +50,7 @@
 
 # FASTER MOUSE SCROLL
 !.imwheelrc
+
+# WALLPAPERS
+!.wallpapers
+!.wallpapers/*
