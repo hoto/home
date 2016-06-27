@@ -5,7 +5,6 @@
 !.gitattributes
 !README.md
 !LICENSE.txt
-.gitconfig
 
 # BASHRC AND SCRIPTS FOR IT
 !.bashrc
