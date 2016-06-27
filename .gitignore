@@ -3,6 +3,7 @@
 
 !.gitignore
 !.gitattributes
+!.gitconfig
 !README.md
 !LICENSE.txt
 
