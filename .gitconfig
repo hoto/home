@@ -1,0 +1,7 @@
+[user]
+	email = andrzej.rehmann@motorolasolutions.com
+	name = Andrzej Rehmann
+[push]
+	default = simple
+[core]
+	editor = vim

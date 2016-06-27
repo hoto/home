@@ -2,6 +2,9 @@
 *
 
 !.gitignore
+!.gitconfig
+!.wallpapers
+!.wallpapers/*
 !.gitattributes
 !README.md
 !LICENSE.txt
