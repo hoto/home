@@ -31,9 +31,8 @@ alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%
 # DOCKER ALIASES
 alias d='docker'
 alias di='docker images'
-alias dsr='docker ps'
-alias ds='dsr --all'
-alias dp='ds'
+alias dp='docker ps'
+alias dpa='dp --all'
 alias dc='docker-compose'
 
 # SOURCE OTHER SCRIPTS
