@@ -58,4 +58,5 @@ export LESS_TERMCAP_ue=$(printf '\e[0m') # leave underline mode
 export LESS_TERMCAP_us=$(printf '\e[04;36m') # enter underline mode - cyan
 
 # run 'time' before a command when executing it with Ctlr+j
+export TIMEFORMAT='r: %R, u: %U, s: %S'
 bind '"\C-j": "\C-atime \C-m"'
