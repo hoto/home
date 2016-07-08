@@ -28,6 +28,10 @@ alias gds="gd --staged"
 alias gp="cat ~/.gittoken | xclip; git push"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold magenta)%an%Creset %Cgreen%cr' --abbrev-commit"
 
+# ALIASES
+alias inform='cd ~/git/cckrk/inform'
+alias vault='cd ~/git/vault/vault-core'
+
 # DOCKER ALIASES
 alias d='docker'
 alias di='docker images'
@@ -60,3 +64,6 @@ export LESS_TERMCAP_us=$(printf '\e[04;36m') # enter underline mode - cyan
 # run 'time' before a command when executing it with Ctlr+j
 export TIMEFORMAT='r: %R, u: %U, s: %S'
 bind '"\C-j": "\C-atime \C-m"'
+
+# Enable 'minimise on click'
+gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-minimize-window true
