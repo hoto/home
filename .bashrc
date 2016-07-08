@@ -30,7 +30,9 @@ alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%
 
 # ALIASES
 alias inform='cd ~/git/cckrk/inform'
+alias i='inform'
 alias vault='cd ~/git/vault/vault-core'
+alias v='vault'
 
 # DOCKER ALIASES
 alias d='docker'
