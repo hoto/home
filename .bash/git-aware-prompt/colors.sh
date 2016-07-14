@@ -8,6 +8,7 @@ txtpur="$(tput setaf 5 2>/dev/null || echo '\e[0;35m')"  # Purple
 txtcyn="$(tput setaf 6 2>/dev/null || echo '\e[0;36m')"  # Cyan
 txtwht="$(tput setaf 7 2>/dev/null || echo '\e[0;37m')"  # White
 txtdgr="$(tput setaf 8 2>/dev/null || echo '\e[0;90m')"  # Dark Grey
+txtlbl="$(echo '\e[0;94m')"                              # Light Blue
 
 # Bold
 bldblk="$(tput setaf 0 2>/dev/null)$(tput bold 2>/dev/null || echo '\e[1;30m')"  # Black
@@ -33,11 +34,12 @@ undwht="$(tput setaf 7 2>/dev/null)$(tput smul 2>/dev/null || echo '\e[4;37m')" 
 bakblk="$(tput setab 0 2>/dev/null || echo '\e[40m')"  # Black
 bakred="$(tput setab 1 2>/dev/null || echo '\e[41m')"  # Red
 bakgrn="$(tput setab 2 2>/dev/null || echo '\e[42m')"  # Green
-bakylw="$(tput setab 3 2>/dev/null || echo '\e[43m')"  # Yellow
+bakylw="$(echo '\e[43m')"  # Yellow
 bakblu="$(tput setab 4 2>/dev/null || echo '\e[44m')"  # Blue
 bakpur="$(tput setab 5 2>/dev/null || echo '\e[45m')"  # Purple
 bakcyn="$(tput setab 6 2>/dev/null || echo '\e[46m')"  # Cyan
 bakwht="$(tput setab 7 2>/dev/null || echo '\e[47m')"  # White
+baklbl="$(echo '\e[104m')"                             # Light Blue
 
 # Reset
 txtrst="$(tput sgr 0 2>/dev/null || echo '\e[0m')"  # Text Reset

@@ -7,8 +7,8 @@ function show_return_code_if_non_zero() {
 }
 
 # TODO: Maybe add more colors? https://github.com/itchyny/lightline.vim
-export PS1="\[$bakblu\]\[$txtwht\]\w\
-\[$txtrst\]\[$bakylw\]\[$txtblu\]\
+export PS1="\[$baklbl\]\[$txtwht\]\w\
+\[$txtrst\]\[$txtlbl\]\[$bakylw\]\
 \[$txtrst\]\[$bakylw\]\[$txtdgr\] (\${git_commit_hash:0:3})\
 \[$txtrst\]\[$bakylw\]\[$txtblk\]  \$git_branch\
 \[$txtrst\]\[$txtylw\]\
