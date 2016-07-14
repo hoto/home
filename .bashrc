@@ -8,9 +8,12 @@ alias grep='grep -n --color'
 alias tree='tree -C'
 
 # TREE
-function _tree(){ if [[ -z "$1" ]]; then tree; else tree -L $1; fi }
-alias t0='_tree'
+function _tree(){ 
+  local n=${1:='1'} 
+  tree -L $n
+}
 alias t='_tree 1'
+alias t0='_tree'
 alias t1='_tree 2'
 alias t2='_tree 3'
 alias t3='_tree 4'
@@ -27,6 +30,11 @@ alias gd="git diff --unified=0 --color=always --word-diff=color"
 alias gds="gd --staged"
 alias gp="cat ~/.gittoken | xclip; git push"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold magenta)%an%Creset %Cgreen%cr' --abbrev-commit"
+function git_hash(){ 
+  local n=${1:-'1'}
+  git log --pretty=format:'%h' -n ${n}
+}
+alias gh="git_hash"
 
 # ALIASES
 alias inform='cd ~/git/cckrk/inform'
