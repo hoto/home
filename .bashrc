@@ -22,7 +22,7 @@ function git_hash() {
   git log --pretty=format:'%h' -n ${n}
 }
 function git_hash_colorized() {
-  echo -e \"$( git_hash $1 | sed '1 s/^/\\\e[35m/g' | sed '1 s/$/\\\e[0m/g' )\"
+  echo -e $( git_hash $1 | sed '1 s/^/\\\e[35m/g' | sed '1 s/$/\\\e[0m/g' )
 }
 alias gh="git_hash_colorized"
 alias gsb="git submodule"
