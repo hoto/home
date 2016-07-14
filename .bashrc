@@ -6,6 +6,7 @@ alias ll='la'
 alias colors='perl .bash/256colors2.pl'
 alias grep='grep -n --color'
 alias tree='tree -C'
+alias e='exit'
 
 # GIT ALIASES
 alias g="cd ~/git; tree -L 2 -d"
