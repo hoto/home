@@ -7,20 +7,6 @@ alias colors='perl .bash/256colors2.pl'
 alias grep='grep -n --color'
 alias tree='tree -C'
 
-# TREE
-function _tree(){ 
-  local n=${1:='1'} 
-  tree -L $n
-}
-alias t='_tree 1'
-alias t0='_tree'
-alias t1='_tree 2'
-alias t2='_tree 3'
-alias t3='_tree 4'
-alias t4='_tree 5'
-alias t5='_tree 6'
-alias tt='t5'
-
 # GIT ALIASES
 alias g="cd ~/git; tree -L 2 -d"
 alias gc="git commit -m"
@@ -35,6 +21,22 @@ function git_hash(){
   git log --pretty=format:'%h' -n ${n}
 }
 alias gh="git_hash"
+alias gsb="git submodule"
+alias sb="gsb"
+
+# TREE
+function _tree(){ 
+  local n=${1:='1'} 
+  tree -L $n
+}
+alias t='_tree 1'
+alias t0='_tree'
+alias t1='_tree 2'
+alias t2='_tree 3'
+alias t3='_tree 4'
+alias t4='_tree 5'
+alias t5='_tree 6'
+alias tt='t5'
 
 # ALIASES
 alias inform='cd ~/git/cckrk/inform'
