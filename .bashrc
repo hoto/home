@@ -7,6 +7,7 @@ alias colors='perl .bash/256colors2.pl'
 alias grep='grep -n --color'
 alias tree='tree -C'
 alias e='exit'
+alias ex='e'
 
 # GIT ALIASES
 alias g="cd ~/git; tree -L 2 -d"
@@ -29,6 +30,7 @@ function git_hash_colorized() {
       git_hash $1 | \
       sed '1 s/^/\\\e[35m/g' | \
       sed '1 s/$/\\\e[0m /g' | \
+      sed '2~1 s/6/\\\e[96m6\\e[0m/g' | \
       awk '{a[i++]=$0} END {for (j=i-1; j>=0;) print a[j--] }' \
     )"
 }
