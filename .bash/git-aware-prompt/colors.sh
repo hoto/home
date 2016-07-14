@@ -7,6 +7,7 @@ txtblu="$(tput setaf 4 2>/dev/null || echo '\e[0;34m')"  # Blue
 txtpur="$(tput setaf 5 2>/dev/null || echo '\e[0;35m')"  # Purple
 txtcyn="$(tput setaf 6 2>/dev/null || echo '\e[0;36m')"  # Cyan
 txtwht="$(tput setaf 7 2>/dev/null || echo '\e[0;37m')"  # White
+txtdgr="$(tput setaf 8 2>/dev/null || echo '\e[0;90m')"  # Dark Grey
 
 # Bold
 bldblk="$(tput setaf 0 2>/dev/null)$(tput bold 2>/dev/null || echo '\e[1;30m')"  # Black
