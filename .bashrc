@@ -31,7 +31,7 @@ alias gds="gd --staged"
 alias gp="cat ~/.gittoken | xclip; git push"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold magenta)%an%Creset %Cgreen%cr' --abbrev-commit"
 function git_hash(){ 
-  local n=${1:-'1'}
+  local n=${1:-'3'}
   git log --pretty=format:'%h' -n ${n}
 }
 alias gh="git_hash"
