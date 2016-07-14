@@ -17,11 +17,14 @@ alias gd="git diff --unified=0 --color=always --word-diff=color"
 alias gds="gd --staged"
 alias gp="cat ~/.gittoken | xclip; git push"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold magenta)%an%Creset %Cgreen%cr' --abbrev-commit"
-function git_hash(){ 
+function git_hash() { 
   local n=${1:-'3'}
   git log --pretty=format:'%h' -n ${n}
 }
-alias gh="git_hash"
+function git_hash_colorized() {
+  echo -e \"$( git_hash $1 | sed '1 s/^/\\\e[35m/g' | sed '1 s/$/\\\e[0m/g' )\"
+}
+alias gh="git_hash_colorized"
 alias gsb="git submodule"
 alias sb="gsb"
 

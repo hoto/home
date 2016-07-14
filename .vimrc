@@ -157,3 +157,8 @@ map <C-n> :NERDTreeToggle<CR>
 
 " JAVASCRIPT-LIBRARIES-SYNTAX
 let g:used_javascript_libs = 'underscore,backbone,flux,react,jasmine,chai'
+
+" Jump to last position when reopenning a file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
