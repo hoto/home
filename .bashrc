@@ -65,6 +65,9 @@ alias dp='docker ps'
 alias dpa='dp --all'
 alias dc='docker-compose'
 
+# XCLIP
+alias xclip='xclip -selection primary -f | xclip -selection clipboard -f'
+
 # SOURCE OTHER SCRIPTS
 BASH_SCRIPTS=${HOME}/.bash
 source ${BASH_SCRIPTS}/ps1.sh
