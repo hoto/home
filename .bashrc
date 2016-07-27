@@ -96,3 +96,6 @@ bind '"\C-j": "\C-atime \C-m"'
 
 # Enable 'minimise on click'
 gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-minimize-window true
+
+# Change screenshots default save directory
+gsettings set org.gnome.gnome-screenshot auto-save-directory "file:///home/$USER/Desktop/"
