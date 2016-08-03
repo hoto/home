@@ -99,3 +99,6 @@ gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshel
 
 # Change screenshots default save directory
 gsettings set org.gnome.gnome-screenshot auto-save-directory "file:///home/$USER/Desktop/"
+
+# Load ssh keys to ssh-agent
+ssh-add ~/.ssh/andrzej-rehmann-dellm4600-ubuntu.priv &>/dev/null
