@@ -8,6 +8,8 @@ alias grep='grep -n --color'
 alias tree='tree -C'
 alias e='exit'
 alias ex='e'
+alias terminal='gnome-terminal'
+alias ter='terminal'
 
 # GIT ALIASES
 alias g="cd ~/git; tree -L 2 -d"
