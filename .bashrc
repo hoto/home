@@ -10,6 +10,7 @@ alias e='exit'
 alias ex='e'
 alias terminal='gnome-terminal'
 alias ter='terminal'
+alias des='cd ~/Desktop'
 
 # GIT ALIASES
 alias g="cd ~/git; tree -L 2 -d"
