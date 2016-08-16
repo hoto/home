@@ -58,10 +58,7 @@ alias inform='cd ~/git/cckrk/inform'
 alias inform2='cd ~/git/cckrk/inform-cloudfront-distribution'
 alias i='inform'
 alias i2='inform2'
-alias vault='cd ~/git/vault/vault-core'
-alias vault2='cd ~/git/vault/vault-devops'
-alias v='vault'
-alias v2='vault2'
+alias v='cd ~/git/vault/ccvault.core'
 
 # DOCKER ALIASES
 alias d='docker'
