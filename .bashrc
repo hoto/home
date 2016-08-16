@@ -11,6 +11,8 @@ alias ex='e'
 alias terminal='gnome-terminal'
 alias ter='terminal'
 alias des='cd ~/Desktop'
+alias exp='nautilus --browser .'
+alias expl='exp'
 
 # GIT ALIASES
 alias g="cd ~/git; tree -L 2 -d"
