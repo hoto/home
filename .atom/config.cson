@@ -1,7 +1,10 @@
 "*":
   autosave:
     enabled: true
-  core: {}
+  core:
+    disabledPackages: [
+      "markdown-preview"
+    ]
   editor:
     autoIndentOnPaste: false
     invisibles: {}
