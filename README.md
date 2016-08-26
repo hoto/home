@@ -50,3 +50,11 @@ Add to startup:
     Startup Applications > Add 
     Name: imwheel for mouse scroll
     Command: imwheel
+
+### Install redshift
+From Software Center install redshift.
+If you have problems with geolocation run:
+
+  redshift -l list
+
+Then change the geolaction provider in `~/.config/redshift.conf`
