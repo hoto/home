@@ -67,6 +67,15 @@ alias dp='docker ps'
 alias dpa='dp --all'
 alias dc='docker-compose'
 
+# PROJECTS
+function project(){
+  local query=$1
+  echo query=${1}
+  find ~/git -maxdepth 2 -type d -exec echo {} \;
+}
+alias p='project $1'
+
+
 # XCLIP
 alias xclip='xclip -selection primary -f | xclip -selection clipboard -f'
 
