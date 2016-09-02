@@ -24,7 +24,7 @@ alias gds="gd --staged"
 alias gp="cat ~/.gittoken | xclip; git push"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold magenta)%an%Creset %Cgreen%cr' --abbrev-commit"
 alias gsm="git submodule"
-function git_hash() { 
+function git_hash() {
   local n=${1:-'3'}
   git log --pretty=format:'%h' -n ${n}
 }
@@ -40,8 +40,8 @@ function git_hash_colorized() {
 alias gh="git_hash_colorized"
 
 # TREE
-function _tree(){ 
-  local n=${1:='1'} 
+function _tree(){
+  local n=${1:='1'}
   tree -L $n
 }
 alias t='_tree 1'
@@ -68,12 +68,11 @@ alias dpa='dp --all'
 alias dc='docker-compose'
 
 # PROJECTS
-function project(){
+function find_project(){
   local query=$1
-  echo query=${1}
-  find ~/git -maxdepth 2 -type d -exec echo {} \;
+  find ~/git -maxdepth 2 -type d -exec echo {} \; | cut -d/ -f5- | /bin/grep --color ${query}
 }
-alias p='project $1'
+alias f='find_project $1'
 
 
 # XCLIP
@@ -96,8 +95,8 @@ export PAGER=less
 export LESS_TERMCAP_mb=$(printf '\e[01;31m') # enter blinking mode - red
 export LESS_TERMCAP_md=$(printf '\e[01;35m') # enter double-bright mode - bold, magenta
 export LESS_TERMCAP_me=$(printf '\e[0m') # turn off all appearance modes (mb, md, so, us)
-export LESS_TERMCAP_se=$(printf '\e[0m') # leave standout mode    
-export LESS_TERMCAP_so=$(printf '\e[01;31m') # enter standout (searched phrase) mode - red 
+export LESS_TERMCAP_se=$(printf '\e[0m') # leave standout mode
+export LESS_TERMCAP_so=$(printf '\e[01;31m') # enter standout (searched phrase) mode - red
 export LESS_TERMCAP_ue=$(printf '\e[0m') # leave underline mode
 export LESS_TERMCAP_us=$(printf '\e[04;36m') # enter underline mode - cyan
 
@@ -112,7 +111,7 @@ gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshel
 gsettings set org.gnome.gnome-screenshot auto-save-directory "file:///home/$USER/Desktop/"
 
 # Load ssh keys to ssh-agent
-ssh-add ~/.ssh/andrzej-rehmann-dellm4600-ubuntu.priv &>/dev/null || : 
+ssh-add ~/.ssh/andrzej-rehmann-dellm4600-ubuntu.priv &>/dev/null || :
 
 # RUBY ON RAILS
 export PATH="$HOME/.rbenv/bin:$PATH"
