@@ -70,6 +70,7 @@ alias dc='docker-compose'
 # PROJECTS
 function find_project(){
   local query=$1
+  cd ~/git
   find ~/git -maxdepth 2 -type d -exec echo {} \; | cut -d/ -f5- | /bin/grep --color ${query}
 }
 alias f='find_project $1'
