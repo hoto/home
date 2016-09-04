@@ -59,6 +59,7 @@ alias inform2='cd ~/git/cckrk/inform-cloudfront-distribution'
 alias i='inform'
 alias i2='inform2'
 alias v='cd ~/git/vault/ccvault.core'
+alias f='cd ~/git; find ~/git -maxdepth 2 -type d -printf "%P\n" | /bin/grep --color '
 
 # DOCKER ALIASES
 alias d='docker'
@@ -66,15 +67,6 @@ alias di='docker images'
 alias dp='docker ps'
 alias dpa='dp --all'
 alias dc='docker-compose'
-
-# PROJECTS
-function find_project(){
-  local query=$1
-  cd ~/git
-  find ~/git -maxdepth 2 -type d -exec echo {} \; | cut -d/ -f5- | /bin/grep --color ${query}
-}
-alias f='find_project $1'
-
 
 # XCLIP
 alias xclip='xclip -selection primary -f | xclip -selection clipboard -f'
