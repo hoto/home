@@ -13,6 +13,10 @@
     tabType: "soft"
   "exception-reporting":
     userId: "4af8475c-e628-e8d1-6f1f-795f3f64b65c"
+  "file-types":
+  #https://atom.io/packages/file-types, ctrl+shift+i console.log(Object.keys(atom.grammars.grammarsByScopeName).sort().join("\n"))
+    conf: "source.ruby",
+    service: "source.ruby"
   "split-diff":
     diffWords: true
     ignoreWhitespace: true
