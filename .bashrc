@@ -66,6 +66,7 @@ alias i2='inform2'
 alias v='cd ~/git/vault/ccvault.core'
 alias f='cd ~/git; find ~/git -maxdepth 2 -type d -printf "%P\n" | /bin/grep --color '
 alias w='nohup wstorm . > /dev/null && exit'
+alias a='nohup atom -a . > /dev/null && exit'
 
 # DOCKER ALIASES
 alias d='docker'
