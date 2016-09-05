@@ -21,7 +21,7 @@ alias ga="git add -A"
 alias gs="git status"
 alias gd="git diff --unified=0 --color=always --word-diff=color"
 alias gds="gd --staged"
-alias gp="cat ~/.gittoken | xclip; git push"
+alias gpp="cat ~/.gittoken | xclip; git push"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold magenta)%an%Creset %Cgreen%cr' --abbrev-commit"
 alias gsm="git submodule"
 function git_hash() {
@@ -38,6 +38,11 @@ function git_hash_colorized() {
     )"
 }
 alias gh="git_hash_colorized"
+function git_push_origin() {
+  cat ~/.gittoken | xclip
+  git push -u origin $git_branch
+}
+alias gp="git_push_origin"
 
 # TREE
 function _tree(){
