@@ -16,6 +16,7 @@
   "file-types":
   #https://atom.io/packages/file-types, ctrl+shift+i console.log(Object.keys(atom.grammars.grammarsByScopeName).sort().join("\n"))
     conf: "source.ruby",
+    tmpl: "source.ruby",
     service: "source.ruby"
   "split-diff":
     diffWords: true
