@@ -18,6 +18,7 @@
     conf: "source.ruby",
     tmpl: "source.ruby",
     service: "source.ruby"
+    ini: "source.ruby"
   "split-diff":
     diffWords: true
     ignoreWhitespace: true
