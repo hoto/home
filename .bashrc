@@ -15,7 +15,7 @@ alias exp='nautilus --browser .'
 alias expl='exp'
 
 # GIT ALIASES
-alias g="cd ~/git; tree -L 2 -d"
+alias gg="cd ~/git; tree -L 2 -d"
 alias gc="git commit -m"
 alias ga="git add -A"
 alias gs="git status"
@@ -66,6 +66,7 @@ alias web='cd ~/git/cckrk/webtip'
 alias tipm='cd ~/git/cckrk/tipmanager'
 alias v='cd ~/git/vault/ccvault.core'
 alias f='cd ~/git; find ~/git -maxdepth 2 -type d -printf "%P\n" | /bin/grep --color '
+alias g='f'
 alias w='(wstorm . &) && exit'
 alias a='nohup atom -a . > /dev/null && exit'
 
