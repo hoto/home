@@ -24,6 +24,7 @@ Plugin 'tomtom/tlib_vim' "for vim-snipmate
 Plugin 'garbas/vim-snipmate' 
 Plugin 'honza/vim-snippets' "for vim-snipmate
 Plugin 'evanmiller/nginx-vim-syntax'
+Plugin 'matt-deacalion/vim-systemd-syntax'
 call vundle#end()
 
 filetype plugin indent on
