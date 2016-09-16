@@ -18,7 +18,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 
 # GIT ALIASES
-alias gg="cd ~/git; tree -L 2 -d"
+alias gg="cd ~/git; tree -L 1 -d"
 alias gc="git commit -m"
 alias ga="git add -A"
 alias gs="git status"
