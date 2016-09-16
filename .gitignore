@@ -32,8 +32,6 @@
 # SCREEN
 !.screenrc
 
-!.inputrc
-
 # GNOME TERMINAL (UBUNTU)
 # I ignore profiles in .bashrc (git assume unchaged command)
 !.gconf
