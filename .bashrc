@@ -13,6 +13,9 @@ alias ter='terminal && exit'
 alias des='cd ~/Desktop'
 alias exp='nautilus --browser .'
 alias expl='exp'
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
 
 # GIT ALIASES
 alias gg="cd ~/git; tree -L 2 -d"
