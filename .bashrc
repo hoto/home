@@ -61,7 +61,7 @@ alias t5='_tree 6'
 alias tt='t5'
 
 # torm . &) && exitLIASES
-alias i='cd ~/git/cckrk/inform'
+alias in='cd ~/git/cckrk/inform'
 alias tip='cd ~/git/cckrk/tipservice'
 alias rec='cd ~/git/cckrk/recipientservice'
 alias web='cd ~/git/cckrk/webtip'
@@ -70,6 +70,7 @@ alias v='cd ~/git/vault/ccvault.core'
 alias f='cd ~/git; find ~/git -maxdepth 2 -type d -printf "%P\n" | /bin/grep --color '
 alias g='f'
 alias w='(wstorm . &) && exit'
+alias i='(intellij . &) && exit'
 alias a='nohup atom -a . > /dev/null && exit'
 
 # DOCKER ALIASES
