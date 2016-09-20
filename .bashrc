@@ -16,6 +16,8 @@ alias expl='exp'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
+alias band='tcptrack'
+alias band2='bmon' 
 
 # GIT ALIASES
 alias gg="cd ~/git; tree -L 1 -d"
