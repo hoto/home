@@ -16,9 +16,7 @@ alias expl='exp'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
-alias band='tcptrack'
-alias band2='bmon' 
-alias band3='nethogs' 
+alias ports='sudo lsof -i -n -P | grep TCP'
 
 # GIT ALIASES
 alias gg="cd ~/git; tree -L 1 -d"
@@ -74,6 +72,7 @@ alias f='cd ~/git; find ~/git -maxdepth 2 -type d -printf "%P\n" | /bin/grep --c
 alias g='f'
 alias w='(wstorm . &) && exit'
 alias i='(intellij . &) && exit'
+alias p='(charm . &) && exit'
 alias a='nohup atom -a . > /dev/null && exit'
 
 # DOCKER ALIASES
