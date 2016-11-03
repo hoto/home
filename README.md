@@ -4,7 +4,13 @@ Config for Bash, Vim, git and others.
 
 #### Install stuff
 
-    sudo apt install -y vim xclip git imwheel exfat-utils exfat-fuse tree
+    sudo apt install -y vim xclip git imwheel exfat-utils exfat-fuse tree \
+           python3 python3-pip python-dev
+
+#### Install Pygments for colorful cat
+
+    pip install Pygments
+
 
 #### Install Powerline Fonts 
 

@@ -17,7 +17,7 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 alias ports='sudo lsof -i -n -P | grep TCP'
-alias ccat='pygmentize -g'
+alias c='pygmentize -g'
 
 # GIT ALIASES
 alias gg="cd ~/git; tree -L 1 -d"
