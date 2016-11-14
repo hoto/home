@@ -60,7 +60,7 @@ alias t2='_tree 2'
 alias t3='_tree 3'
 alias t4='_tree 4'
 alias t5='_tree 5'
-alias tt='t5'
+alias tt='tree -a -I ".git|node_modules"'
 
 # torm . &) && exitLIASES
 alias in='cd ~/git/cckrk/inform'
