@@ -51,7 +51,7 @@ alias gp="git_push_origin"
 # TREE
 function _tree(){
   local n=${1:='1'}
-  tree -L $n
+  tree -L $n -I ".git|node_modules|.idea|bower_components|coverage" -a
 }
 alias t='_tree 1'
 alias t0='_tree'
@@ -60,7 +60,7 @@ alias t2='_tree 2'
 alias t3='_tree 3'
 alias t4='_tree 4'
 alias t5='_tree 5'
-alias tt='tree -a -I ".git|node_modules"'
+alias tt='t5'
 
 # torm . &) && exitLIASES
 alias in='cd ~/git/cckrk/inform'
