@@ -125,3 +125,6 @@ ssh-add ~/.ssh/andrzej-rehmann-dellm4600-ubuntu.priv &>/dev/null || :
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+
+# YARN
+export PATH="$HOME/.yarn/bin:$PATH"
