@@ -62,7 +62,11 @@ alias t4='_tree 4'
 alias t5='_tree 5'
 alias tt='t5'
 
-# torm . &) && exitLIASES
+# ANSIBLE ALIASES
+alias an='ansible'
+alias ap='ansible-playbook'
+
+# PROJECTS ALIASES
 alias in='cd ~/git/cckrk/inform'
 alias tip='cd ~/git/cckrk/tipservice'
 alias rec='cd ~/git/cckrk/recipientservice'
@@ -108,7 +112,7 @@ export LESS_TERMCAP_so=$(printf '\e[01;31m') # enter standout (searched phrase) 
 export LESS_TERMCAP_ue=$(printf '\e[0m') # leave underline mode
 export LESS_TERMCAP_us=$(printf '\e[04;36m') # enter underline mode - cyan
 
-# run 'time' before a command when executing it with Ctlr+j
+# Run 'time' before a command when executing it with Ctlr+j
 export TIMEFORMAT='r: %R, u: %U, s: %S'
 bind '"\C-j": "\C-atime \C-m"'
 
