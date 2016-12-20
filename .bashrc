@@ -85,7 +85,7 @@ alias d='docker'
 alias di='docker images'
 alias dp='docker ps'
 alias dpa='dp --all'
-alias dc='docker-compose'
+alias dc='COMPOSE_HTTP_TIMEOUT=99999 docker-compose'
 
 # XCLIP
 alias xclip='xclip -selection primary -f | xclip -selection clipboard -f'
