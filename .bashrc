@@ -132,3 +132,6 @@ export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
 # YARN
 export PATH="$HOME/.yarn/bin:$PATH"
+
+# NPM GLOBAL MODULES
+export PATH="$HOME/.npm-global/bin:$PATH"
