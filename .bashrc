@@ -76,7 +76,7 @@ alias v='cd ~/git/vault/ccvault.core'
 alias f='cd ~/git; find ~/git -maxdepth 2 -type d -printf "%P\n" | /bin/grep --color '
 alias g='f'
 alias w='(webstorm . &) && exit'
-alias i='(intellij . &) && exit'
+alias i='(idea . &) && exit'
 alias p='(charm . &) && exit'
 alias a='nohup atom -a . > /dev/null && exit'
 
