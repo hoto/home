@@ -19,6 +19,7 @@ alias mv='mv -i'
 alias ports='sudo lsof -i -n -P | grep TCP'
 alias c='pygmentize -g'
 alias stat='/usr/bin/stat --format "%a %U %G %n [%F]"'
+alias googler='googler -n 3'
 
 # GIT ALIASES
 alias gg="cd ~/git; tree -L 1 -d"
