@@ -18,6 +18,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias ports='sudo lsof -i -n -P | grep TCP'
 alias c='pygmentize -g'
+alias stat='/usr/bin/stat .bash --format "%a %U %G %n [%F]"'
 
 # GIT ALIASES
 alias gg="cd ~/git; tree -L 1 -d"
@@ -67,11 +68,6 @@ alias an='ansible'
 alias ap='ansible-playbook'
 
 # PROJECTS ALIASES
-alias in='cd ~/git/cckrk/inform'
-alias tip='cd ~/git/cckrk/tipservice'
-alias rec='cd ~/git/cckrk/recipientservice'
-alias web='cd ~/git/cckrk/webtip'
-alias tipm='cd ~/git/cckrk/tipmanager'
 alias v='cd ~/git/vault/ccvault.core'
 alias f='cd ~/git; find ~/git -maxdepth 2 -type d -printf "%P\n" | /bin/grep --color '
 alias g='f'
