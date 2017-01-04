@@ -41,13 +41,16 @@
       "/home/dcjf64/git/cckrk/common-map",
       "/home/dcjf64/git/cckrk/common-web",
       "/home/dcjf64/git/cckrk/json-typescript-mapper",
-      "/home/dcjf64/git/cckrk/tsoa"
+      "/home/dcjf64/git/cckrk/tsoa",
+      "/home/dcjf64/git/ccp/common-header-api",
+      "/home/dcjf64/git/ccp/common-header-ui"
     ],
     "inform": [
       "/home/andrzej/git/cckrk/inform",
       "/home/dcjf64/git/baff/map-proxy",
       "/home/dcjf64/git/cckrk/inform-locate-E2E-tests",
-      "/home/dcjf64/git/cckrk/inform"
+      "/home/dcjf64/git/cckrk/inform",
+      "/home/dcjf64/git/ccp/map-proxy"
     ],
     "all": [
       "/home/andrzej/git/baff/author-aem",
@@ -236,7 +239,12 @@
     "auth": [
       "/home/dcjf64/git/baff/admin-api",
       "/home/dcjf64/git/baff/gateway",
-      "/home/dcjf64/git/baff/login-ui"
+      "/home/dcjf64/git/baff/login-ui",
+      "/home/dcjf64/git/ccp/admin-ui",
+      "/home/dcjf64/git/ccp/admin",
+      "/home/dcjf64/git/ccp/l7-policies",
+      "/home/dcjf64/git/ccp/login-api",
+      "/home/dcjf64/git/ccp/login-ui"
     ],
     "vault": [
       "/home/dcjf64/git/baff/author-aem",
