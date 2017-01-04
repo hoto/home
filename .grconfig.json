@@ -161,7 +161,16 @@
     "vault": [
       "/home/dcjf64/git/baff/author-aem",
       "/home/dcjf64/git/baff/redaction-proxy",
-      "/home/dcjf64/git/baff/redaction"
+      "/home/dcjf64/git/baff/redaction",
+      "/home/dcjf64/git/vault/ccvault.core",
+      "/home/dcjf64/git/vault/ccvault.devops",
+      "/home/dcjf64/git/vault/ccvault.fsv",
+      "/home/dcjf64/git/vault/ccvault.mml",
+      "/home/dcjf64/git/vault/ccvault.redaction",
+      "/home/dcjf64/git/vault/ccvault.rollup",
+      "/home/dcjf64/git/vault/ccvault.tests",
+      "/home/dcjf64/git/vault/ccvault.waldo",
+      "/home/dcjf64/git/vault/redaction-proxy"
     ],
     "platform": [
       "/home/dcjf64/git/baff/bootstrap",
@@ -186,7 +195,18 @@
     ],
     "redaction": [
       "/home/dcjf64/git/baff/redaction-proxy",
-      "/home/dcjf64/git/baff/redaction"
+      "/home/dcjf64/git/baff/redaction",
+      "/home/dcjf64/git/vault/ccvault.redaction",
+      "/home/dcjf64/git/vault/ccvault.waldo",
+      "/home/dcjf64/git/vault/redaction-proxy"
+    ],
+    "krk-devops": [
+      "/home/dcjf64/git/krk-devops/aws-cli-builder",
+      "/home/dcjf64/git/krk-devops/develop-release-master",
+      "/home/dcjf64/git/krk-devops/nexus-npm-publisher",
+      "/home/dcjf64/git/krk-devops/node-nexus-builder",
+      "/home/dcjf64/git/krk-devops/npm-version",
+      "/home/dcjf64/git/krk-devops/team-ssh-keys"
     ]
   }
 }
