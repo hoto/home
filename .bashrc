@@ -132,3 +132,9 @@ export PATH="$HOME/.yarn/bin:$PATH"
 
 # NPM GLOBAL MODULES
 export PATH="$HOME/.npm-global/bin:$PATH"
+
+# EXPORTS
+export EDITOR=vim
+
+# Enable mixu/gr completeion 
+. <(gr completion)
