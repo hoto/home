@@ -52,3 +52,6 @@
 # WALLPAPERS
 !.wallpapers
 !.wallpapers/*
+
+# mixu/gr
+.grconfig.json

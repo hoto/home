@@ -1,0 +1,34 @@
+{
+  "tags": {
+    "tipsoft": [
+      "/home/andrzej/git/cckrk/webtip",
+      "/home/andrzej/git/cckrk/tipservice",
+      "/home/andrzej/git/cckrk/tipmanager",
+      "/home/andrzej/git/cckrk/tipsoft-devops",
+      "/home/andrzej/git/cckrk/recipientservice"
+    ],
+    "cckrk": [
+      "/home/andrzej/git/cckrk/address-picker",
+      "/home/andrzej/git/cckrk/bootstrap-ui",
+      "/home/andrzej/git/cckrk/common-backend",
+      "/home/andrzej/git/cckrk/common-map",
+      "/home/andrzej/git/cckrk/common-web",
+      "/home/andrzej/git/cckrk/inform",
+      "/home/andrzej/git/cckrk/recipientservice",
+      "/home/andrzej/git/cckrk/tipmanager",
+      "/home/andrzej/git/cckrk/tipservice",
+      "/home/andrzej/git/cckrk/tipsoft-devops",
+      "/home/andrzej/git/cckrk/webtip"
+    ],
+    "common": [
+      "/home/andrzej/git/cckrk/address-picker",
+      "/home/andrzej/git/cckrk/bootstrap-ui",
+      "/home/andrzej/git/cckrk/common-backend",
+      "/home/andrzej/git/cckrk/common-map",
+      "/home/andrzej/git/cckrk/common-web"
+    ],
+    "inform": [
+      "/home/andrzej/git/cckrk/inform"
+    ]
+  }
+}
