@@ -29,6 +29,63 @@
     ],
     "inform": [
       "/home/andrzej/git/cckrk/inform"
+    ],
+    "all": [
+      "/home/andrzej/git/baff/author-aem",
+      "/home/andrzej/git/baff/frogs",
+      "/home/andrzej/git/baff/fsv",
+      "/home/andrzej/git/baff/ingest",
+      "/home/andrzej/git/baff/login-ui",
+      "/home/andrzej/git/baff/mattermost",
+      "/home/andrzej/git/baff/platformy",
+      "/home/andrzej/git/baff/plug",
+      "/home/andrzej/git/baff/publication",
+      "/home/andrzej/git/baff/recipientservice",
+      "/home/andrzej/git/baff/redaction-proxy",
+      "/home/andrzej/git/baff/redaction",
+      "/home/andrzej/git/baff/thedefiler",
+      "/home/andrzej/git/baff/tipservice",
+      "/home/andrzej/git/cckrk/address-picker",
+      "/home/andrzej/git/cckrk/bootstrap-ui",
+      "/home/andrzej/git/cckrk/common-backend",
+      "/home/andrzej/git/cckrk/common-map",
+      "/home/andrzej/git/cckrk/common-web",
+      "/home/andrzej/git/cckrk/inform",
+      "/home/andrzej/git/cckrk/recipientservice",
+      "/home/andrzej/git/cckrk/tipmanager",
+      "/home/andrzej/git/cckrk/tipservice",
+      "/home/andrzej/git/cckrk/tipsoft-devops",
+      "/home/andrzej/git/cckrk/webtip",
+      "/home/andrzej/git/ccp/common-header-ui",
+      "/home/andrzej/git/ccp/frogs",
+      "/home/andrzej/git/ccp/ingest",
+      "/home/andrzej/git/ccp/login-api",
+      "/home/andrzej/git/ccp/map-proxy",
+      "/home/andrzej/git/ccp/publication"
+    ],
+    "baff": [
+      "/home/andrzej/git/baff/author-aem",
+      "/home/andrzej/git/baff/frogs",
+      "/home/andrzej/git/baff/fsv",
+      "/home/andrzej/git/baff/ingest",
+      "/home/andrzej/git/baff/login-ui",
+      "/home/andrzej/git/baff/mattermost",
+      "/home/andrzej/git/baff/platformy",
+      "/home/andrzej/git/baff/plug",
+      "/home/andrzej/git/baff/publication",
+      "/home/andrzej/git/baff/recipientservice",
+      "/home/andrzej/git/baff/redaction-proxy",
+      "/home/andrzej/git/baff/redaction",
+      "/home/andrzej/git/baff/thedefiler",
+      "/home/andrzej/git/baff/tipservice"
+    ],
+    "ccp": [
+      "/home/andrzej/git/ccp/common-header-ui",
+      "/home/andrzej/git/ccp/frogs",
+      "/home/andrzej/git/ccp/ingest",
+      "/home/andrzej/git/ccp/login-api",
+      "/home/andrzej/git/ccp/map-proxy",
+      "/home/andrzej/git/ccp/publication"
     ]
   }
 }
