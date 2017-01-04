@@ -78,7 +78,16 @@
       "/home/dcjf64/git/ccp/map-proxy",
       "/home/dcjf64/git/ccp/streaming",
       "/home/dcjf64/git/ccp/trusted-proxy",
-      "/home/dcjf64/git/ccp/uns-mutilator"
+      "/home/dcjf64/git/ccp/uns-mutilator",
+      "/home/dcjf64/git/vault/ccvault.core",
+      "/home/dcjf64/git/vault/ccvault.devops",
+      "/home/dcjf64/git/vault/ccvault.fsv",
+      "/home/dcjf64/git/vault/ccvault.mml",
+      "/home/dcjf64/git/vault/ccvault.redaction",
+      "/home/dcjf64/git/vault/ccvault.rollup",
+      "/home/dcjf64/git/vault/ccvault.tests",
+      "/home/dcjf64/git/vault/ccvault.waldo",
+      "/home/dcjf64/git/vault/redaction-proxy"
     ],
     "baff": [
       "/home/andrzej/git/baff/author-aem",
