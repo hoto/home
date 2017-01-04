@@ -5,7 +5,9 @@
       "/home/andrzej/git/cckrk/tipservice",
       "/home/andrzej/git/cckrk/tipmanager",
       "/home/andrzej/git/cckrk/tipsoft-devops",
-      "/home/andrzej/git/cckrk/recipientservice"
+      "/home/andrzej/git/cckrk/recipientservice",
+      "/home/dcjf64/git/baff/recipientservice",
+      "/home/dcjf64/git/baff/tipservice"
     ],
     "cckrk": [
       "/home/andrzej/git/cckrk/address-picker",
@@ -28,7 +30,8 @@
       "/home/andrzej/git/cckrk/common-web"
     ],
     "inform": [
-      "/home/andrzej/git/cckrk/inform"
+      "/home/andrzej/git/cckrk/inform",
+      "/home/dcjf64/git/baff/map-proxy"
     ],
     "all": [
       "/home/andrzej/git/baff/author-aem",
@@ -61,7 +64,21 @@
       "/home/andrzej/git/ccp/ingest",
       "/home/andrzej/git/ccp/login-api",
       "/home/andrzej/git/ccp/map-proxy",
-      "/home/andrzej/git/ccp/publication"
+      "/home/andrzej/git/ccp/publication",
+      "/home/dcjf64/git/ccp/admin-ui",
+      "/home/dcjf64/git/ccp/admin",
+      "/home/dcjf64/git/ccp/common-header-api",
+      "/home/dcjf64/git/ccp/common-header-ui",
+      "/home/dcjf64/git/ccp/explorer",
+      "/home/dcjf64/git/ccp/frogs",
+      "/home/dcjf64/git/ccp/ingest",
+      "/home/dcjf64/git/ccp/l7-policies",
+      "/home/dcjf64/git/ccp/login-api",
+      "/home/dcjf64/git/ccp/login-ui",
+      "/home/dcjf64/git/ccp/map-proxy",
+      "/home/dcjf64/git/ccp/streaming",
+      "/home/dcjf64/git/ccp/trusted-proxy",
+      "/home/dcjf64/git/ccp/uns-mutilator"
     ],
     "baff": [
       "/home/andrzej/git/baff/author-aem",
@@ -77,7 +94,42 @@
       "/home/andrzej/git/baff/redaction-proxy",
       "/home/andrzej/git/baff/redaction",
       "/home/andrzej/git/baff/thedefiler",
-      "/home/andrzej/git/baff/tipservice"
+      "/home/andrzej/git/baff/tipservice",
+      "/home/dcjf64/git/baff/admin-api",
+      "/home/dcjf64/git/baff/author-aem",
+      "/home/dcjf64/git/baff/bootstrap",
+      "/home/dcjf64/git/baff/elasticsearch-curator",
+      "/home/dcjf64/git/baff/elasticsearch-exporter",
+      "/home/dcjf64/git/baff/elasticsearch",
+      "/home/dcjf64/git/baff/explorer",
+      "/home/dcjf64/git/baff/fluentd",
+      "/home/dcjf64/git/baff/frogs",
+      "/home/dcjf64/git/baff/gateway",
+      "/home/dcjf64/git/baff/gitlab-hook-doer",
+      "/home/dcjf64/git/baff/haproxy",
+      "/home/dcjf64/git/baff/kibana",
+      "/home/dcjf64/git/baff/login-ui",
+      "/home/dcjf64/git/baff/map-proxy",
+      "/home/dcjf64/git/baff/mvn-builder-builder",
+      "/home/dcjf64/git/baff/nexus",
+      "/home/dcjf64/git/baff/ops",
+      "/home/dcjf64/git/baff/platformy",
+      "/home/dcjf64/git/baff/plug",
+      "/home/dcjf64/git/baff/prometheus",
+      "/home/dcjf64/git/baff/recipientservice",
+      "/home/dcjf64/git/baff/redaction-proxy",
+      "/home/dcjf64/git/baff/redaction",
+      "/home/dcjf64/git/baff/redis-exporter",
+      "/home/dcjf64/git/baff/registrator",
+      "/home/dcjf64/git/baff/sonar-scanner",
+      "/home/dcjf64/git/baff/sonarqube",
+      "/home/dcjf64/git/baff/storm-tick",
+      "/home/dcjf64/git/baff/storm",
+      "/home/dcjf64/git/baff/terminator",
+      "/home/dcjf64/git/baff/thedefiler",
+      "/home/dcjf64/git/baff/tipservice",
+      "/home/dcjf64/git/baff/unicorns",
+      "/home/dcjf64/git/baff/zookeeper"
     ],
     "ccp": [
       "/home/andrzej/git/ccp/common-header-ui",
@@ -85,7 +137,56 @@
       "/home/andrzej/git/ccp/ingest",
       "/home/andrzej/git/ccp/login-api",
       "/home/andrzej/git/ccp/map-proxy",
-      "/home/andrzej/git/ccp/publication"
+      "/home/andrzej/git/ccp/publication",
+      "/home/dcjf64/git/ccp/admin-ui",
+      "/home/dcjf64/git/ccp/admin",
+      "/home/dcjf64/git/ccp/common-header-api",
+      "/home/dcjf64/git/ccp/common-header-ui",
+      "/home/dcjf64/git/ccp/explorer",
+      "/home/dcjf64/git/ccp/frogs",
+      "/home/dcjf64/git/ccp/ingest",
+      "/home/dcjf64/git/ccp/l7-policies",
+      "/home/dcjf64/git/ccp/login-api",
+      "/home/dcjf64/git/ccp/login-ui",
+      "/home/dcjf64/git/ccp/map-proxy",
+      "/home/dcjf64/git/ccp/streaming",
+      "/home/dcjf64/git/ccp/trusted-proxy",
+      "/home/dcjf64/git/ccp/uns-mutilator"
+    ],
+    "auth": [
+      "/home/dcjf64/git/baff/admin-api",
+      "/home/dcjf64/git/baff/gateway",
+      "/home/dcjf64/git/baff/login-ui"
+    ],
+    "vault": [
+      "/home/dcjf64/git/baff/author-aem",
+      "/home/dcjf64/git/baff/redaction-proxy",
+      "/home/dcjf64/git/baff/redaction"
+    ],
+    "platform": [
+      "/home/dcjf64/git/baff/bootstrap",
+      "/home/dcjf64/git/baff/fluentd",
+      "/home/dcjf64/git/baff/haproxy",
+      "/home/dcjf64/git/baff/ops",
+      "/home/dcjf64/git/baff/registrator",
+      "/home/dcjf64/git/baff/thedefiler"
+    ],
+    "monitoring": [
+      "/home/dcjf64/git/baff/kibana",
+      "/home/dcjf64/git/baff/prometheus"
+    ],
+    "management": [
+      "/home/dcjf64/git/baff/nexus",
+      "/home/dcjf64/git/baff/sonar-scanner",
+      "/home/dcjf64/git/baff/sonarqube"
+    ],
+    "config": [
+      "/home/dcjf64/git/baff/platformy",
+      "/home/dcjf64/git/baff/plug"
+    ],
+    "redaction": [
+      "/home/dcjf64/git/baff/redaction-proxy",
+      "/home/dcjf64/git/baff/redaction"
     ]
   }
 }
