@@ -7,7 +7,13 @@
       "/home/andrzej/git/cckrk/tipsoft-devops",
       "/home/andrzej/git/cckrk/recipientservice",
       "/home/dcjf64/git/baff/recipientservice",
-      "/home/dcjf64/git/baff/tipservice"
+      "/home/dcjf64/git/baff/tipservice",
+      "/home/dcjf64/git/cckrk/recipientservice",
+      "/home/dcjf64/git/cckrk/tipmanager",
+      "/home/dcjf64/git/cckrk/tipservice",
+      "/home/dcjf64/git/cckrk/tipsoft-E2E-tests",
+      "/home/dcjf64/git/cckrk/tipsoft-devops",
+      "/home/dcjf64/git/cckrk/webtip"
     ],
     "cckrk": [
       "/home/andrzej/git/cckrk/address-picker",
@@ -27,11 +33,21 @@
       "/home/andrzej/git/cckrk/bootstrap-ui",
       "/home/andrzej/git/cckrk/common-backend",
       "/home/andrzej/git/cckrk/common-map",
-      "/home/andrzej/git/cckrk/common-web"
+      "/home/andrzej/git/cckrk/common-web",
+      "/home/dcjf64/git/cckrk/address-picker",
+      "/home/dcjf64/git/cckrk/bootstrap-ui",
+      "/home/dcjf64/git/cckrk/cloudfront-distributions-generator",
+      "/home/dcjf64/git/cckrk/common-backend",
+      "/home/dcjf64/git/cckrk/common-map",
+      "/home/dcjf64/git/cckrk/common-web",
+      "/home/dcjf64/git/cckrk/json-typescript-mapper",
+      "/home/dcjf64/git/cckrk/tsoa"
     ],
     "inform": [
       "/home/andrzej/git/cckrk/inform",
-      "/home/dcjf64/git/baff/map-proxy"
+      "/home/dcjf64/git/baff/map-proxy",
+      "/home/dcjf64/git/cckrk/inform-locate-E2E-tests",
+      "/home/dcjf64/git/cckrk/inform"
     ],
     "all": [
       "/home/andrzej/git/baff/author-aem",
@@ -87,7 +103,25 @@
       "/home/dcjf64/git/vault/ccvault.rollup",
       "/home/dcjf64/git/vault/ccvault.tests",
       "/home/dcjf64/git/vault/ccvault.waldo",
-      "/home/dcjf64/git/vault/redaction-proxy"
+      "/home/dcjf64/git/vault/redaction-proxy",
+      "/home/dcjf64/git/cckrk/address-picker",
+      "/home/dcjf64/git/cckrk/bootstrap-ui",
+      "/home/dcjf64/git/cckrk/cloudfront-distributions-generator",
+      "/home/dcjf64/git/cckrk/common-backend",
+      "/home/dcjf64/git/cckrk/common-map",
+      "/home/dcjf64/git/cckrk/common-web",
+      "/home/dcjf64/git/cckrk/gitlab-build-statuses",
+      "/home/dcjf64/git/cckrk/inform-locate-E2E-tests",
+      "/home/dcjf64/git/cckrk/inform",
+      "/home/dcjf64/git/cckrk/json-typescript-mapper",
+      "/home/dcjf64/git/cckrk/node-ts-project-template",
+      "/home/dcjf64/git/cckrk/recipientservice",
+      "/home/dcjf64/git/cckrk/tipmanager",
+      "/home/dcjf64/git/cckrk/tipservice",
+      "/home/dcjf64/git/cckrk/tipsoft-E2E-tests",
+      "/home/dcjf64/git/cckrk/tipsoft-devops",
+      "/home/dcjf64/git/cckrk/tsoa",
+      "/home/dcjf64/git/cckrk/webtip"
     ],
     "baff": [
       "/home/andrzej/git/baff/author-aem",
@@ -191,7 +225,8 @@
     ],
     "monitoring": [
       "/home/dcjf64/git/baff/kibana",
-      "/home/dcjf64/git/baff/prometheus"
+      "/home/dcjf64/git/baff/prometheus",
+      "/home/dcjf64/git/cckrk/gitlab-build-statuses"
     ],
     "management": [
       "/home/dcjf64/git/baff/nexus",
