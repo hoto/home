@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=imwheel
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=imwheel faster mouse scroll
+Name=imwheel faster mouse scroll
+Comment[en_US]=
+Comment=

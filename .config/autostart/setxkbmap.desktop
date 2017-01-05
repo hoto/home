@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=setxkbmap -option caps:escape
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=Disable Capslock
+Name=Disable Capslock
+Comment[en_US]=
+Comment=
