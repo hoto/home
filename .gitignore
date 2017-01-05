@@ -29,6 +29,12 @@
 !.config/
 !.config/redshift.conf
 
+# AUTOSTART
+!.config/autostart/imwheel.desktop
+!.config/autostart/redshift-gtk.desktop
+!.config/autostart/setxkbmap.desktop
+
+
 # SCREEN
 !.screenrc
 
