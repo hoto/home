@@ -296,6 +296,11 @@
       "/home/dcjf64/git/krk-devops/node-nexus-builder",
       "/home/dcjf64/git/krk-devops/npm-version",
       "/home/dcjf64/git/krk-devops/team-ssh-keys"
+    ],
+    "home": [
+      "/home/andrzej/git/hoto/ansible-home",
+      "/home/andrzej/git/hoto/home",
+      "/home/andrzej/git/hoto/home-private"
     ]
   }
 }
