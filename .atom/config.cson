@@ -20,6 +20,9 @@
     ini: "source.ruby"
     service: "source.ruby"
     tmpl: "source.ruby"
+  "find-and-replace":
+    closeFindPanelAfterSearch: true
+    openProjectFindResultsInRightPane: true
   "split-diff":
     diffWords: true
     ignoreWhitespace: true
