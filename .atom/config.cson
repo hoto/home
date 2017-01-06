@@ -6,6 +6,7 @@
       "tidy-markdown"
       "markdown-preview"
     ]
+    telemetryConsent: "limited"
   editor:
     autoIndentOnPaste: false
     invisibles: {}
