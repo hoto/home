@@ -44,10 +44,7 @@ function git_hash_colorized() {
     )"
 }
 alias gh="git_hash_colorized"
-function git_push_origin() {
-  git push -u origin $git_branch
-}
-alias gp="git_push_origin"
+alias gp="git push -u origin $git_branch"
 
 # TREE
 function _tree(){
