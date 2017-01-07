@@ -119,9 +119,9 @@ gsettings set org.gnome.gnome-screenshot auto-save-directory "file:///home/$USER
 ssh-add ~/.ssh/andrzej-rehmann-dellm4600-ubuntu.priv &>/dev/null || :
 
 # RUBY ON RAILS
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+#export PATH="$HOME/.rbenv/bin:$PATH"
+#eval "$(rbenv init -)"
+#export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
 # YARN
 export PATH="$HOME/.yarn/bin:$PATH"
