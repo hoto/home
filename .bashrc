@@ -116,7 +116,7 @@ gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshel
 gsettings set org.gnome.gnome-screenshot auto-save-directory "file:///home/$USER/Desktop/"
 
 # Load ssh keys to ssh-agent
-ssh-add ~/.ssh/andrzej-rehmann-dellm4600-ubuntu.priv &>/dev/null || :
+ssh-add ~/.ssh/pubbutt.pem &>/dev/null || :
 
 # RUBY ON RAILS
 #export PATH="$HOME/.rbenv/bin:$PATH"
