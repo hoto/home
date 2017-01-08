@@ -22,7 +22,7 @@ alias stat='/usr/bin/stat --format "%a %U %G %n [%F]"'
 alias googler='googler -n 3'
 function open_chrome() {
   local url=$1
-  google-chrome ${url}
+  google-chrome ${url} &
   exit
 }
 alias ch=open_chrome
