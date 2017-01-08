@@ -20,6 +20,14 @@ alias ports='sudo lsof -i -n -P | grep TCP'
 alias c='pygmentize -g'
 alias stat='/usr/bin/stat --format "%a %U %G %n [%F]"'
 alias googler='googler -n 3'
+function open_chrome() {
+  local url=$1
+  google-chrome ${url}
+  exit
+}
+alias ch=open_chrome
+alias gm='open_chrome https://mail.google.com/mail/u/0/'
+alias gmm='open_chrome https://mail.google.com/mail/u/1/'
 
 # GIT ALIASES
 alias gg="cd ~/git; tree -L 1 -d"
