@@ -19,6 +19,7 @@ alias ports='sudo lsof -i -n -P | grep TCP'
 alias c='pygmentize -g'
 alias stat='/usr/bin/stat --format "%a %U %G %n [%F]"'
 alias googler='googler -n 3'
+alias ack='ack -i'
 function open_chrome() {
   local url=$1
   google-chrome ${url} &
