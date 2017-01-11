@@ -20,6 +20,7 @@ alias c='pygmentize -g'
 alias stat='/usr/bin/stat --format "%a %U %G %n [%F]"'
 alias googler='googler -n 3'
 alias ack='ack -i'
+alias du='du -h'
 function open_chrome() {
   local url=$1
   google-chrome ${url} &
