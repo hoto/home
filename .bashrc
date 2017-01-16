@@ -144,3 +144,6 @@ export EDITOR=vim
 
 # Enable mixu/gr completeion 
 . <(gr completion)
+
+# added by Anaconda2 4.2.0 installer
+export PATH="/home/andrzej/software/anaconda2/bin:$PATH"
