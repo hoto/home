@@ -20,6 +20,7 @@ alias c='pygmentize -g'
 alias stat='/usr/bin/stat --format "%a %U %G %n [%F]"'
 alias googler='googler -n 3'
 alias ack='ack -i'
+alias du='du -h'
 function open_chrome() {
   local url=$1
   google-chrome ${url} &
@@ -73,9 +74,10 @@ alias an='ansible'
 alias ap='ansible-playbook'
 
 # PROJECTS ALIASES
-alias v='cd ~/git/vault/ccvault.core'
-alias f='cd ~/git; find ~/git -maxdepth 2 -type d -printf "%P\n" | /bin/grep --color '
-alias g='f'
+alias ans='cd ~/git/hoto/ansible-home'
+alias g='cd ~/git; find ~/git -maxdepth 2 -type d -printf "%P\n" | /bin/grep --color '
+
+# SOFTWARE
 alias w='(webstorm . &) && exit'
 alias i='(idea . &) && exit'
 alias p='(charm . &) && exit'
