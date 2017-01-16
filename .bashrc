@@ -52,7 +52,7 @@ function git_hash_colorized() {
     )"
 }
 alias gh="git_hash_colorized"
-alias gp="git push -u origin $git_branch"
+alias gp="git push --set-upstream origin $git_branch"
 
 # TREE
 function _tree(){
