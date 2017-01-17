@@ -29,6 +29,7 @@ function open_chrome() {
 alias ch=open_chrome
 alias gm='open_chrome https://mail.google.com/mail/u/0/'
 alias gmm='open_chrome https://mail.google.com/mail/u/1/'
+alias lastpass='lpass'
 
 # GIT ALIASES
 alias gg="cd ~/git; tree -L 1 -d"
