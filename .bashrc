@@ -148,9 +148,3 @@ export EDITOR=vim
 
 # added by Anaconda2 4.2.0 installer
 export PATH="/home/andrzej/software/anaconda2/bin:$PATH"
-
-# TERMINIX https://gnunn1.github.io/terminix-web/manual/vteconfig/
-if [[ $TERMINIX_ID ]]; then
-  source /etc/profile.d/vte.sh
-fi
-
