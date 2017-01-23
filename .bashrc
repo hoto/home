@@ -79,10 +79,12 @@ alias ans='cd ~/git/hoto/ansible-home'
 alias g='cd ~/git; find ~/git -maxdepth 2 -type d -printf "%P\n" | /bin/grep --color '
 
 # SOFTWARE
-alias w='(webstorm . &) && exit'
+alias wn='webstorm . &'
+alias w='(wn) && exit'
 alias i='(idea . &) && exit'
 alias p='(charm . &) && exit'
-alias a='nohup atom -a . > /dev/null && exit'
+alias an='nohup atom -a .'
+alias a='an && exit'
 
 # DOCKER ALIASES
 alias d='docker'
