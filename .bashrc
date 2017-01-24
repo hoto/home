@@ -81,8 +81,10 @@ alias g='cd ~/git; find ~/git -maxdepth 2 -type d -printf "%P\n" | /bin/grep --c
 # SOFTWARE
 alias wn='webstorm . &'
 alias w='(wn) && exit'
-alias i='(idea . &) && exit'
-alias p='(charm . &) && exit'
+alias in='idea . &'
+alias i='(in) && exit'
+alias pn='charm . &'
+alias p='(pn) && exit'
 alias an='nohup atom -a .'
 alias a='an && exit'
 
