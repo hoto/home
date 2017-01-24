@@ -8,8 +8,8 @@ alias grep='grep --ignore-case --line-number --color'
 alias tree='tree -C'
 alias e='exit'
 alias ex='e'
-alias terminal='gnome-terminal'
-alias ter='terminal && exit'
+alias terminal='terminix'
+alias ter='terminix && exit'
 alias des='cd ~/Desktop'
 alias exp='nautilus --browser .'
 alias expl='exp'
@@ -105,10 +105,6 @@ source /usr/share/bash-completion/completions/git
 
 # Map capslock key to escape key
 setxkbmap -option caps:escape
-
-# Ignore changes in ubuntu terminal profiles (because of timestamps being updated there)
-git update-index --assume-unchanged ${HOME}/.gconf/apps/gnome-terminal/profiles/Default/%gconf.xml 2>&-
-git update-index --assume-unchanged ${HOME}/.gconf/apps/gnome-terminal/profiles/Profile0/%gconf.xml 2>&-
 
 # Colors for 'man'
 export PAGER=less
