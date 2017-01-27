@@ -75,10 +75,6 @@ syntax on "syntax highliting on
 set hlsearch "higlight last searched pattern
 filetype indent plugin on
 
-if has('mouse')
-  set mouse=a
-endif
-
 "=====================================
 " MAPPINGS
 "====================================
