@@ -82,6 +82,9 @@ alias ap='ansible-playbook'
 alias ans='cd ~/git/hoto/ansible-home-ubuntu'
 alias g='cd ~/git; find ~/git -maxdepth 2 -type d -printf "%P\n" | /bin/grep --color '
 
+# SSH ALIASES
+alias frogs='ssh -t develop ssh -t develop-node16-worker'
+
 # SOFTWARE
 alias wn='webstorm . &'
 alias w='(wn) && exit'
