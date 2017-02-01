@@ -79,7 +79,7 @@ alias an='ansible'
 alias ap='ansible-playbook'
 
 # PROJECTS ALIASES
-alias ans='cd ~/git/hoto/ansible-home'
+alias ans='cd ~/git/hoto/ansible-home-ubuntu'
 alias g='cd ~/git; find ~/git -maxdepth 2 -type d -printf "%P\n" | /bin/grep --color '
 
 # SOFTWARE
