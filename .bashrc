@@ -125,6 +125,9 @@ export LESS_TERMCAP_us=$(printf '\e[04;36m') # enter underline mode - cyan
 export TIMEFORMAT='r: %R, u: %U, s: %S'
 bind '"\C-j": "\C-atime \C-m"'
 
+# Change screenshots default save directory
+gsettings set org.gnome.gnome-screenshot auto-save-directory "file:///home/$USER/Desktop/"
+
 # Load ssh keys to ssh-agent
 ssh-add ~/.ssh/pubbutt.pem &>/dev/null || :
 
