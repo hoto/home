@@ -33,7 +33,7 @@ alias gmm='open_chrome https://mail.google.com/mail/u/1/'
 alias lastpass='lpass'
 
 # GIT ALIASES
-alias gg="cd ~/git; tree -L 1 -d"
+alias gg="cd ~/projects; tree -L 1 -d"
 alias gc="git commit -m"
 alias ga="git add -A"
 alias gs="git status"
@@ -79,8 +79,8 @@ alias an='ansible'
 alias ap='ansible-playbook'
 
 # PROJECTS ALIASES
-alias ans='cd ~/git/hoto/ansible-home-ubuntu'
-alias g='cd ~/git; find ~/git -maxdepth 2 -type d -printf "%P\n" | /bin/grep --color '
+alias ans='cd ~/projects/hoto/ansible-home-fedora'
+alias g='cd ~/projects; find ~/projects -maxdepth 2 -type d -printf "%P\n" | /bin/grep --color '
 
 # SSH ALIASES
 alias frogs='ssh -t develop ssh -t develop-node16-worker'
@@ -92,8 +92,6 @@ alias in='idea . &'
 alias i='(in) && exit'
 alias pn='charm . &'
 alias p='(pn) && exit'
-alias an='nohup atom -a . > /dev/null'
-alias a='an && exit'
 
 # DOCKER ALIASES
 alias d='docker'
@@ -127,12 +125,6 @@ export LESS_TERMCAP_us=$(printf '\e[04;36m') # enter underline mode - cyan
 export TIMEFORMAT='r: %R, u: %U, s: %S'
 bind '"\C-j": "\C-atime \C-m"'
 
-# Enable 'minimise on click'
-gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-minimize-window true
-
-# Change screenshots default save directory
-gsettings set org.gnome.gnome-screenshot auto-save-directory "file:///home/$USER/Desktop/"
-
 # Load ssh keys to ssh-agent
 ssh-add ~/.ssh/pubbutt.pem &>/dev/null || :
 
@@ -151,7 +143,7 @@ export PATH="$HOME/.npm-global/bin:$PATH"
 export EDITOR=vim
 
 # Enable mixu/gr completeion 
-. <(gr completion)
+#. <(gr completion)
 
 # added by Anaconda2 4.2.0 installer
 export PATH="/home/andrzej/software/anaconda2/bin:$PATH"
