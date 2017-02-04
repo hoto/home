@@ -134,22 +134,16 @@ gsettings set org.gnome.gnome-screenshot auto-save-directory "file:///home/$USER
 # Load ssh keys to ssh-agent
 ssh-add ~/.ssh/pubbutt.pem &>/dev/null || :
 
-# RUBY ON RAILS
-#export PATH="$HOME/.rbenv/bin:$PATH"
-#eval "$(rbenv init -)"
-#export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
-
 # YARN
 export PATH="$HOME/.yarn/bin:$PATH"
 
 # NPM GLOBAL MODULES
 export PATH="$HOME/.npm-global/bin:$PATH"
 
+# Enable mixu/gr completeion 
+. <(gr completion)
+
 # EXPORTS
 export EDITOR=vim
-
-# Enable mixu/gr completeion 
-#. <(gr completion)
-
-# added by Anaconda2 4.2.0 installer
-export PATH="/home/andrzej/software/anaconda2/bin:$PATH"
+export HISTSIZE=10000
+export HISTFILESIZE=10000
