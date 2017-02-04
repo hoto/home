@@ -92,8 +92,6 @@ alias in='idea . &'
 alias i='(in) && exit'
 alias pn='charm . &'
 alias p='(pn) && exit'
-alias an='nohup atom -a . > /dev/null'
-alias a='an && exit'
 
 # DOCKER ALIASES
 alias d='docker'
@@ -126,7 +124,6 @@ export LESS_TERMCAP_us=$(printf '\e[04;36m') # enter underline mode - cyan
 # Run 'time' before a command when executing it with Ctlr+j
 export TIMEFORMAT='r: %R, u: %U, s: %S'
 bind '"\C-j": "\C-atime \C-m"'
-
 
 # Change screenshots default save directory
 gsettings set org.gnome.gnome-screenshot auto-save-directory "file:///home/$USER/Desktop/"
