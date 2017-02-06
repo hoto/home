@@ -94,6 +94,8 @@ alias pn='charm . &'
 alias p='(pn) && exit'
 alias an='nohup atom -a . > /dev/null'
 alias a='an && exit'
+alias vn='code . &'
+alias v='(vn) && exit'
 
 # DOCKER ALIASES
 alias d='docker'
