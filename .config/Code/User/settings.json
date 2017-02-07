@@ -1,4 +1,14 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "files.autoSave": "onFocusChange"
+    "files.autoSave": "onFocusChange",
+    "workbench.welcome.enabled": false,
+    "editor.fontSize": 16,
+    "editor.fontFamily": "'DejaVu Sans Mono', 'Droid Sans Mono','Courier New', monospace, 'Droid Sans Fallback'",
+    "editor.tabSize": 2,
+    "editor.wordWrap": true,
+     "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.idea": true
+  }
 }
