@@ -125,13 +125,6 @@ export LESS_TERMCAP_so=$(printf '\e[01;31m') # enter standout (searched phrase) 
 export LESS_TERMCAP_ue=$(printf '\e[0m') # leave underline mode
 export LESS_TERMCAP_us=$(printf '\e[04;36m') # enter underline mode - cyan
 
-# Run 'time' before a command when executing it with Ctlr+j
-export TIMEFORMAT='r: %R, u: %U, s: %S'
-bind '"\C-j": "\C-atime \C-m"'
-
-# Change screenshots default save directory
-gsettings set org.gnome.gnome-screenshot auto-save-directory "file:///home/$USER/Desktop/"
-
 # Load ssh keys to ssh-agent
 ssh-add ~/.ssh/pubbutt.pem &>/dev/null || :
 
@@ -146,6 +139,7 @@ export PATH="$HOME/.npm-global/bin:$PATH"
 
 # EXPORTS
 export EDITOR=vim
+export TIMEFORMAT='r: %R, u: %U, s: %S'
 
 # HSTR (CTRL + R history enhancer) 
 # https://github.com/dvorka/hstr
