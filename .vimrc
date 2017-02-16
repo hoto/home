@@ -73,6 +73,7 @@ endif
 
 syntax on "syntax highliting on
 set hlsearch "higlight last searched pattern
+highlight Search cterm=NONE ctermfg=black ctermbg=yellow
 filetype indent plugin on
 
 "=====================================
