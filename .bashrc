@@ -20,7 +20,7 @@ alias c='pygmentize -g'
 alias stat='/usr/bin/stat --format "%a %U %G %n [%F]"'
 alias googler='googler -n 3'
 alias ack='ack -i'
-alias ackI='ack'
+alias acki='/usr/bin/ack'
 alias fack='ack -f | ack -i'
 alias du='du -h'
 function open_chrome() {
@@ -32,6 +32,10 @@ alias ch=open_chrome
 alias gm='open_chrome https://mail.google.com/mail/u/0/'
 alias gmm='open_chrome https://mail.google.com/mail/u/1/'
 alias lastpass='lpass'
+function set_backlight() {
+  xbacklight -set $1
+}
+alias b='set_backlight'
 
 # GIT ALIASES
 alias gg="cd ~/projects; tree -L 1 -d"
