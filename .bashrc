@@ -152,7 +152,7 @@ export TIMEFORMAT='r: %R, u: %U, s: %S'
 
 # HSTR (CTRL + R history enhancer) 
 # https://github.com/dvorka/hstr
-export HH_CONFIG=hicolor         # get more colors
+export HH_CONFIG=hicolor,rawhistory # get more colors and sort by date
 shopt -s histappend              # append new history items to .bash_history
 export HISTCONTROL=ignorespace   # leading space hides commands from history
 export HISTFILESIZE=10000        # increase history file size (default is 500)
