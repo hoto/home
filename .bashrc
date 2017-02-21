@@ -5,6 +5,10 @@ alias la='ls -lash'
 alias ll='la'
 alias colors='perl .bash/256colors2.pl'
 alias grep='grep --ignore-case --line-number --color'
+function grep_highlight() {
+  grep -E "$1|\$"
+}
+alias greph='grep_highlight'
 alias tree='tree -C'
 alias e='exit'
 alias ex='e'
