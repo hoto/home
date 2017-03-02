@@ -4,6 +4,7 @@
 --ignore-directory=node_modules
 --ignore-directory=bower_components
 --ignore-directory=coverage
+--ignore-directory=dist
 
 --ignore-file=ext:bak
 --ignore-file=ext:htc
