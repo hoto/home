@@ -25,6 +25,7 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets' "for vim-snipmate
 Plugin 'evanmiller/nginx-vim-syntax'
 Plugin 'kurayama/systemd-vim-syntax'
+Plugin 'tmux-plugins/vim-tmux'
 call vundle#end()
 
 filetype plugin indent on
