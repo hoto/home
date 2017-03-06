@@ -89,7 +89,15 @@ alias ap='ansible-playbook'
 
 # PROJECTS ALIASES
 alias ans='cd ~/projects/hoto/ansible-home-fedora'
-alias g='cd ~/projects; find ~/projects -maxdepth 2 -type d -printf "%P\n" | /bin/grep --color '
+alias home='cd ~/projects/hoto/home'
+function go_to_project() {
+  local pattern=$1
+  fuzzy-project-finder ${pattern}
+  local selectedProjectPath=$(cat ~/.fuzzy-project-finder/.projects)
+  cd ${selectedProjectPath}
+}
+alias g='go_to_project'
+#alias g='cd ~/projects; find ~/projects -maxdepth 2 -type d -printf "%P\n" | /bin/grep --color '
 
 # SSH ALIASES
 alias frogs='ssh -t develop ssh -t develop-node16-worker'
