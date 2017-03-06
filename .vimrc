@@ -10,6 +10,7 @@ Plugin 'L9'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'FuzzyFinder'
+Plugin 'vim-scripts/vim-auto-save'
 Plugin 'scrooloose/nerdtree'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'elzr/vim-json'
@@ -122,6 +123,12 @@ map <C-p> :cd %:p:h<CR>
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 12
 set laststatus=2 "display a line at the bottom of the screen with file name
 let g:airline_powerline_fonts = 1
+
+" VIM-AUTO-SAVE
+let g:auto_save = 1 "enable autosave
+let g:auto_save_silent = 1 "auto-save notification display on/off
+let g:auto_save_in_insert_mode = 0
+let g:auto_save_no_updatetime = 1
 
 " FUZZY-FINDER
 let s:slash = '[/\\]'
