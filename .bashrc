@@ -100,7 +100,7 @@ alias g='go_to_project'
 #alias g='cd ~/projects; find ~/projects -maxdepth 2 -type d -printf "%P\n" | /bin/grep --color '
 
 # SSH ALIASES
-alias frogs='ssh -t develop ssh -t develop-node16-worker fleetctl ssh frogs'
+alias frogs='ssh -At develop ssh -At develop-node17-worker fleetctl ssh tipservice@1'
 
 # SOFTWARE
 alias wn='webstorm . &'
