@@ -9,6 +9,7 @@
     telemetryConsent: "limited"
   editor:
     autoIndentOnPaste: false
+    fontSize: 15
     invisibles: {}
     showIndentGuide: true
     softWrap: true
