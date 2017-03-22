@@ -40,6 +40,7 @@ function set_backlight() {
   xbacklight -set $1
 }
 alias b='set_backlight'
+alias diff='webstorm diff'
 
 # GIT ALIASES
 alias gg="cd ~/projects; tree -L 1 -d"
