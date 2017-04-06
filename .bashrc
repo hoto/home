@@ -41,6 +41,7 @@ function set_backlight() {
 }
 alias b='set_backlight'
 alias diff='webstorm diff'
+alias k='kubectl'
 
 # GIT ALIASES
 alias gg="cd ~/projects; tree -L 1 -d"
@@ -172,3 +173,4 @@ if [[ $- =~ .*i.* ]]; then bind '"\C-r": "\C-a hh -- \C-j"'; fi
 
 # there is this stupid warning on fedora sometimes 
 __vte_prompt_command() { true; }
+export GOPATH=$HOME/go
