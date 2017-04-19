@@ -20,7 +20,7 @@ Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'chase/vim-ansible-yaml'
 Plugin 'MarcWeber/vim-addon-mw-utils' "for vim-snipmate
 Plugin 'tomtom/tlib_vim' "for vim-snipmate
-Plugin 'garbas/vim-snipmate' 
+Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets' "for vim-snipmate
 Plugin 'evanmiller/nginx-vim-syntax'
 Plugin 'kurayama/systemd-vim-syntax'
@@ -48,7 +48,7 @@ set encoding=utf-8
 set t_Co=256 "enables 256 colors
 set nobackup
 set noswapfile
-set nowritebackup 
+set nowritebackup
 set ignorecase "ignore case when searching
 set incsearch " do incremental searching
 set nomodeline "disable modelines, source of security vulnerabilities
@@ -86,9 +86,6 @@ noremap # *#zz
 noremap <C-Y> <C-R>
 inoremap <C-Y> <C-O><C-R>
 
-"vim won't move cursor back after insertion - this brakes arrow keys in I mode
-inoremap <silent> <Esc> <C-O>:stopinsert<CR>
-
 " CTRL-p will set PATH to current file directory (usefull for fuzzy finder)
 map <C-p> :cd %:p:h<CR>
 
@@ -118,14 +115,14 @@ let g:fuf_modesDisable = []
 let g:fuf_mrufile_maxItem = 60
 let g:fuf_mrucmd_maxItem = 60
 let g:fuf_enumeratingLimit = 60
-map ,f :FufFile <CR> 
-map ,c :FufCoverageFile <CR> 
-map ,e :FufBuffer <CR> 
-map ,r :FufMruFile <CR> 
-map ,j :FufJumpList <CR> 
-map ,g :FufLine <CR> 
-map ,l :FufLine <CR> 
-map ,p :FufRenewCache <CR> 
+map ,f :FufFile <CR>
+map ,c :FufCoverageFile <CR>
+map ,e :FufBuffer <CR>
+map ,r :FufMruFile <CR>
+map ,j :FufJumpList <CR>
+map ,g :FufLine <CR>
+map ,l :FufLine <CR>
+map ,p :FufRenewCache <CR>
 
 " JAVASCRIPT-LIBRARIES-SYNTAX
 let g:used_javascript_libs = 'underscore,backbone,flux,react,jasmine,chai'
