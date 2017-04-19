@@ -11,7 +11,6 @@ Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'FuzzyFinder'
 Plugin 'vim-scripts/vim-auto-save'
-Plugin 'scrooloose/nerdtree'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'elzr/vim-json'
 Plugin 'jelera/vim-javascript-syntax'
@@ -50,7 +49,6 @@ set t_Co=256 "enables 256 colors
 set nobackup
 set noswapfile
 set nowritebackup 
-set hlsearch "highlight searches
 set ignorecase "ignore case when searching
 set incsearch " do incremental searching
 set nomodeline "disable modelines, source of security vulnerabilities
@@ -60,7 +58,7 @@ set tabstop=4
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-set autoindent "keep the same indent in new line
+"set autoindent "keep the same indent in new line
 set backspace=indent,eol,start whichwrap+=<,>,[,] "allow backspacing over autoindent, line breaks etc.
 set pastetoggle=<F10> "disables formatting when pasting text in Insert mode
 set splitright "make vsplit put the new buffer on the right of the current buffer
@@ -84,31 +82,9 @@ filetype indent plugin on
 noremap * #*zz
 noremap # *#zz
 
-" CTRL+X is Cut
-vnoremap <C-X> "+x 
-" CTRL+C is Copy
-noremap <C-C> "+y 
-
-" Use CTRL-S for saving, also in Insert mode
-noremap <C-S>		:update<CR>
-vnoremap <C-S>		<C-C>:update<CR>
-inoremap <C-S>		<C-O>:update<CR>
-
-" CTRL-Z is Undo; not in cmdline though
-noremap <C-Z> u
-inoremap <C-Z> <C-O>u
-
 " CTRL-Y is Redo (although not repeat); not in cmdline though
 noremap <C-Y> <C-R>
 inoremap <C-Y> <C-O><C-R>
-
-" CTRL-A is Select all
-noremap <C-A> gggH<C-O>G
-inoremap <C-A> <C-O>gg<C-O>gH<C-O>G
-cnoremap <C-A> <C-C>gggH<C-O>G
-onoremap <C-A> <C-C>gggH<C-O>G
-snoremap <C-A> <C-C>gggH<C-O>G
-xnoremap <C-A> <C-C>ggVG
 
 "vim won't move cursor back after insertion - this brakes arrow keys in I mode
 inoremap <silent> <Esc> <C-O>:stopinsert<CR>
@@ -150,9 +126,6 @@ map ,j :FufJumpList <CR>
 map ,g :FufLine <CR> 
 map ,l :FufLine <CR> 
 map ,p :FufRenewCache <CR> 
-
-" NERD-TREE
-map <C-n> :NERDTreeToggle<CR>
 
 " JAVASCRIPT-LIBRARIES-SYNTAX
 let g:used_javascript_libs = 'underscore,backbone,flux,react,jasmine,chai'
