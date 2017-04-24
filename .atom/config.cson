@@ -7,6 +7,10 @@
       "markdown-preview"
     ]
     telemetryConsent: "limited"
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
   editor:
     autoIndentOnPaste: false
     fontSize: 15
