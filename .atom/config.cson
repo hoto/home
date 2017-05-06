@@ -5,15 +5,12 @@
     disabledPackages: [
       "tidy-markdown"
       "markdown-preview"
+      "dbclick-tree-view"
     ]
     telemetryConsent: "limited"
-    themes: [
-      "one-light-ui"
-      "one-light-syntax"
-    ]
   editor:
     autoIndentOnPaste: false
-    fontSize: 15
+    fontSize: 19
     invisibles: {}
     showIndentGuide: true
     softWrap: true
