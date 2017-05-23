@@ -176,4 +176,4 @@ __vte_prompt_command() { true; }
 export GOPATH=$HOME/go
 
 # JAVA
-export JAVA_HOME=/usr/java/jdk1.8.0_131/
+export JAVA_HOME=/usr/java/jdk1.8.0_131
