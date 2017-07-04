@@ -42,6 +42,7 @@ function set_backlight() {
 alias b='set_backlight'
 alias diff='webstorm diff'
 alias k='kubectl'
+alias o='xdg-open'
 
 # GIT ALIASES
 alias gg="cd ~/projects; tree -L 1 -d"
