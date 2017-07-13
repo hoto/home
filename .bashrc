@@ -100,7 +100,6 @@ function go_to_project() {
   cd ${selectedProjectPath}
 }
 alias g='go_to_project'
-#alias g='cd ~/projects; find ~/projects -maxdepth 2 -type d -printf "%P\n" | /bin/grep --color '
 
 # SSH ALIASES
 alias frogs='ssh -At develop ssh -At develop-node17-worker fleetctl ssh tipservice@1'

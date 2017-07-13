@@ -24,13 +24,12 @@ find_git_dirty() {
   fi
 }
 
-PROMPT_COMMAND="find_git_branch; find_git_commit_hash; find_git_dirty; $PROMPT_COMMAND"
+find_dirty_files() {
+  local staged=$(git status --porcelain 2> /dev/null | /bin/grep -E "^M|^A" | wc -l)
+  local modified=$(git status --porcelain 2> /dev/null | /bin/grep "^AM" | wc -l)
+  local new=$(git status --porcelain 2> /dev/null | /bin/grep "^??" | wc -l)
+  number_of_git_changed_files=" (${staged}/${modified}/${new})"
+}
 
-# Default Git enabled prompt with dirty state
-# export PS1="\u@\h \w \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
+PROMPT_COMMAND="find_git_branch; find_git_dirty; find_dirty_files; $PROMPT_COMMAND"
 
-# Another variant:
-# export PS1="\[$bldgrn\]\u@\h\[$txtrst\] \w \[$bldylw\]\$git_branch\[$txtcyn\]\$git_dirty\[$txtrst\]\$ "
-
-# Default Git enabled root prompt (for use with "sudo -s")
-# export SUDO_PS1="\[$bakred\]\u@\h\[$txtrst\] \w\$ "
