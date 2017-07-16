@@ -7,7 +7,7 @@ function show_return_code_if_non_zero() {
 
 export PS1="\[$bakblu\]\[$txtwht\]\w\
 \[$txtrst\]\[$txtblu\]\[$bakylw\]\
-\[$txtrst\]\[$bakylw\]\[$txtblk\]  \$git_branch\$number_of_git_changed_files\
+\[$txtrst\]\[$bakylw\]\[$txtblk\]  \$git_branch\
 \[$txtrst\]\[$txtylw\]\
 \[$txtrst\]\[$txtred\]\$git_dirty\
 \[$txtrst\]\
