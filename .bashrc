@@ -122,6 +122,19 @@ alias di='docker images'
 alias dp='docker ps'
 alias dpa='dp --all'
 alias dc='COMPOSE_HTTP_TIMEOUT=99999 docker-compose'
+function docker_grep_containers(){
+  docker ps -a | grep $1
+}
+alias dgc='docker_grep_containers'
+alias dg='dgc'
+function docker_grep_images(){
+  docker images | grep $1
+}
+alias dgi='docker_grep_images'
+function docker_stats(){
+  docker stats $(docker ps --format '{{.Names}}')
+}
+alias ds="docker_stats"
 
 # XCLIP
 alias xclip='xclip -selection primary -f | xclip -selection clipboard -f'
