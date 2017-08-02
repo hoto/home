@@ -10,8 +10,6 @@ function grep_highlight() {
 }
 alias greph='grep_highlight'
 alias tree='tree -C'
-alias e='exit'
-alias ex='e'
 alias terminal='tilix'
 alias ter='tilix && exit'
 alias des='cd ~/Desktop'
@@ -43,6 +41,7 @@ alias b='set_backlight'
 alias diff='webstorm diff'
 alias k='kubectl'
 alias o='xdg-open'
+alias e='etcdctl'
 
 # GIT ALIASES
 alias gg="cd ~/projects; tree -L 1 -d"
@@ -190,3 +189,8 @@ export GOPATH=$HOME/go
 
 # JAVA
 export JAVA_HOME=/usr/java/jdk1.8.0_131
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
