@@ -1,8 +1,7 @@
-# UTIL ALIASES
+### UTIL ALIASES
 alias ls='ls --color --group-directories-first'
 alias l='ls'
-alias la='ls -lash'
-alias ll='la'
+alias ll='ls -lash'
 alias colors='perl .bash/256colors2.pl'
 alias grep='grep --ignore-case --line-number --color'
 function grep_highlight() {
@@ -12,25 +11,18 @@ alias greph='grep_highlight'
 alias tree='tree -C'
 alias terminal='tilix'
 alias ter='tilix && exit'
-alias des='cd ~/Desktop'
 alias exp='nautilus --browser .'
-alias expl='exp'
-alias cp='cp -i'
-alias mv='mv -i'
 alias ports='sudo lsof -i -n -P | grep TCP'
 alias c='~/envs/pygmentize/bin/pygmentize -g'
 alias stat='/usr/bin/stat --format "%a %U %G %n [%F]"'
-alias googler='googler -n 3'
 alias ack='ack -i'
 alias acki='/usr/bin/ack'
 alias ackf='ack -f | ack -i'
-alias du='du -h'
 function open_chrome() {
   local url=$1
   google-chrome ${url} &
   exit
 }
-alias ch=open_chrome
 alias gm='open_chrome https://mail.google.com/mail/u/0/'
 alias gmm='open_chrome https://mail.google.com/mail/u/1/'
 alias lastpass='lpass'
@@ -41,9 +33,8 @@ alias b='set_backlight'
 alias diff='webstorm diff'
 alias k='kubectl'
 alias o='xdg-open'
-alias e='etcdctl'
 
-# GIT ALIASES
+### GIT
 alias gg="cd ~/projects; tree -L 1 -d"
 alias gc="git commit -m"
 alias ga="git add -A"
@@ -71,7 +62,7 @@ function git_push() {
 }
 alias gp="git_push"
 
-# TREE
+### TREE
 function _tree(){
   local n=${1:='1'}
   tree -L $n -I ".git|node_modules|.idea|bower_components|coverage|.gradle" -a
@@ -85,8 +76,7 @@ alias t4='_tree 4'
 alias t5='_tree 5'
 alias tt='t5'
 
-# ANSIBLE ALIASES
-alias an='ansible'
+### ANSIBLE
 alias ap='ansible-playbook'
 
 # PROJECTS ALIASES
@@ -100,9 +90,6 @@ function go_to_project() {
 }
 alias g='go_to_project'
 
-# SSH ALIASES
-alias frogs='ssh -At develop ssh -At develop-node17-worker fleetctl ssh tipservice@1'
-
 # SOFTWARE
 alias wn='webstorm . &'
 alias w='(wn) && exit'
@@ -115,38 +102,17 @@ alias a='an && exit'
 alias vn='code . &'
 alias v='(vn) && exit'
 
-# DOCKER ALIASES
-alias d='docker'
-alias di='docker images'
-alias dp='docker ps'
-alias dpa='dp --all'
+### DOCKER 
 alias dc='COMPOSE_HTTP_TIMEOUT=99999 docker-compose'
-function docker_grep_containers(){
-  docker ps -a | grep $1
-}
-alias dgc='docker_grep_containers'
-alias dg='dgc'
-function docker_grep_images(){
-  docker images | grep $1
-}
-alias dgi='docker_grep_images'
-function docker_stats(){
-  docker stats $(docker ps --format '{{.Names}}')
-}
-alias ds="docker_stats"
 
-# XCLIP
+### XCLIP
 alias xclip='xclip -selection primary -f | xclip -selection clipboard -f'
 
-# SOURCE OTHER SCRIPTS
+### PS1
 BASH_SCRIPTS=${HOME}/.bash
 source ${BASH_SCRIPTS}/ps1.sh
-source /usr/share/bash-completion/completions/git
 
-# Map capslock key to escape key
-setxkbmap -option caps:escape
-
-# Colors for 'man'
+### Colors for man
 export PAGER=less
 export LESS_TERMCAP_mb=$(printf '\e[01;31m') # enter blinking mode - red
 export LESS_TERMCAP_md=$(printf '\e[01;35m') # enter double-bright mode - bold, magenta
@@ -156,41 +122,25 @@ export LESS_TERMCAP_so=$(printf '\e[01;31m') # enter standout (searched phrase) 
 export LESS_TERMCAP_ue=$(printf '\e[0m') # leave underline mode
 export LESS_TERMCAP_us=$(printf '\e[04;36m') # enter underline mode - cyan
 
-# Load ssh keys to ssh-agent
-ssh-add ~/.ssh/pubbutt.pem &>/dev/null || :
-
-# YARN
-export PATH="$HOME/.yarn/bin:$PATH"
-
-# NPM GLOBAL MODULES
-export PATH="$HOME/.npm-global/bin:$PATH"
-
-# Enable mixu/gr completeion 
-. <(gr completion)
-
-# EXPORTS
-export EDITOR=vim
-export TIMEFORMAT='r: %R, u: %U, s: %S'
-
-# HSTR (CTRL + R history enhancer) 
-# https://github.com/dvorka/hstr
+### HSTR (CTRL + R history enhancer) https://github.com/dvorka/hstr
 export HH_CONFIG=hicolor,rawhistory # get more colors and sort by date
-shopt -s histappend              # append new history items to .bash_history
 export HISTCONTROL=ignorespace   # leading space hides commands from history
 export HISTFILESIZE=10000        # increase history file size (default is 500)
 export HISTSIZE=${HISTFILESIZE}  # increase history size (default is 500)
 export PROMPT_COMMAND="history -a; history -n; ${PROMPT_COMMAND}"   # mem/file sync
-# if this is interactive shell, then bind hh to Ctrl-r (for Vi mode check doc)
-if [[ $- =~ .*i.* ]]; then bind '"\C-r": "\C-a hh -- \C-j"'; fi
+shopt -s histappend              # append new history items to .bash_history
+if [[ $- =~ .*i.* ]]; then bind '"\C-r": "\C-a hh -- \C-j"'; fi # if this is interactive shell, then bind hh to Ctrl-r (for Vi mode check doc)
 
-# there is this stupid warning on fedora sometimes 
-__vte_prompt_command() { true; }
+### OTHER
+export EDITOR=vim
+export TIMEFORMAT='r: %R, u: %U, s: %S'
 export GOPATH=$HOME/go
-
-# JAVA
 export JAVA_HOME=/usr/java/jdk1.8.0_131
+export PATH="$HOME/.yarn/bin:$PATH"
+export PATH="$HOME/.npm-global/bin:$PATH"
+__vte_prompt_command() { true; } # there is this stupid warning on fedora sometimes 
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# Map capslock key to escape key
+setxkbmap -option caps:escape
 
+source /usr/share/bash-completion/completions/git
