@@ -33,6 +33,7 @@ alias b='set_backlight'
 alias diff='webstorm diff'
 alias k='kubectl'
 alias o='xdg-open'
+alias less='less -S'
 
 ### GIT
 alias gg="cd ~/projects; tree -L 1 -d"
