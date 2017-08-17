@@ -136,7 +136,7 @@ if [[ $- =~ .*i.* ]]; then bind '"\C-r": "\C-a hh -- \C-j"'; fi # if this is int
 ### OTHER
 export EDITOR=vim
 export TIMEFORMAT='r: %R, u: %U, s: %S'
-export JAVA_HOME=/usr/java/jdk1.8.0_144
+export JAVA_HOME=/usr/lib/jvm/java/
 export GOPATH="${HOME}/go"
 export PATH="${GOPATH}/bin:/usr/local/go/bin:${HOME}/.yarn/bin:${HOME}/.npm-global/bin:$PATH"
 __vte_prompt_command() { true; } # there is this stupid warning on fedora sometimes 
