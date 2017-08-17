@@ -1,6 +1,7 @@
 ### UTIL ALIASES
 alias ls='ls --color --group-directories-first'
 alias l='ls'
+alias la='ls -a'
 alias ll='ls -lash'
 alias colors='perl .bash/256colors2.pl'
 alias grep='grep --ignore-case --line-number --color'
@@ -135,10 +136,9 @@ if [[ $- =~ .*i.* ]]; then bind '"\C-r": "\C-a hh -- \C-j"'; fi # if this is int
 ### OTHER
 export EDITOR=vim
 export TIMEFORMAT='r: %R, u: %U, s: %S'
-export GOPATH=$HOME/go
 export JAVA_HOME=/usr/java/jdk1.8.0_144
-export PATH="$HOME/.yarn/bin:$PATH"
-export PATH="$HOME/.npm-global/bin:$PATH"
+export GOPATH="${HOME}/go"
+export PATH="${GOPATH}/bin:/usr/local/go/bin:${HOME}/.yarn/bin:${HOME}/.npm-global/bin:$PATH"
 __vte_prompt_command() { true; } # there is this stupid warning on fedora sometimes 
 
 # Map capslock key to escape key
