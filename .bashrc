@@ -145,3 +145,11 @@ __vte_prompt_command() { true; } # there is this stupid warning on fedora someti
 setxkbmap -option caps:escape
 
 source /usr/share/bash-completion/completions/git
+
+export NVM_DIR="$HOME/.nvm"
+function load_nvm() {
+  echo "nvm loaded..."
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+}
+alias nvm='load_nvm'
