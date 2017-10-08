@@ -1,4 +1,5 @@
 ### UTIL ALIASES
+alias des='cd ~/Desktop'
 alias ls='ls --color --group-directories-first'
 alias l='ls'
 alias la='ls -a'
@@ -91,6 +92,11 @@ function go_to_project() {
   cd ${selectedProjectPath}
 }
 alias g='go_to_project'
+function copy_template() {
+  local template_name="$1"
+  cp --verbose --recursive ~/projects/hoto/templates/${template_name}/. .
+}
+alias template='copy_template'
 
 # SOFTWARE
 alias wn='webstorm . &'
@@ -138,7 +144,7 @@ export EDITOR=vim
 export TIMEFORMAT='r: %R, u: %U, s: %S'
 export JAVA_HOME=/usr/lib/jvm/java/
 export GOPATH="${HOME}/go"
-export PATH="${GOPATH}/bin:/usr/local/go/bin:${HOME}/.yarn/bin:${HOME}/.npm-global/bin:$PATH"
+export PATH="${PATH}:${GOPATH}/bin:/usr/local/go/bin:${HOME}/.yarn/bin:${HOME}/.npm-global/bin:${HOME}/.rvm/bin"
 __vte_prompt_command() { true; } # there is this stupid warning on fedora sometimes 
 
 # Map capslock key to escape key
@@ -153,3 +159,4 @@ function load_nvm() {
   [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 }
 alias nvm='load_nvm'
+
