@@ -112,6 +112,7 @@ alias v='(vn) && exit'
 
 ### DOCKER 
 alias dc='COMPOSE_HTTP_TIMEOUT=99999 docker-compose'
+alias d='docker'
 
 ### XCLIP
 alias xclip='xclip -selection primary -f | xclip -selection clipboard -f'

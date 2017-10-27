@@ -82,6 +82,8 @@ filetype indent plugin on
 noremap * #*zz
 noremap # *#zz
 
+:imap jj <Esc>
+
 " CTRL-Y is Redo (although not repeat); not in cmdline though
 noremap <C-Y> <C-R>
 inoremap <C-Y> <C-O><C-R>
