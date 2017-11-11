@@ -84,8 +84,9 @@ alias ap='ansible-playbook'
 
 # PROJECTS ALIASES
 PROJECTS="${HOME}/projects/hoto"
-alias ans='cd ${PROJECTS}/ansible-home-fedora'
-alias home='cd ${PROJECTS}/home'
+alias proj="cd ${PROJECTS}"
+alias ans="cd ${PROJECTS}/ansible-home-fedora"
+alias home="cd ${PROJECTS}/home"
 function go_to_project() {
   local pattern=$1
   fuzzy-project-finder ${pattern}
