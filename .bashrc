@@ -82,11 +82,12 @@ alias tt='t5'
 ### ANSIBLE
 alias ap='ansible-playbook'
 
-# PROJECTS ALIASES
-PROJECTS="${HOME}/projects/hoto"
+### PROJECTS ALIASES
+PROJECTS="${HOME}/projects"
+MY_PROJECTS="${PROJECTS}/hoto"
 alias proj="cd ${PROJECTS}"
-alias ans="cd ${PROJECTS}/ansible-home-fedora"
-alias home="cd ${PROJECTS}/home"
+alias ans="cd ${MY_PROJECTS}/ansible-home-fedora"
+alias home="cd ${MY_PROJECTS}/home"
 function go_to_project() {
   local pattern=$1
   fuzzy-project-finder ${pattern}
@@ -96,7 +97,7 @@ function go_to_project() {
 alias g='go_to_project'
 function copy_template() {
   local template_name="$1"
-  cp --recursive ${PROJECTS}/project-templates/${template_name}/. .
+  cp --recursive ${MY_PROJECTS}/project-templates/${template_name}/. .
   echo "Copied ${template_name} template files."
   git init
 }
@@ -104,11 +105,11 @@ alias template='copy_template'
 function copy_kata_description() {
   local kata_name="$1"
   if [[ -z "$1" ]]; then
-    ls -1  ${PROJECTS}/project-templates/ | /usr/bin/grep kata | rev | cut -c 4- | rev
+    ls -1  ${MY_PROJECTS}/project-templates/ | /usr/bin/grep kata | rev | cut -c 4- | rev
     return
   fi
   cat README.md > /tmp/original-file
-  cat ${PROJECTS}/project-templates/${kata_name}.md /tmp/original-file > README.md
+  cat ${MY_PROJECTS}/project-templates/${kata_name}.md /tmp/original-file > README.md
   echo "Prepended kata description to README.md file."
 }
 alias kata='copy_kata_description'
