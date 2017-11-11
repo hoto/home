@@ -20,11 +20,11 @@ Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'chase/vim-ansible-yaml'
 Plugin 'MarcWeber/vim-addon-mw-utils' "for vim-snipmate
 Plugin 'tomtom/tlib_vim' "for vim-snipmate
+Plugin 'kurayama/systemd-vim-syntax'
+Plugin 'tmux-plugins/vim-tmux'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets' "for vim-snipmate
 Plugin 'evanmiller/nginx-vim-syntax'
-Plugin 'kurayama/systemd-vim-syntax'
-Plugin 'tmux-plugins/vim-tmux'
 call vundle#end()
 
 filetype plugin indent on

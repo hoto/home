@@ -11,8 +11,8 @@ function grep_highlight() {
 }
 alias greph='grep_highlight'
 alias tree='tree -C'
-alias terminal='tilix'
-alias ter='tilix && exit'
+alias terminal='tilix &'
+alias ter='tilix &'
 alias exp='nautilus --browser .'
 alias ports='sudo lsof -i -n -P | grep TCP'
 alias c='~/envs/pygmentize/bin/pygmentize -g'
@@ -83,8 +83,9 @@ alias tt='t5'
 alias ap='ansible-playbook'
 
 # PROJECTS ALIASES
-alias ans='cd ~/projects/hoto/ansible-home-fedora'
-alias home='cd ~/projects/hoto/home'
+PROJECTS="${HOME}/projects/hoto"
+alias ans='cd ${PROJECTS}/ansible-home-fedora'
+alias home='cd ${PROJECTS}/home'
 function go_to_project() {
   local pattern=$1
   fuzzy-project-finder ${pattern}
@@ -94,9 +95,22 @@ function go_to_project() {
 alias g='go_to_project'
 function copy_template() {
   local template_name="$1"
-  cp --verbose --recursive ~/projects/hoto/templates/${template_name}/. .
+  cp --recursive ${PROJECTS}/project-templates/${template_name}/. .
+  echo "Copied ${template_name} template files."
+  git init
 }
 alias template='copy_template'
+function copy_kata_description() {
+  local kata_name="$1"
+  if [[ -z "$1" ]]; then
+    ls -1  ${PROJECTS}/project-templates/ | /usr/bin/grep kata | rev | cut -c 4- | rev
+    return
+  fi
+  cat README.md > /tmp/original-file
+  cat ${PROJECTS}/project-templates/${kata_name}.md /tmp/original-file > README.md
+  echo "Prepended kata description to README.md file."
+}
+alias kata='copy_kata_description'
 
 # SOFTWARE
 alias wn='webstorm . &'
