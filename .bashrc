@@ -71,13 +71,15 @@ function _tree(){
   tree -L $n -I ".git|node_modules|.idea|bower_components|coverage|.gradle" -a
 }
 alias t='_tree 1'
-alias t0='_tree'
 alias t1='_tree 1'
 alias t2='_tree 2'
 alias t3='_tree 3'
 alias t4='_tree 4'
 alias t5='_tree 5'
-alias tt='t5'
+alias t6='_tree 6'
+alias t7='_tree 7'
+alias t8='_tree 8'
+alias tt='t8'
 
 ### ANSIBLE
 alias ap='ansible-playbook'
