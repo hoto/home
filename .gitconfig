@@ -19,4 +19,4 @@
   log72h = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold magenta)%an%Creset %Cgreen%cr' --abbrev-commit --since='72 hours ago'
 
 [credential]
-	helper = cache --timeout=604800
+	helper = cache --timeout=6048000
