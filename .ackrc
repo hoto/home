@@ -9,7 +9,6 @@
 --ignore-file=ext:bak
 --ignore-file=ext:htc
 --ignore-file=ext:pdf
---ignore-file=ext:sql
 
 --ignore-file=match:.rbfu-version
 --ignore-file=match:.rbenv-version
