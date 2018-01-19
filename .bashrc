@@ -36,6 +36,10 @@ alias diff='webstorm diff'
 alias k='kubectl'
 alias o='xdg-open'
 alias less='less -S'
+alias light='gsettings set org.gnome.desktop.interface gtk-theme "Adwaita"'
+alias white='light'
+alias dark='gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"'
+alias black='dark'
 
 ### GIT
 alias gg="cd ~/projects; tree -L 1 -d"
