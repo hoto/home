@@ -87,6 +87,7 @@ alias tt='t8'
 
 ### ANSIBLE
 alias ap='ansible-playbook'
+alias av='ansible-vault'
 
 ### PROJECTS ALIASES
 PROJECTS="${HOME}/projects"
