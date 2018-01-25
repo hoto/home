@@ -24,6 +24,7 @@ Plugin 'kurayama/systemd-vim-syntax'
 Plugin 'tmux-plugins/vim-tmux'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets' "for vim-snipmate
+Plugin 'luochen1990/rainbow'
 Plugin 'evanmiller/nginx-vim-syntax'
 call vundle#end()
 
@@ -158,6 +159,8 @@ map ,g :FufLine <CR>
 map ,l :FufLine <CR>
 map ,p :FufRenewCache <CR>
 
+
+
 " JAVASCRIPT-LIBRARIES-SYNTAX
 let g:used_javascript_libs = 'underscore,backbone,flux,react,jasmine,chai'
 
@@ -165,5 +168,8 @@ let g:used_javascript_libs = 'underscore,backbone,flux,react,jasmine,chai'
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
+
+" luochen1990/rainbow
+let g:rainbow_active = 1 " :RainbowToggle
 
 au BufNewFile,BufRead Jenkinsfile setf groovy
