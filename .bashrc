@@ -1,6 +1,12 @@
+#!/usr/bin/env bash
+
 ### UTIL ALIASES
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+  alias ls='ls --color --group-directories-first'
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+  alias ls='ls -G'
+fi
 alias des='cd ~/Desktop'
-alias ls='ls --color --group-directories-first'
 alias l='ls'
 alias la='ls -a'
 alias ll='ls -lash'
@@ -133,7 +139,7 @@ alias a='an && exit'
 alias vn='code . &'
 alias v='(vn) && exit'
 
-### DOCKER 
+### DOCKER
 alias dc='COMPOSE_HTTP_TIMEOUT=99999 docker-compose'
 alias d='docker'
 
@@ -163,19 +169,39 @@ export PROMPT_COMMAND="history -a; history -n; ${PROMPT_COMMAND}"   # mem/file s
 shopt -s histappend              # append new history items to .bash_history
 if [[ $- =~ .*i.* ]]; then bind '"\C-r": "\C-a hh -- \C-j"'; fi # if this is interactive shell, then bind hh to Ctrl-r (for Vi mode check doc)
 
-### OTHER
+### EXPORTS
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+  :
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home
+  export GROOVY_HOME=/usr/local/opt/groovy/libexec
+fi
+function set_path() {
+  export GOPATH="${HOME}/go"
+  local GO_BIN="${HOME}/bin"
+  local GO_LOCAL_BIN="/usr/local/go/bin"
+  local YARN_BIN="${HOME}/.yarn/bin"
+  local NPM_GLOBAL="${HOME}/.npm-global/bin"
+  local RVM_BIN="${HOME}/.rvm/bin"
+  local AWS_CLI_BIN="${HOME}/envs/awscli/bin/"
+  local AWS_SHELL_BIN="${HOME}/envs/aws-shell/bin/"
+  local ANSIBLE_BIN="${HOME}/envs/ansible/bin/"
+  export PATH="${PATH}:${GO_BIN}:${GO_LOCAL_BIN}:${YARN_BIN}:${NPM_GLOBAL}:${AWS_CLI_BIN}:${AWS_SHELL_BIN}:${ANSIBLE_BIN}:${RVM_BIN}"
+}
+set_path
+
+### OTHER CRAP
 export EDITOR=vim
 export TIMEFORMAT='r: %R, u: %U, s: %S'
-export JAVA_HOME=/usr/lib/jvm/java/
-export GOPATH="${HOME}/go"
-export PATH="${PATH}:${GOPATH}/bin:/usr/local/go/bin:${HOME}/.yarn/bin:${HOME}/.npm-global/bin:${HOME}/.rvm/bin"
-__vte_prompt_command() { true; } # there is this stupid warning on fedora sometimes 
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+  setxkbmap -option caps:escape # Map capslock key to escape key
+  source /usr/share/bash-completion/completions/git
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+  alias ls='ls -G'
+fi
+__vte_prompt_command() { true; } # there is this stupid warning on fedora sometimes
 
-# Map capslock key to escape key
-setxkbmap -option caps:escape
-
-source /usr/share/bash-completion/completions/git
-
+# NVM
 export NVM_DIR="$HOME/.nvm"
 function load_nvm() {
   echo "nvm loaded..."
