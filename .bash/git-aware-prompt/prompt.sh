@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 find_git_commit_hash() {
   git_commit_hash=$(git rev-parse HEAD 2> /dev/null)
 }
@@ -25,9 +26,9 @@ find_git_dirty() {
 }
 
 find_dirty_files() {
-  local staged=$(git status --porcelain 2> /dev/null | /bin/grep -E "^M|^A" | wc -l)
-  local modified=$(git status --porcelain 2> /dev/null | /bin/grep "^AM" | wc -l)
-  local new=$(git status --porcelain 2> /dev/null | /bin/grep "^??" | wc -l)
+  local staged=$(git status --porcelain 2> /dev/null | /usr/bin/grep -E "^M|^A" | wc -l)
+  local modified=$(git status --porcelain 2> /dev/null | /usr/bin/grep "^AM" | wc -l)
+  local new=$(git status --porcelain 2> /dev/null | /usr/bin/grep "^??" | wc -l)
   number_of_git_changed_files=" (${staged}/${modified}/${new})"
 }
 
