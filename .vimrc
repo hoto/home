@@ -24,6 +24,7 @@ Plugin 'kurayama/systemd-vim-syntax'
 Plugin 'tmux-plugins/vim-tmux'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets' "for vim-snipmate
+Plugin 'martinda/Jenkinsfile-vim-syntax'
 Plugin 'luochen1990/rainbow'
 Plugin 'evanmiller/nginx-vim-syntax'
 call vundle#end()
@@ -147,9 +148,9 @@ let s:dirname = 'node_modules|target|bower_components|build|deploy|tools|\.idea|
 let g:fuf_file_exclude = '\v'.'('.s:startname.'('.s:dirname.')'.s:endname.')|(('.s:extension.')$)'
 let g:fuf_dir_exclude = '\v'.s:startname.'('.s:dirname.')'.s:endname
 let g:fuf_modesDisable = []
-let g:fuf_mrufile_maxItem = 60
-let g:fuf_mrucmd_maxItem = 60
-let g:fuf_enumeratingLimit = 60
+let g:fuf_mrufile_maxItem = 120
+let g:fuf_mrucmd_maxItem = 120
+let g:fuf_enumeratingLimit = 120
 map ,f :FufFile <CR>
 map ,c :FufCoverageFile <CR>
 map ,e :FufBuffer <CR>
@@ -172,4 +173,4 @@ endif
 " luochen1990/rainbow
 let g:rainbow_active = 1 " :RainbowToggle
 
-au BufNewFile,BufRead Jenkinsfile setf groovy
+"au BufNewFile,BufRead Jenkinsfile setf groovy
