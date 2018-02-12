@@ -173,4 +173,3 @@ endif
 " luochen1990/rainbow
 let g:rainbow_active = 1 " :RainbowToggle
 
-"au BufNewFile,BufRead Jenkinsfile setf groovy
