@@ -110,7 +110,8 @@ function go_to_project() {
 alias g='go_to_project'
 function copy_template() {
   local template_name="$1"
-  cp --recursive ${MY_PROJECTS}/project-templates/${template_name}/. .
+  #cp --recursive ${MY_PROJECTS}/project-templates/${template_name}/. .
+  cp -R ${MY_PROJECTS}/project-templates/${template_name}/. .
   echo "Copied ${template_name} template files."
   git init
 }
@@ -185,8 +186,7 @@ function set_path() {
   local RVM_BIN="${HOME}/.rvm/bin"
   local AWS_CLI_BIN="${HOME}/envs/awscli/bin/"
   local AWS_SHELL_BIN="${HOME}/envs/aws-shell/bin/"
-  local ANSIBLE_BIN="${HOME}/envs/ansible/bin/"
-  export PATH="${PATH}:${GO_BIN}:${GO_LOCAL_BIN}:${YARN_BIN}:${NPM_GLOBAL}:${AWS_CLI_BIN}:${AWS_SHELL_BIN}:${ANSIBLE_BIN}:${RVM_BIN}"
+  export PATH="${PATH}:${GO_BIN}:${GO_LOCAL_BIN}:${YARN_BIN}:${NPM_GLOBAL}:${AWS_CLI_BIN}:${AWS_SHELL_BIN}:${RVM_BIN}"
 }
 set_path
 
