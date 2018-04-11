@@ -129,15 +129,15 @@ function copy_kata_description() {
 alias kata='copy_kata_description'
 
 # SOFTWARE
-alias wn='webstorm . &'
+alias wn='webstorm ${PWD}/ &'
 alias w='(wn) && exit'
-alias in='idea . &'
+alias in='idea ${PWD}/ &'
 alias i='(in) && exit'
-alias pn='charm . &'
+alias pn='charm ${PWD}/ &'
 alias p='(pn) && exit'
-alias an='nohup atom -a . > /dev/null'
+alias an='nohup atom -a ${PWD}/ > /dev/null'
 alias a='an && exit'
-alias vn='code . &'
+alias vn='code ${PWD} &'
 alias v='(vn) && exit'
 
 ### DOCKER
