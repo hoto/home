@@ -78,7 +78,7 @@ alias gp="git_push"
 ### TREE
 function _tree(){
   local n=${1:='1'}
-  tree -L $n -I ".git|node_modules|.idea|bower_components|coverage|.gradle" -a
+  tree -L $n -I ".git|.svn|node_modules|.idea|bower_components|coverage|.gradle" -a
 }
 alias t='_tree 1'
 alias t1='_tree 1'
@@ -143,6 +143,8 @@ alias v='(vn) && exit'
 ### DOCKER
 alias dc='COMPOSE_HTTP_TIMEOUT=99999 docker-compose'
 alias d='docker'
+alias dps='docker ps'
+alias dpsa='docker ps -a'
 
 ### XCLIP
 alias xclip='xclip -selection primary -f | xclip -selection clipboard -f'
