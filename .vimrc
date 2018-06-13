@@ -25,8 +25,6 @@ Plugin 'tmux-plugins/vim-tmux'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets' "for vim-snipmate
 Plugin 'martinda/Jenkinsfile-vim-syntax'
-Plugin 'luochen1990/rainbow'
-Plugin 'evanmiller/nginx-vim-syntax'
 call vundle#end()
 
 filetype plugin indent on
