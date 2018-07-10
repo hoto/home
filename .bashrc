@@ -46,6 +46,8 @@ alias light='gsettings set org.gnome.desktop.interface gtk-theme "Adwaita"'
 alias white='light'
 alias dark='gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"'
 alias black='dark'
+alias rmp='rm -rf .idea && find . -name "*.iml" | xargs rm'
+alias fix_project='rmp'
 
 ### GIT
 alias gg="cd ~/projects; tree -L 1 -d"
