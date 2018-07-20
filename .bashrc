@@ -206,6 +206,23 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 fi
 __vte_prompt_command() { true; } # there is this stupid warning on fedora sometimes
 
+### Countdown
+countdown()
+(
+  IFS=:
+  set -- $*
+  secs=$(( ${1#0} * 3600 + ${2#0} * 60 + ${3#0} ))
+  while [ $secs -gt 0 ]
+  do
+    sleep 1 &
+    printf "\r%02d:%02d:%02d" $((secs/3600)) $(( (secs/60)%60)) $((secs%60))
+    secs=$(( $secs - 1 ))
+    wait
+  done
+  echo
+)
+alias pomo='countdown "00:25:00"'
+
 # NVM
 export NVM_DIR="$HOME/.nvm"
 function load_nvm() {
