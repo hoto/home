@@ -56,6 +56,7 @@ alias ga="git add -A"
 alias gs="git status"
 alias gd="git diff"
 alias gds="gd --staged"
+alias gcm="git checkout master"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold magenta)%an%Creset %Cgreen%cr' --abbrev-commit"
 alias gsm="git submodule"
 function git_hash() {
