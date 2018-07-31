@@ -132,6 +132,18 @@ function copy_kata_description() {
 }
 alias kata='copy_kata_description'
 
+### MANGO ALIASES
+function mango_versions() {
+  for name in product stock prices; do
+    echo "${name}"
+    for environment in dev pre pro; do
+      printf "${environment}: "
+      ssh jenkins curl -s ${name}.${environment}.mango.com/info | jq .build.version
+    done
+  done
+}
+alias versions='mango_versions'
+
 # SOFTWARE
 alias wn='webstorm ${PWD}/ &'
 alias w='(wn) && exit'
