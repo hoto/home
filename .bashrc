@@ -48,6 +48,11 @@ alias dark='gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"'
 alias black='dark'
 alias rmp='rm -rf .idea && find . -name "*.iml" | xargs rm'
 alias fix_project='rmp'
+function scanpdf() {
+  local file=$1
+  convert ${file} -colorspace gray \( +clone -blur 0x1 \) +swap -compose divide -composite -linear-stretch 1%x0% -rotate 1.5 scanned.pdf
+}
+alias scan_pdf='scanpdf'
 
 ### GIT
 alias gg="cd ~/projects; tree -L 1 -d"
