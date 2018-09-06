@@ -53,6 +53,7 @@ function scanpdf() {
   convert ${file} -colorspace gray \( +clone -blur 0x1 \) +swap -compose divide -composite -linear-stretch 1%x0% -rotate 1.5 scanned.pdf
 }
 alias scan_pdf='scanpdf'
+alias ipcheck="curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'"
 
 ### GIT
 alias gg="cd ~/projects; tree -L 1 -d"
