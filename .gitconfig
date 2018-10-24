@@ -11,6 +11,7 @@
     prune = true
 [alias]
   c = checkout
+  d = difftool
   l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold magenta)%an%Creset %Cgreen%cr' --abbrev-commit 
   log1h = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold magenta)%an%Creset %Cgreen%cr' --abbrev-commit --since='1 hours ago'
   log2h = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold magenta)%an%Creset %Cgreen%cr' --abbrev-commit --since='2 hours ago'
@@ -21,3 +22,11 @@
 
 [credential]
 	helper = cache --timeout=6048000
+
+[diff]
+  tool = vimdiff
+  compactionHeuristic = true
+
+[difftool]
+  prompt = false
+  trustExitCode = true
