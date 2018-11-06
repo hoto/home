@@ -143,7 +143,7 @@ function mango_versions() {
   for name in prices pricesloader product stock; do
     echo "${name}"
     for environment in dev pre pro; do
-      local version=$(ssh jenkins curl -s ${name}.${environment}.mango.com/info | jq .build.version)
+      local version=$(ssh jenkins curl -s ${name}.${environment}.mango.com/info | jq -r .build.version)
       printf "${environment}: ${version}\n"
     done
   done
