@@ -145,7 +145,7 @@ function mango_versions() {
     for environment in dev pre pro; do
       local version=$(ssh jenkins curl -s ${name}.${environment}.mango.com/info | jq -r .build.version)
       local health=$(ssh jenkins curl -s ${name}.${environment}.mango.com/health | jq -r .status)
-      printf "${environment}: ${health} ${version}\n"
+      printf "  ${environment}: ${health} ${version}\n"
     done
   done
 }
