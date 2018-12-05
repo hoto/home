@@ -140,7 +140,7 @@ alias kata='copy_kata_description'
 
 ### MANGO ALIASES
 function mango_versions() {
-  for name in pricesloader prices product stock; do
+  for name in pricesloader prices partners product stock; do
     echo "${name}"
     for environment in dev pre pro; do
       local version=$(ssh jenkins curl -s ${name}.${environment}.mango.com/info | jq -r .build.version)
@@ -252,3 +252,7 @@ function load_nvm() {
 }
 alias nvm='load_nvm'
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/andrzej.rehmann/.sdkman"
+[[ -s "/home/andrzej.rehmann/.sdkman/bin/sdkman-init.sh" ]] && source "/home/andrzej.rehmann/.sdkman/bin/sdkman-init.sh"
