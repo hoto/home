@@ -19,6 +19,7 @@ BULLETTRAIN_PROMPT_ORDER=(
     git
     cmd_exec_time
   )
+export BULLETTRAIN_DIR_EXTENDED=2 # 0=short, 1=medium, 2=complete
 export BULLETTRAIN_TIME_BG=yellow
 export BULLETTRAIN_GIT_BG=yellow
 export BULLETTRAIN_GIT_DIRTY=" %F{red}★%F{black}"
