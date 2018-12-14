@@ -37,6 +37,10 @@ export BULLETTRAIN_GIT_DIVERGED=''
 source $ZSH/oh-my-zsh.sh
 emulate sh -c 'source ${HOME}/.profile'
 
+### HSTR
+export HISTFILE=~/.zsh_history
+bindkey -s "\C-r" "\eqhh\n"
+
 ### SDKMAN
 export SDKMAN_DIR="${HOME}/.sdkman"
 [[ -s "${HOME}/.sdkman/bin/sdkman-init.sh" ]] && source "${HOME}/.sdkman/bin/sdkman-init.sh"
