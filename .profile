@@ -97,17 +97,6 @@ alias t7='_tree 7'
 alias t8='_tree 8'
 alias tt='t8'
 
-
-
-
-
-
-
-
-
-
-
-
 ### ANSIBLE
 alias ap='ansible-playbook'
 alias av='ansible-vault'
@@ -180,10 +169,6 @@ alias dpsa='docker ps -a'
 ### XCLIP
 alias xclip='xclip -selection primary -f | xclip -selection clipboard -f'
 
-### PS1
-#BASH_SCRIPTS=${HOME}/.bash
-#source ${BASH_SCRIPTS}/ps1.sh
-
 ### Colors for man
 export PAGER=less
 export LESS_TERMCAP_mb=$(printf '\e[01;31m') # enter blinking mode - red
@@ -200,6 +185,7 @@ export HISTCONTROL=ignorespace   # leading space hides commands from history
 export HISTFILESIZE=10000        # increase history file size (default is 500)
 export HISTSIZE=${HISTFILESIZE}  # increase history size (default is 500)
 export PROMPT_COMMAND="history -a; history -n; ${PROMPT_COMMAND}"   # mem/file sync
+#TODO: fix HSTR on zsh
 #shopt -s histappend              # append new history items to .bash_history
 #if [[ $- =~ .*i.* ]]; then bind '"\C-r": "\C-a hh -- \C-j"'; fi # if this is interactive shell, then bind hh to Ctrl-r (for Vi mode check doc)
 
@@ -231,4 +217,13 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 elif [[ "$OSTYPE" == "darwin"* ]]; then
   alias ls='ls -G'
 fi
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+function load_nvm() {
+  echo "nvm loaded..."
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+}
+alias nvm='load_nvm'
 
