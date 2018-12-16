@@ -196,8 +196,8 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 fi
 function set_path() {
   export GOPATH="${HOME}/go"
-  local GO_BIN="${HOME}/bin"
-  local GO_LOCAL_BIN="/usr/local/go/bin"
+  export GO_BIN="${GOPATH}/bin"
+  export GO_LOCAL_BIN="/usr/local/go/bin"
   local YARN_BIN="${HOME}/.yarn/bin"
   local NPM_GLOBAL="${HOME}/.npm-global/bin"
   local RVM_BIN="${HOME}/.rvm/bin"
