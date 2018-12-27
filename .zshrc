@@ -39,7 +39,7 @@ emulate sh -c 'source ${HOME}/.profile'
 
 ### HSTR
 export HISTFILE=~/.zsh_history
-bindkey -s "\C-r" "\eqhh\n"
+bindkey -s "\C-r" "\C-a hh -- \C-j"
 
 ### SDKMAN
 export SDKMAN_DIR="${HOME}/.sdkman"
