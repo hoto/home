@@ -110,8 +110,8 @@ alias ans="cd ${MY_PROJECTS}/ansible-home-fedora"
 alias home="cd ${MY_PROJECTS}/home"
 function go_to_project() {
   local pattern=$1
-  fuzzy-project-finder ${pattern}
-  local selectedProjectPath=$(cat ~/.fuzzy-project-finder/.projects)
+  fuzzy-repo-finder ${pattern}
+  local selectedProjectPath=$(cat ~/.fuzzy-repo-finder/selected_project.txt)
   cd ${selectedProjectPath}
 }
 alias g='go_to_project'
