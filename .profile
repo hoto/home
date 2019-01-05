@@ -51,6 +51,8 @@ function scanpdf() {
 }
 alias scan_pdf='scanpdf'
 alias ipcheck="curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'"
+alias server="python3 -m http.server" # localhost:8000 or provide port after space
+alias server2="python -m SimpleHTTPServer" # localhost:8000
 
 ### GIT
 alias gg="cd ~/projects; tree -L 1 -d"
