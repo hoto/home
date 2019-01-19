@@ -112,7 +112,7 @@ alias ans="cd ${MY_PROJECTS}/ansible-home-fedora"
 alias home="cd ${MY_PROJECTS}/home"
 function go_to_project() {
   local pattern=$1
-  fuzzy-repo-finder ${pattern}
+  ~/bin/fuzzy-repo-finder ${pattern}
   local selectedProjectPath="$(cat ~/.fuzzy-repo-finder/selected_project.txt)"
   cd "${selectedProjectPath}"
 }
@@ -211,7 +211,7 @@ function set_path() {
 set_path
 
 ### OTHER CRAP
-export LESS="-F -X $LESS" # no pagination if less than a page
+export LESS="eFRX"
 export EDITOR=vim
 export TIMEFORMAT='r: %R, u: %U, s: %S'
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
