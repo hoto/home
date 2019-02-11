@@ -139,7 +139,7 @@ alias kata='copy_kata_description'
 
 ### MANGO ALIASES
 function mango_versions() {
-  for name in pricesloader prices partners product stock; do
+  for name in partners mngidp purchasenotifications pricesloader prices product stock; do
     echo "${name}"
     for environment in dev pre pro; do
       local version=$(ssh jenkins curl -s ${name}.${environment}.mango.com/info | jq -r .build.version)
