@@ -175,6 +175,16 @@ let g:rainbow_active = 1 " :RainbowToggle
 
 " jessedhillon/vim-easycomment
 vmap <silent> <C-_> :call ToggleCommentVisual()<CR>
-nmap <silent> <C-_> :call ToggleCommentLine()<CR> j
+nmap <silent> <C-_> :call ToggleCommentLine()<CR>
 au FileType yaml let b:comment_style="inline"
 au FileType yaml let b:comment_opener="#"
+au FileType sh let b:comment_style="inline"
+au FileType sh let b:comment_opener="#"
+au FileType conf let b:comment_style="inline"
+au FileType conf let b:comment_opener="#"
+au FileType groovy let b:comment_style="inline"
+au FileType groovy let b:comment_opener="//"
+au FileType java let b:comment_style="inline"
+au FileType java let b:comment_opener="//"
+au FileType Jenkinsfile let b:comment_style="inline"
+au FileType Jenkinsfile let b:comment_opener="//"
