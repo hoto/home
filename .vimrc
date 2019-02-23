@@ -25,6 +25,7 @@ Plugin 'tmux-plugins/vim-tmux'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets' "for vim-snipmate
 Plugin 'martinda/Jenkinsfile-vim-syntax'
+Plugin 'https://github.com/jessedhillon/vim-easycomment.git'
 call vundle#end()
 
 filetype plugin indent on
@@ -171,3 +172,9 @@ endif
 " luochen1990/rainbow
 let g:rainbow_active = 1 " :RainbowToggle
 
+
+" jessedhillon/vim-easycomment
+vmap <silent> <C-_> :call ToggleCommentVisual()<CR>
+nmap <silent> <C-_> :call ToggleCommentLine()<CR>
+au FileType yaml let b:comment_style="inline"
+au FileType yaml let b:comment_opener="#"
