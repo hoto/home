@@ -111,10 +111,7 @@ alias proj="cd ${PROJECTS}"
 alias ans="cd ${MY_PROJECTS}/ansible-home-fedora"
 alias home="cd ${MY_PROJECTS}/home"
 function go_to_project() {
-  local pattern=$1
-  ~/bin/fuzzy-repo-finder ${pattern}
-  local selectedProjectPath="$(cat ~/.fuzzy-repo-finder/selected_project.txt)"
-  cd "${selectedProjectPath}"
+  cd $(fuzzy-repo-finder --projectRoots "${HOME}/projects,${HOME}/go/src/github.com/hoto" $@)
 }
 alias g='go_to_project'
 function copy_template() {
