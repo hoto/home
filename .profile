@@ -86,7 +86,7 @@ alias gp="git_push"
 ### TREE
 function _tree(){
   local n=${1:='1'}
-  tree -L $n -I ".git|.svn|node_modules|.idea|bower_components|coverage|.gradle" -a
+  tree -L $n -I ".git|.svn|node_modules|.idea|bower_components|coverage|.gradle|dist|build|target" -a
 }
 alias t='_tree 1'
 alias t1='_tree 1'
