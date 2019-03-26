@@ -79,7 +79,10 @@ function git_hash_colorized() {
 }
 alias gh="git_hash_colorized"
 function git_push() {
-  git push --set-upstream origin $(echo $git_branch)
+  local branch=$(git symbolic-ref --short -q HEAD)
+  local command="git push --set-upstream origin $branch"
+  echo ${command}
+  eval ${command}
 }
 alias gp="git_push"
 
