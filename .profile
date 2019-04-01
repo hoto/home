@@ -35,7 +35,6 @@ function set_backlight() {
   xbacklight -set $1
 }
 alias b='set_backlight'
-alias diff='webstorm diff'
 alias k='kubectl'
 alias o='xdg-open'
 alias less='less -S'
