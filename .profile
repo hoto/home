@@ -93,7 +93,7 @@ function findTree(){ # findTree "Order*|Purchase.java"
 }
 function _tree(){
   local n=${1:='1'}
-  tree -L $n -I ${TREE_IGNORE} -a --prune
+  tree -L $n -I ${TREE_IGNORE} -a
 }
 alias t='_tree 1'
 alias t1='_tree 1'
