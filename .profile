@@ -86,9 +86,14 @@ function git_push() {
 alias gp="git_push"
 
 ### TREE
+TREE_IGNORE=".git|.svn|node_modules|.idea|bower_components|coverage|.gradle|dist|build|target"
+function findTree(){ # findTree "Order.java|Purchase.java"
+  local pattern="$1" 
+  tree -I ${TREE_IGNORE} -a -P "$pattern" --prune
+}
 function _tree(){
   local n=${1:='1'}
-  tree -L $n -I ".git|.svn|node_modules|.idea|bower_components|coverage|.gradle|dist|build|target" -a
+  tree -L $n -I ${TREE_IGNORE} -a --prune
 }
 alias t='_tree 1'
 alias t1='_tree 1'
