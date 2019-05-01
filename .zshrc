@@ -5,10 +5,12 @@ ZSH_THEME="bullet-train"
 
 plugins=(
   git
+  virtualenv
 )
 
 # https://github.com/caiogondim/bullet-train.zsh
 BULLETTRAIN_PROMPT_ORDER=(
+    virtualenv
     time
     status
     custom
@@ -33,6 +35,9 @@ export BULLETTRAIN_GIT_UNMERGED=''
 export BULLETTRAIN_GIT_AHEAD=''
 export BULLETTRAIN_GIT_BEHIND=''
 export BULLETTRAIN_GIT_DIVERGED=''
+export BULLETTRAIN_VIRTUALENV_BG='green'
+export BULLETTRAIN_VIRTUALENV_FG='black'
+export BULLETTRAIN_VIRTUALENV_PREFIX='(env)'
 
 source $ZSH/oh-my-zsh.sh
 emulate sh -c 'source ${HOME}/.profile'
