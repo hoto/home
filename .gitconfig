@@ -30,3 +30,6 @@
 [difftool]
   prompt = false
   trustExitCode = true
+
+[branch]
+  sort=-committerdate
