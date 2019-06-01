@@ -126,6 +126,10 @@ function go_to_project() {
 }
 alias g='go_to_project'
 function copy_template() {
+  if [[ -z "$1" ]]; then
+    tree -L 1 -d ${MY_PROJECTS}/project-templates/
+    return 1
+  fi
   local template_name="$1"
   #cp --recursive ${MY_PROJECTS}/project-templates/${template_name}/. .
   cp -R ${MY_PROJECTS}/project-templates/${template_name}/. .
@@ -137,7 +141,7 @@ function copy_kata_description() {
   local kata_name="$1"
   if [[ -z "$1" ]]; then
     ls -1  ${MY_PROJECTS}/project-templates/ | /usr/bin/grep kata | rev | cut -c 4- | rev
-    return
+    return 1
   fi
   cat README.md > /tmp/original-file
   cat ${MY_PROJECTS}/project-templates/${kata_name}.md /tmp/original-file > README.md
