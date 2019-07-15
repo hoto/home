@@ -57,6 +57,10 @@ function jwt_decode() {
 }
 alias jwt=jwt_decode
 
+### TMP ALIASES
+alias ldap2user='lpass show 5556862302636707868 --clip --field username'
+alias ldap2pass='lpass show 5556862302636707868 --clip --field password'
+
 ### GIT
 alias gg="cd ~/projects; tree -L 1 -d"
 alias gc="git commit -m"
