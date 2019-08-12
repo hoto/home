@@ -52,6 +52,8 @@ alias scan_pdf='scanpdf'
 alias ipcheck="curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'"
 alias server="python3 -m http.server" # localhost:8000 or provide port after space
 alias server2="python -m SimpleHTTPServer" # localhost:8000
+#https://fabianlee.org/2016/09/26/ubuntu-simulating-a-web-server-using-netcat/
+alias mockserver='while true; do echo -e "HTTP/1.1 200 OK\n\n $(date)" | nc -l localhost 9000; done'
 function jwt_decode() {
   sed 's/\./\n/g' <<< $(cut -d. -f1,2 <<< $1) | base64 --decode | jq
 }
