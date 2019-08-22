@@ -20,7 +20,7 @@ alias exp='nautilus --browser . &'
 alias ports='sudo lsof -i -n -P | grep TCP'
 alias c='~/envs/pygmentize/bin/pygmentize -g'
 alias stat='/usr/bin/stat --format "%a %U %G %n [%F]"'
-alias ack='ack -i'
+alias ack='ack --pager -i'
 alias acki='/usr/bin/ack'
 alias ackf='ack -f | ack -i'
 function open_chrome() {
