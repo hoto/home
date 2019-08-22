@@ -211,8 +211,8 @@ export PROMPT_COMMAND="history -a; history -n; ${PROMPT_COMMAND}"   # mem/file s
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
   :
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home
-  export GROOVY_HOME=/usr/local/opt/groovy/libexec
+  export JAVA_HOME=/Users/andrzej.rehmann/.sdkman/candidates/java/current
+  export GROOVY_HOME=/Users/andrzej.rehmann/.sdkman/candidates/groovy/current
 fi
 function set_path() {
   export GOPATH="${HOME}/go"
