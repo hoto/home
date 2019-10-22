@@ -83,7 +83,9 @@ filetype indent plugin on
 noremap * #*zz
 noremap # *#zz
 
+" Escape INSERT mode when quickly typing jj or kk
 :imap jj <Esc>
+:imap kk <Esc>
 
 " CTRL-Y is Redo (although not repeat); not in cmdline though
 noremap <C-Y> <C-R>
