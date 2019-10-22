@@ -55,7 +55,7 @@ function run_mock_server(){
     local port="$1"
     local usage=$(cat <<-END
 
-    Running mock server in the background.
+    Running mock server in the background always responding with 200.
 
     More info: https://fabianlee.org/2016/09/26/ubuntu-simulating-a-web-server-using-netcat/
 
