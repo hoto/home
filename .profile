@@ -61,7 +61,7 @@ function run_mock_server(){
 
     Test: 
 
-        $ curl localhost:9000
+        $ curl localhost:${port}
         > 200 Tue 22 Oct 2019 19:38:57 BST
 
     To exit the program:
