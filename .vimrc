@@ -79,6 +79,8 @@ filetype indent plugin on
 "=====================================
 " MAPPINGS
 "====================================
+"treat _ as a word boundary
+set iskeyword-=_
 " do not skip to next search match
 noremap * #*zz
 noremap # *#zz
