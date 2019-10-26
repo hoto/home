@@ -76,7 +76,7 @@ function run_mock_server(){
  
 END
 )
-    echo ${usage}
+    echo -e "${usage}"
     while true; do 
       echo -e "HTTP/1.1 200 OK\n\n200 $(date)" | nc -l localhost ${port};
     done
