@@ -151,7 +151,7 @@ alias ag='ansible-galaxy'
 
 ### PROJECTS ALIASES
 PROJECTS="${HOME}/projects"
-MY_PROJECTS="${PROJECTS}/hoto"
+MY_PROJECTS="${PROJECTS}/github/hoto"
 alias proj="cd ${PROJECTS}"
 alias ans="cd ${MY_PROJECTS}/ansible-home-fedora"
 alias home="cd ${MY_PROJECTS}/home"

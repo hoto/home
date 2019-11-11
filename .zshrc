@@ -6,6 +6,8 @@ ZSH_THEME="bullet-train"
 plugins=(
   git
   virtualenv
+  zsh-autosuggestions 
+  zsh-syntax-highlighting #must be last
 )
 
 # https://github.com/caiogondim/bullet-train.zsh
