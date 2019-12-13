@@ -252,7 +252,8 @@ function set_path() {
   local AWS_CLI_BIN="${HOME}/envs/awscli/bin/"
   local AWS_SHELL_BIN="${HOME}/envs/aws-shell/bin/"
   local JETBRAINS_TOOLBOX="${HOME}/.local/share/JetBrains/Toolbox/bin/"
-  export PATH="${PATH}:${GO_BIN}:${GO_LOCAL_BIN}:${YARN_BIN}:${NPM_GLOBAL}:${AWS_CLI_BIN}:${AWS_SHELL_BIN}:${RVM_BIN}:${JETBRAINS_TOOLBOX}"
+  local CARGO_BIN="${HOME}/.cargo/bin"
+  export PATH="${PATH}:${GO_BIN}:${GO_LOCAL_BIN}:${YARN_BIN}:${NPM_GLOBAL}:${AWS_CLI_BIN}:${AWS_SHELL_BIN}:${RVM_BIN}:${JETBRAINS_TOOLBOX}${CARGO_BIN}"
 }
 set_path
 
