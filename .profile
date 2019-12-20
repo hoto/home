@@ -86,6 +86,10 @@ function jwt_decode() {
   sed 's/\./\n/g' <<< $(cut -d. -f1,2 <<< $1) | base64 --decode | jq
 }
 alias jwt=jwt_decode
+function timestamp_now(){
+  date +%s
+}
+alias timestamp=timestamp_now
 
 ### TMP ALIASES
 alias ldap2user='lpass show 5556862302636707868 --clip --field username'
@@ -275,3 +279,5 @@ function load_nvm() {
 }
 alias nvm='load_nvm'
 
+
+export PATH="$HOME/.cargo/bin:$PATH"
