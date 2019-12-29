@@ -247,6 +247,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
   export GROOVY_HOME=/Users/andrzej.rehmann/.sdkman/candidates/groovy/current
 fi
 function set_path() {
+  export HOME_BIN_PATH="${HOME}/bin"
   export GOPATH="${HOME}/go"
   export GO_BIN="${GOPATH}/bin"
   export GO_LOCAL_BIN="/usr/local/go/bin"
@@ -257,7 +258,7 @@ function set_path() {
   local AWS_SHELL_BIN="${HOME}/envs/aws-shell/bin/"
   local JETBRAINS_TOOLBOX="${HOME}/.local/share/JetBrains/Toolbox/bin/"
   local CARGO_BIN="${HOME}/.cargo/bin"
-  export PATH="${PATH}:${GO_BIN}:${GO_LOCAL_BIN}:${YARN_BIN}:${NPM_GLOBAL}:${AWS_CLI_BIN}:${AWS_SHELL_BIN}:${RVM_BIN}:${JETBRAINS_TOOLBOX}:${CARGO_BIN}"
+  export PATH="${PATH}:${GO_BIN}:${GO_LOCAL_BIN}:${YARN_BIN}:${NPM_GLOBAL}:${AWS_CLI_BIN}:${AWS_SHELL_BIN}:${RVM_BIN}:${JETBRAINS_TOOLBOX}:${CARGO_BIN}:${HOME_BIN_PATH}"
 }
 set_path
 
