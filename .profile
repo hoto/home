@@ -118,7 +118,7 @@ function git_hash_colorized() {
       awk '{a[i++]=$0} END {for (j=i-1; j>=0;) print a[j--] }' \
     )"
 }
-alias gh="git_hash_colorized"
+alias ghc="git_hash_colorized"
 function git_push() {
   local branch=$(git symbolic-ref --short -q HEAD)
   local command="git push --set-upstream origin $branch"
