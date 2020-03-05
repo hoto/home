@@ -159,6 +159,7 @@ MY_PROJECTS="${PROJECTS}/github/hoto"
 alias proj="cd ${PROJECTS}"
 alias ans="cd ${MY_PROJECTS}/ansible-home-fedora"
 alias home="cd ${MY_PROJECTS}/home"
+alias goji="cd ${PROJECTS}/github/goji"
 alias paym="cd ${PROJECTS}/github/goji/payments-application"
 function go_to_project() {
   cd $(fuzzy-repo-finder --projectRoots "${HOME}/projects,${HOME}/go/src/github.com/hoto" $@)
