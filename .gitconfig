@@ -1,6 +1,7 @@
 [user]
 	email = andrzej.rehmann@gmail.com
 	name = Andrzej Rehmann
+	signingkey = 2660329C72C9CCAA09212B6F9DDF5E06DDDC88A0
 [push]
 	default = simple
 [core]
@@ -39,3 +40,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[commit]
+	gpgsign = true

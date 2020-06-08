@@ -103,7 +103,7 @@ alias gs="git status"
 alias gd="git diff"
 alias gds="gd --staged"
 alias gcm="git checkout master"
-alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold magenta)%an%Creset %Cgreen%cr' --abbrev-commit"
+alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset %C(magenta)%G?%Creset -%C(yellow)%d%Creset %s %C(bold magenta)%an%Creset %Cgreen%cr' --abbrev-commit"
 alias gsm="git submodule"
 function git_hash() {
   local n=${1:-'3'}
@@ -284,3 +284,4 @@ alias nvm='load_nvm'
 
 
 export PATH="$HOME/.cargo/bin:$PATH"
+export GPG_TTY=$(tty)
