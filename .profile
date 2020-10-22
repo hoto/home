@@ -31,7 +31,12 @@ alias gm='open_chrome https://mail.google.com/mail/u/0/'
 alias gmm='open_chrome https://mail.google.com/mail/u/1/'
 alias lastpass='lpass'
 function set_backlight() {
-  xbacklight -set $1
+  if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    xbacklight -set $1
+  elif [[ "$OSTYPE" == "darwin"* ]]; then
+    echo "Setting brightness to $1 (range 0-1)"
+    brightness -d 1 $1
+  fi
 }
 alias b='set_backlight'
 alias k='kubectl'
@@ -162,7 +167,7 @@ alias home="cd ${MY_PROJECTS}/home"
 alias goji="cd ${PROJECTS}/github/goji"
 alias paym="cd ${PROJECTS}/github/goji/payments-application"
 function go_to_project() {
-  cd $(fuzzy-repo-finder --projectRoots "${HOME}/projects,${HOME}/go/src/github.com/hoto" $@)
+  cd $(fuzzy-repo-finder --projectRoots "${HOME}/projects,${HOME}/go/src/github.com/hoto,${HOME}/go/src/github.com/goji-p2p" $@)
 }
 alias g='go_to_project'
 function copy_template() {
