@@ -39,6 +39,8 @@ function set_backlight() {
   fi
 }
 alias b='set_backlight'
+alias b0='b 0'
+alias b1='b 1'
 alias k='kubectl'
 alias o='xdg-open'
 alias less='less -S'
