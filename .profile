@@ -35,7 +35,7 @@ function set_backlight() {
     xbacklight -set $1
   elif [[ "$OSTYPE" == "darwin"* ]]; then
     echo "Setting brightness to $1 (range 0-1)"
-    brightness -d 1 $1
+    brightness $1
   fi
 }
 alias b='set_backlight'
