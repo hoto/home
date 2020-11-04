@@ -5,6 +5,7 @@
 --ignore-directory=bower_components
 --ignore-directory=coverage
 --ignore-directory=dist
+--ignore-directory=.next
 
 --ignore-file=ext:bak
 --ignore-file=ext:htc
