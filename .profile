@@ -97,6 +97,14 @@ function timestamp_now(){
   date +%s
 }
 alias timestamp=timestamp_now
+function mysql_port(){
+    local container=$(docker ps | /usr/bin/grep "mysql:" | head -n1 | awk '{print $1}')
+    local port=$(docker inspect --format='{{(index (index .NetworkSettings.Ports "3306/tcp") 0).HostPort}}' ${container})
+    local uptime=$(docker ps | /usr/bin/grep "mysql:" | head -n1 | awk '{print $7 " " $8 " " $9}')
+    echo ${port} | pbcopy
+    echo "${uptime} | ${container} | ${port} ✂️  "
+}
+alias mysqlPort=mysql_port
 
 ### TMP ALIASES
 alias ldap2user='lpass show 5556862302636707868 --clip --field username'
