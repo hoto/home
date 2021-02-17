@@ -22,6 +22,7 @@ alias c='~/envs/pygmentize/bin/pygmentize -g'
 
 alias acki='/usr/local/bin/ack'
 alias ackf='ack -f | ack -i'
+alias ackj='ack -Q --java'
 function open_chrome() {
   local url=$1
   google-chrome ${url} &
