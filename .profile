@@ -90,10 +90,6 @@ END
     done
 }
 alias mockserver='run_mock_server 9000'
-function jwt_decode() {
-  sed 's/\./\n/g' <<< $(cut -d. -f1,2 <<< $1) | base64 --decode | jq
-}
-alias jwt=jwt_decode
 function timestamp_now(){
   date +%s
 }
@@ -300,3 +296,4 @@ alias nvm='load_nvm'
 
 export PATH="$HOME/.cargo/bin:$PATH"
 export GPG_TTY=$(tty)
+
