@@ -101,6 +101,7 @@ function mysql_port(){
     echo "${container} | ${port} ✂️  "
 }
 alias mysqlPort=mysql_port
+alias aws-shell='aws --cli-auto-prompt'
 
 ### TMP ALIASES
 alias ldap2user='lpass show 5556862302636707868 --clip --field username'
@@ -227,7 +228,7 @@ alias vn='code ${PWD} &'
 alias v='(vn) && exit'
 
 ### DOCKER
-alias dc='COMPOSE_HTTP_TIMEOUT=99999 docker-compose'
+alias dc='docker compose'
 alias d='docker'
 alias dps='docker ps'
 alias dpsa='docker ps -a'
@@ -267,11 +268,9 @@ function set_path() {
   local YARN_BIN="${HOME}/.yarn/bin"
   local NPM_GLOBAL="${HOME}/.npm-global/bin"
   local RVM_BIN="${HOME}/.rvm/bin"
-  local AWS_CLI_BIN="${HOME}/envs/awscli/bin/"
-  local AWS_SHELL_BIN="${HOME}/envs/aws-shell/bin/"
   local JETBRAINS_TOOLBOX="${HOME}/.local/share/JetBrains/Toolbox/bin/"
   local CARGO_BIN="${HOME}/.cargo/bin"
-  export PATH="${PATH}:${GO_BIN}:${GO_LOCAL_BIN}:${YARN_BIN}:${NPM_GLOBAL}:${AWS_CLI_BIN}:${AWS_SHELL_BIN}:${RVM_BIN}:${JETBRAINS_TOOLBOX}:${CARGO_BIN}:${HOME_BIN_PATH}"
+  export PATH="${PATH}:${GO_BIN}:${GO_LOCAL_BIN}:${YARN_BIN}:${NPM_GLOBAL}:${RVM_BIN}:${JETBRAINS_TOOLBOX}:${CARGO_BIN}:${HOME_BIN_PATH}"
 }
 set_path
 

@@ -24,7 +24,6 @@ Plugin 'kurayama/systemd-vim-syntax'
 Plugin 'tmux-plugins/vim-tmux'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets' "for vim-snipmate
-Plugin 'martinda/Jenkinsfile-vim-syntax'
 Plugin 'https://github.com/jessedhillon/vim-easycomment.git'
 call vundle#end()
 
@@ -194,5 +193,3 @@ au FileType groovy let b:comment_style="inline"
 au FileType groovy let b:comment_opener="//"
 au FileType java let b:comment_style="inline"
 au FileType java let b:comment_opener="//"
-au FileType Jenkinsfile let b:comment_style="inline"
-au FileType Jenkinsfile let b:comment_opener="//"
